@@ -1,0 +1,390 @@
+Date,Location,Province,AttackType,ConfirmedUSAttack,DroneStrike,StrikesMin,StrikesMax,TotalKilledMin,TotalKilledMax,CiviliansKilledMin,CiviliansKilledMax,ChildrenKilledMin,ChildrenKilledMax,TotalInjuredMin,TotalInjuredMax,SourceConfirmed
+2002-11-03,Unknown,Marib,Drone strike,Confirmed,1,1,1,6,6,0,0,0,0,0,0,TBIJ (All)
+2009-12-17,Al Majala,Abyan,Cruise missile strike,Confirmed,0,1,1,55,58,44,44,21,22,9,9,TBIJ (All)
+2009-12-17,Arhab,Sanaa,"US-Yemen ground operation
+Possible drone strike",Confirmed,0,1,1,0,0,0,0,0,0,0,0,TBIJ (All)
+2009-12-24,Rafd,Shabwa,"Airstrike
+Possible cruise missile strike",Confirmed,0,1,1,30,34,0,0,0,0,0,0,TBIJ (All)
+2010-01-12,Unknown,Shabwa,"Yemen ground operation
+Possible US assistance",Possible,0,1,1,1,2,0,0,0,0,0,0,TBIJ (All)
+2010-01-15,Al Ajashir,Saada,Airstrike,Possible,0,1,1,0,6,0,0,0,0,0,0,TBIJ (All)
+2010-01-20,Erq al Shawan,Marib,Airstrike,Possible,0,4,4,2,2,0,0,0,0,0,0,TBIJ (All)
+2010-01-31,N/A,Across Yemen,US ground operations,Possible,0,24,24,0,0,0,0,0,0,0,0,TBIJ (All)
+2010-03-14,"Jeezat al Qotn
+Moudia district",Abyan,Airstrike,Confirmed,0,1,1,2,3,0,0,0,0,0,0,TBIJ (All)
+2010-03-15,Moudia,Abyan,Airstrike,Possible,0,1,1,7,20,0,20,0,0,0,0,TBIJ (All)
+2010-05-24,Unknown,Marib,Airstrike,Confirmed,0,1,1,3,4,3,4,0,0,2,3,TBIJ (All)
+2011-05-05,Unknown,Shabwa,"Drone strike
+Airstrike with US conventional aircraft",Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2011-06-03,Zinjibar,Abyan,Drone strike,Confirmed,1,1,1,7,7,4,4,0,0,0,0,TBIJ (All)
+2011-06-10,Zinjibar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2011-06-10,Raia,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,3,2,3,2,3,1,1,0,1,TBIJ (All)
+2011-06-18,Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,0,0,0,0,0,0,6,6,TBIJ (All)
+2011-07-14,"Wadeea district
+Mudiya",Abyan,Drone strike,Confirmed,1,1,1,6,50,30,30,0,0,0,0,TBIJ (All)
+2011-07-14,Unknown,Abyan,Drone strike,Possible,1,1,1,0,0,0,0,0,0,0,0,TBIJ (All)
+2011-07-27,"Karadeef
+Zinjibar",Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2011-08-01,Al Khamila,Abyan,"Drone strike
+Possible Yemen Air Force airstrike",Confirmed,1,2,4,13,16,0,0,0,0,12,17,TBIJ (All)
+2011-08-24,Zinjibar,Abyan,Airstrike,Possible,0,1,1,30,30,0,0,0,0,40,40,TBIJ (All)
+2011-08-24,Arkoub,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,6,6,0,0,0,0,0,0,TBIJ (All)
+2011-08-25,Wadi Hassan,Abyan,Airstrike,Possible,0,1,1,8,8,0,0,0,0,3,3,TBIJ (All)
+2011-08-31,Unknown,Abyan,Airstrike,Confirmed,0,2,2,30,30,0,0,0,0,0,0,TBIJ (All)
+2011-09-05,Jaar,Abyan,Airstrike,Possible,0,1,1,3,7,3,7,0,0,4,4,TBIJ (All)
+2011-09-05,Jaar,Abyan,Airstrike,Possible,0,2,2,9,11,1,1,1,1,2,2,TBIJ (All)
+2011-09-07,Mahfed,Abyan,Drone strike,Confirmed,1,2,3,3,10,0,0,0,0,2,24,TBIJ (All)
+2011-09-21,Mahfed,Abyan,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2011-09-21,Shaqra,Abyan,Airstrike,Possible,0,1,1,6,7,0,0,0,0,3,3,TBIJ (All)
+2011-09-30,Unknown,Jawf,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2011-10-05,Al Arqoub,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,5,5,0,0,0,0,7,7,TBIJ (All)
+2011-10-14,Azzan,Shabwa,Drone strike,Confirmed,1,1,1,0,0,0,0,0,0,0,0,TBIJ (All)
+2011-10-14,Azzan,Shabwa,Drone strike,Confirmed,1,1,1,7,9,2,2,2,2,0,0,TBIJ (All)
+2011-10-14,Unknown,Southern Yemen,"Airstrike
+Possible drone strike",Possible,1,1,1,15,17,0,0,0,0,0,0,TBIJ (All)
+2011-10-14,Azzan,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,2,2,1,2,1,1,0,0,TBIJ (All)
+2011-12-22,Zinjibar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2012-01-31,Lawder,Abyan,Drone strike,Confirmed,1,1,1,10,14,0,0,0,0,0,0,TBIJ (All)
+2012-01-31,Unknown,Abyan,Airstrike,Confirmed,0,3,3,0,0,0,0,0,0,0,0,TBIJ (All)
+2012-03-09,Unknown,Bayda,Drone strike,Confirmed,1,1,1,23,34,2,2,0,0,0,55,TBIJ (All)
+2012-03-10,Jaar and Zinjibar,Abyan,Drone strike,Confirmed,1,2,2,24,24,0,0,0,0,0,0,TBIJ (All)
+2012-03-11,"Jebel Khanfar
+Near Jaar",Abyan,Drone strike,Confirmed,1,1,1,3,6,0,0,0,0,0,0,TBIJ (All)
+2012-03-13,Unknown,Bayda,Drone strike,Confirmed,1,1,7,4,5,0,0,0,0,0,0,TBIJ (All)
+2012-03-18,Zinjibar,Abyan,"Airstrike
+Possible naval bombardment
+Possible drone strike",Possible,1,1,2,14,18,0,0,0,0,0,0,TBIJ (All)
+2012-03-18,Jaar,Abyan,Airstrike,Possible,0,1,1,8,8,0,0,0,0,0,0,TBIJ (All)
+2012-03-22,Zinjibar,Abyan,"Drone strike
+Possible naval bombardment",Confirmed,1,3,4,29,30,0,0,0,0,24,24,TBIJ (All)
+2012-03-30,Azzan,Shabwa,Drone strike,Confirmed,1,2,2,5,5,1,1,0,0,6,9,TBIJ (All)
+2012-04-07,Unknown,Shabwa,Drone strike,Confirmed,1,1,1,0,8,0,0,0,0,0,0,TBIJ (All)
+2012-04-08,Unknown,Abyan,"Airstrike - joint Yemeni and US
+Possible drone strike",Possible,1,2,2,16,16,0,0,0,0,0,0,TBIJ (All)
+2012-04-11,Lawder,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,10,14,0,0,0,0,10,10,TBIJ (All)
+2012-04-14,Al Zahir,Bayda,Drone strike,Confirmed,1,1,1,3,7,0,0,0,0,0,0,TBIJ (All)
+2012-04-16,Azzan,Shabwa,Drone strike,Confirmed,1,1,5,5,7,0,0,0,0,0,0,TBIJ (All)
+2012-04-18,Lawder and Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,3,6,10,0,0,0,0,0,0,TBIJ (All)
+2012-04-21,Lawder,Abyan,"Airstrike
+Possible drone strike",Possible,1,2,2,12,17,0,0,0,0,0,5,TBIJ (All)
+2012-04-22,Sanda,Marib,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2012-04-23,Nasab,Shabwa,"Airstrike
+Possible drone strike",Confirmed,1,1,1,3,3,0,0,0,0,2,2,TBIJ (All)
+2012-04-23,Lawder,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,0,4,0,0,0,0,0,0,TBIJ (All)
+2012-04-26,Moudia,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-04-29,Unknown,Jawf,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-04-30,Lawder,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2012-04-30,Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-05-02,Zinjibar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,10,15,0,0,0,0,0,0,TBIJ (All)
+2012-05-06,Wadi Rafad,Shabwa,Drone strike,Confirmed,1,1,1,2,4,1,1,0,0,0,0,TBIJ (All)
+2012-05-10,Jaar,Abyan,"Airstrike
+Possible naval bombardment
+Possible drone strike",Possible,1,2,2,5,12,0,0,0,0,0,0,TBIJ (All)
+2012-05-10,Shaqra,Abyan,"Airstrike
+Possible naval bombardment
+Possible drone strike",Possible,1,1,1,2,4,0,0,0,0,0,0,TBIJ (All)
+2012-05-12,Al Hosoon,Marib,Drone strike,Confirmed,1,1,1,6,7,0,0,0,0,0,0,TBIJ (All)
+2012-05-12,Unknown,Between Marib and Shabwa,Drone strike,Confirmed,1,1,1,10,10,0,0,0,0,0,0,TBIJ (All)
+2012-05-12,Al Ain,Shabwa/Hadramout,"Airstrike
+Possible drone strike",Possible,1,1,1,6,10,0,0,0,0,0,0,TBIJ (All)
+2012-05-14,Shaqra,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,10,10,0,0,0,0,0,0,TBIJ (All)
+2012-05-14,Lawder,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,6,6,0,0,0,0,0,0,TBIJ (All)
+2012-05-14,Jaar,Abyan,Airstrike,Possible,0,1,1,0,0,0,0,0,0,2,2,TBIJ (All)
+2012-05-15,Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,2,4,14,42,14,26,0,0,20,21,TBIJ (All)
+2012-05-16,Moudia,Abyan,"Airstrike
+Possible naval bombardment
+Possible drone strike",Possible,1,1,2,16,16,0,0,0,0,5,14,TBIJ (All)
+2012-05-17,Shibam,Hadhramout,Drone strike,Confirmed,1,1,1,2,3,0,0,0,0,0,2,TBIJ (All)
+2012-05-17,Shaqra,Abyan,Airstrike,Possible,0,1,1,5,6,0,2,0,0,0,0,TBIJ (All)
+2012-05-19,Jaar,Abyan,Airstrike,Possible,0,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2012-05-19,Unknown,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2012-05-20,Jaar,Abyan,Airstrike,Possible,0,1,1,0,9,0,0,0,0,0,0,TBIJ (All)
+2012-05-28,Manaseh,Bayda,Drone strike,Confirmed,1,1,1,3,5,0,2,0,0,4,4,TBIJ (All)
+2012-05-28,Mukalla,Abyan,"Airstrike
+Possible naval bombardment
+Possible drone strike",Possible,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2012-06-01,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,11,12,0,0,0,0,0,0,TBIJ (All)
+2012-06-07,Moudia,Abyan,Airstrike,Possible,0,1,1,2,2,0,0,0,0,7,7,TBIJ (All)
+2012-06-07,Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-06-07,Jaar,Abyan,Airstrike,Possible,0,1,1,5,5,0,0,0,0,3,3,TBIJ (All)
+2012-06-11,Azzan,Shabwa,Airstrike,Possible,0,1,1,16,16,0,0,0,0,0,0,TBIJ (All)
+2012-06-13,Jaar,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,4,10,18,0,0,0,0,1,1,TBIJ (All)
+2012-06-13,Azzan,Shabwa,Drone strike,Confirmed,1,1,1,9,9,0,0,0,0,0,0,TBIJ (All)
+2012-06-15,Azzan,Shabwa,Airstrike,Possible,0,1,1,5,5,0,0,0,0,2,2,TBIJ (All)
+2012-06-15,Shaqra,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,5,7,5,7,4,6,4,5,TBIJ (All)
+2012-06-19,Unknown,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-06-20,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,1,1,0,0,0,0,TBIJ (All)
+2012-06-20,Al Yafea,Bayda,Airstrike,Possible,0,6,6,5,30,0,0,0,0,6,6,TBIJ (All)
+2012-06-25,Mahfed,Abyan,Drone strike,Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2012-07-03,Bayhan,Shabwa,Drone strike,Confirmed,1,1,1,2,5,0,0,0,0,2,2,TBIJ (All)
+2012-07-04,Mahfed,Abyan,Airstrike,Possible,0,1,4,3,13,0,0,0,0,7,7,TBIJ (All)
+2012-07-23,Mahfed,Abyan,Airstrike,Possible,0,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2012-08-04,Al Qotn,Hadhramout,Drone strike,Confirmed,1,1,1,3,5,0,0,0,0,2,2,TBIJ (All)
+2012-08-06,Radaa,Bayda,Drone strike,Confirmed,1,1,1,7,7,0,0,0,0,0,0,TBIJ (All)
+2012-08-07,Al Qotn,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,2,2,TBIJ (All)
+2012-08-28,Qahb al-Hisan,Hadhramout,Drone strike,Confirmed,1,1,1,2,3,0,0,0,0,0,0,TBIJ (All)
+2012-08-29,Al Qotn,Hadhramout,Drone strike,Confirmed,1,1,1,5,5,2,2,0,0,0,0,TBIJ (All)
+2012-08-31,Hawda,Hadhramout,Drone strike,Confirmed,1,1,1,8,8,0,0,0,0,0,0,TBIJ (All)
+2012-09-02,Radaa,Bayda,"US airstrike
+Possible drone strike",Confirmed,0,1,1,12,12,12,12,3,3,4,11,TBIJ (All)
+2012-09-05,Al Ain,Shabwa/Hadramout,Drone strike,Confirmed,1,1,1,4,6,1,4,0,0,3,3,TBIJ (All)
+2012-09-10,Al Ain,Shabwa/Hadramout,Drone strike,Confirmed,1,1,2,6,15,0,0,0,0,3,3,TBIJ (All)
+2012-09-20,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,2,2,4,0,0,0,0,3,3,TBIJ (All)
+2012-10-04,Al Saeed,Shabwa,Drone strike,Confirmed,1,1,2,3,6,0,0,0,0,2,4,TBIJ (All)
+2012-10-18,Jaar,Abyan,Drone strike,Confirmed,1,2,3,7,9,0,0,0,0,0,0,TBIJ (All)
+2012-10-21,Maarib,Marib,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2012-10-28,Wadi al Abu Jabara,Saada,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,1,1,TBIJ (All)
+2012-11-07,Beit al Ahan,Sanaa,Drone strike,Confirmed,1,1,1,2,2,0,0,0,0,2,3,TBIJ (All)
+2012-12-24,Manaseh,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,3,3,TBIJ (All)
+2012-12-24,Shehr,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,3,3,7,0,0,0,0,1,1,TBIJ (All)
+2012-12-28,Shehr,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,2,2,3,0,0,0,0,0,1,TBIJ (All)
+2012-12-29,Manaseh,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,3,4,0,0,0,0,0,2,TBIJ (All)
+2013-01-01,Unknown,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2013-01-04,Radaa,Bayda,Drone strike,Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2013-01-19,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,0,0,0,0,0,0,0,0,TBIJ (All)
+2013-01-19,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,2,4,0,3,0,0,0,0,TBIJ (All)
+2013-01-19,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,4,6,0,4,0,0,0,0,TBIJ (All)
+2013-01-20,Al Kanais,Marib,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2013-01-21,Nakhla,Marib,Drone strike,Confirmed,1,1,1,2,4,0,0,0,0,2,2,TBIJ (All)
+2013-01-22,Al Boka,Jawf,Drone strike,Confirmed,1,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2013-01-23,Khawlan,Sanaa,Drone strike,Confirmed,1,1,1,4,4,2,2,0,0,0,0,TBIJ (All)
+2013-01-23,Qayfa,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2013-04-17,Wassab al Ali,Damar,Drone strike,Confirmed,1,1,1,4,4,0,4,0,0,0,0,TBIJ (All)
+2013-04-21,Wadi Abida,Marib,"Airstrike
+Possible drone strike",Possible,1,1,1,2,2,0,0,0,0,2,3,TBIJ (All)
+2013-05-18,Mahfed,Abyan,Drone strike,Confirmed,1,1,1,4,9,0,0,0,0,0,0,TBIJ (All)
+2013-05-20,Radaa,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2013-06-01,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,2,7,8,0,0,0,0,2,3,TBIJ (All)
+2013-06-09,"Al Makashma/
+Khab al Shath",Jawf,Drone strike,Confirmed,1,1,1,2,7,1,1,1,1,0,0,TBIJ (All)
+2013-07-27,Mahfed,Abyan,Drone strike,Confirmed,1,1,1,4,9,0,0,0,0,0,0,TBIJ (All)
+2013-07-30,Al Saeed,Shabwa,Drone strike,Confirmed,1,1,1,3,4,0,0,0,0,0,0,TBIJ (All)
+2013-08-01,Wadi Ser,Hadhramout,Drone strike,Confirmed,1,1,1,3,5,4,5,1,1,3,3,TBIJ (All)
+2013-08-06,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2013-08-07,Markha,Shabwa,Drone strike,Confirmed,1,1,1,6,8,0,0,0,0,0,0,TBIJ (All)
+2013-08-08,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,3,8,2,2,2,2,0,0,TBIJ (All)
+2013-08-08,Al Ayoun,Hadhramout,Drone strike,Confirmed,1,1,1,2,7,0,0,0,0,0,0,TBIJ (All)
+2013-08-08,Al Qotn,Hadhramout,Drone strike,Confirmed,1,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2013-08-10,Al Askariya,Lahj,Drone strike,Confirmed,1,1,1,2,5,0,0,0,0,2,5,TBIJ (All)
+2013-08-30,Manaseh,Bayda,Drone strike,Confirmed,1,1,1,4,6,0,0,0,0,0,0,TBIJ (All)
+2013-11-19,Ghayl Bawazir,Hadhramout,"US airstrike
+Possible drone strike",Confirmed,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2013-11-26,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,12,12,0,0,0,0,0,0,TBIJ (All)
+2013-12-09,Al Qotn,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2013-12-12,Radaa,Bayda,Drone strike,Confirmed,1,1,1,12,17,8,16,0,0,5,30,TBIJ (All)
+2013-12-27,Shibam,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,1,1,6,0,0,0,0,0,0,TBIJ (All)
+2013-12-31,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,2,6,0,0,0,0,0,3,TBIJ (All)
+2014-01-06,Radaa,Bayda,Drone strike,Confirmed,1,1,1,0,0,0,0,0,0,0,2,TBIJ (All)
+2014-01-08,Al Qotn,Hadhramout,Drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,2,TBIJ (All)
+2014-01-15,Shibam,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,1,1,0,0,0,0,TBIJ (All)
+2014-01-24,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,3,4,0,0,0,0,0,0,TBIJ (All)
+2014-02-03,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,0,4,0,0,0,0,0,2,TBIJ (All)
+2014-03-02,Shabwan,Marib,Drone strike,Confirmed,1,1,1,2,3,0,0,0,0,2,2,TBIJ (All)
+2014-03-03,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2014-03-03,Radhum,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,2,4,0,0,0,0,2,2,TBIJ (All)
+2014-03-05,Khalek,Jawf,Drone strike,Confirmed,1,1,1,2,4,0,0,0,0,0,0,TBIJ (All)
+2014-03-10,Wadi Abida,Marib,"Airstrike
+Possible drone strike",Possible,1,1,1,1,4,0,1,0,1,0,0,TBIJ (All)
+2014-03-12,Khab Wal Saaf,Jawf,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,0,0,TBIJ (All)
+2014-04-01,Mahfed,Abyan,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,4,4,TBIJ (All)
+2014-04-19,Sawmaa,Bayda,Drone strike,Confirmed,1,1,1,13,21,3,8,0,0,1,6,TBIJ (All)
+2014-04-20,Mahfed,Abyan,"Drone strike
+Yemen Air Force airstrike",Confirmed,1,1,3,24,31,1,1,1,1,1,3,TBIJ (All)
+2014-04-21,Usylan,Shabwa,"US-Yemen ground operation
+Possible drone strike",Confirmed,0,1,1,3,4,1,1,1,1,0,0,TBIJ (All)
+2014-05-12,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,4,6,0,0,0,0,0,0,TBIJ (All)
+2014-06-04,Wadi Abida,Marib,"Airstrike
+Possible drone strike",Possible,1,1,1,3,4,0,0,0,0,0,0,TBIJ (All)
+2014-06-13,Mafraq al Saeed,Marib,Drone strike,Confirmed,1,1,1,5,6,0,0,0,0,0,0,TBIJ (All)
+2014-06-21,Unknown,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,0,0,0,0,0,0,0,0,TBIJ (All)
+2014-08-09,Wadi Abida,Marib,Drone strike,Confirmed,1,1,1,3,3,0,0,0,0,2,2,TBIJ (All)
+2014-08-16,Unknown,Hadhramout,"Airstrike
+Possible drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2014-09-11,Unknown,Shabwa,Drone strike,Confirmed,1,1,1,4,5,0,0,0,0,0,0,TBIJ (All)
+2014-09-25,"Nasab
+Near Ataq",Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,4,5,0,0,0,0,0,0,TBIJ (All)
+2014-09-26,Khasaf,Jawf,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,3,3,TBIJ (All)
+2014-10-15,"Bani Assaf
+Mayfaa",Shabwa,Drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2014-10-24,Radaa,Bayda,"Airstrike
+Possible drone strike",Possible,1,1,1,3,10,0,10,0,0,0,0,TBIJ (All)
+2014-10-26,Radaa, Bayda,"Airstrike
+Possible drone strike
+Yemeni air and ground operations",Possible,1,1,1,12,20,2,10,0,0,0,0,TBIJ (All)
+2014-11-04,Radaa, Bayda,Drone strike,Confirmed,1,3,3,9,20,0,0,0,0,0,0,TBIJ (All)
+2014-11-12,Azzan,Shabwa,Drone strike,Confirmed,1,1,1,6,8,0,0,0,0,0,0,TBIJ (All)
+2014-11-26,Hagr al Saiaar,Hadhramout,US-Yemen ground operation,Confirmed,0,1,1,7,7,0,0,0,0,0,0,TBIJ (All)
+2014-12-06,Nasab,Shabwa,US drone strike,Confirmed,1,1,1,9,10,0,0,0,0,3,3,TBIJ (All)
+2014-12-06,Dafaar,Shabwa,"US ground operation
+Possible US air and drone strike",Confirmed,0,1,1,11,11,8,8,1,1,0,0,TBIJ (All)
+2015-01-26,Hareeb,Shabwa/Mareb border,US drone strike,Confirmed,1,1,1,3,3,1,2,1,1,0,0,TBIJ (All)
+2015-01-31,Al Saeed,Shabwa,US drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-02-02,Unknown,Bayda,US drone strike,Confirmed,1,1,1,3,6,0,0,0,0,0,0,TBIJ (All)
+2015-02-20,Al Houta,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,0,0,TBIJ (All)
+2015-02-28,Bihan region,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,3,4,0,0,0,0,0,0,TBIJ (All)
+2015-03-01,Markha district,Shabwa,"Airstrike
+Possible drone strike",Possible,1,1,1,2,3,0,0,0,0,3,3,TBIJ (All)
+2015-04-12,Mukalla,Hadhramout,"US drone strike
+",Confirmed,1,1,1,3,7,0,0,0,0,0,0,TBIJ (All)
+2015-04-17,Habban,Shabwa,"US drone strike
+",Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2015-04-19,Saeed district,Shabwa,"US drone strike
+",Confirmed,1,1,1,2,6,0,0,0,0,0,0,TBIJ (All)
+2015-04-21,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,2,5,7,0,1,0,1,0,0,TBIJ (All)
+2015-05-08,Mafraq,Shabwa,"Airstrike
+Possible US drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2015-05-10,Ataq,Shabwa,"Airstrike
+Possible US drone strike",Possible,1,1,1,1,4,0,0,0,0,0,0,TBIJ (All)
+2015-05-11,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,4,4,0,0,0,0,2,2,TBIJ (All)
+2015-05-16,Unknown,Shabwa,"US drone strike
+",Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2015-05-22,Unknown,Shabwa,"US drone strike
+",Confirmed,1,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2015-06-02,Unknown,Jawf,"Airstrike
+Possible US drone strike",Possible,1,1,1,5,20,0,0,0,0,0,0,TBIJ (All)
+2015-06-09,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,3,3,0,0,0,0,2,2,TBIJ (All)
+2015-06-25,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,4,5,0,0,0,0,2,2,TBIJ (All)
+2015-06-26,Rafadh,Shabwa,"Airstrike
+Possible US drone strike",Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-06-26,Mukalla,Hadramout,"Airstrike
+Possible US drone strike",Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-07-03,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-07-11,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,3,10,0,0,0,0,0,0,TBIJ (All)
+2015-07-29,Wadi Dikha,Abyan,"US drone strike
+",Confirmed,1,1,1,4,5,0,0,0,0,0,0,TBIJ (All)
+2015-08-12,Mukalla-Rukob road,Hadramout,"US drone strike
+",Confirmed,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2015-08-21,Harib,Marib,"Airstrike, Possible US drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2015-08-23,Mukalla,Hadaramout,"US drone strike
+",Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-08-26,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2015-09-09,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,3,6,0,4,0,0,2,2,TBIJ (All)
+2015-09-11,Unknown,Jawf-Mareb border,"Airstrike, Possible US drone strike",Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2015-09-12,Mukalla,Hadramout,"US drone strike
+",Confirmed,1,1,1,4,5,0,0,0,0,0,0,TBIJ (All)
+2015-09-21,Marib city,Marib,"Airstrike, Possible US drone strike",Possible,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2015-12-22,Nata district,Bayda-Shabwa border,"US drone strike
+",Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2016-01-15,Rafadh,Shabwa,"US drone strike
+",Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-01-19,Sayoun,Hadramout,"US drone strike
+",Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-02-03,Rawda city,Shabwa,"US drone strike
+",Confirmed,1,1,1,6,6,0,0,0,0,0,0,TBIJ (All)
+2016-02-03,Maraquesha,Abyan,"US drone strike
+",Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-02-15,Huta,Lahij,"Airstrike, Possible US drone strike",Possible,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-02-29,Unknown,Hadramout,"US drone or air strike
+",Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-03-04,Radhum,Shabwa,"US drone strike
+",Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2016-03-22,Hajr (75km W of Mukalla),Hadramout,US air strike,Confirmed,0,1,1,50,71,0,0,0,0,28,30,TBIJ (All)
+2016-03-26,Al Hudhn and Naqeel al Hayala villages,Abyan,"Airstrike, Possible US drone strike",Possible,1,2,2,8,8,0,0,0,0,0,0,TBIJ (All)
+2016-03-26,Zinjibar,Abyan,"Airstrike, Possible US drone strike",Possible,1,1,1,6,6,0,0,0,0,0,0,TBIJ (All)
+2016-03-28,Mukalla,Hadramout,Airstrike,Possible,0,1,1,5,5,3,3,0,0,0,0,TBIJ (All)
+2016-03-30,Azzan,Shabwa,US drone strike,Confirmed,1,1,1,2,5,0,0,0,0,0,0,TBIJ (All)
+2016-03-30,Mukalla,Hadramout,Airstrike,Possible,0,3,3,0,0,0,0,0,0,0,0,TBIJ (All)
+2016-04-03,Mukalla,Hadramout,"Airstrike, Possible US drone strike",Possible,1,4,5,0,0,0,0,0,0,0,0,TBIJ (All)
+2016-04-05,Zinjibar,Abyan,Airstrike,Possible,0,2,2,0,0,0,0,0,0,0,0,TBIJ (All)
+2016-04-23,Alemien,Mareb,US drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-04-25,Zinjibar,Abyan,US drone strike,Confirmed,1,1,1,3,6,0,0,0,0,0,0,TBIJ (All)
+2016-04-25,Azzan,Shabwa,US drone strike,Confirmed,1,1,1,2,10,0,0,0,0,0,0,TBIJ (All)
+2016-04-28,Unknown,Shabwa,US drone strike,Confirmed,1,1,1,4,4,0,0,0,0,1,1,TBIJ (All)
+2016-05-19,Unknown,Shabwa,US drone strike,Confirmed,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2016-06-09,Unknown,Bayda,US drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-06-10,Unknown,Mareb,US drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-06-12,Haban,Shabwa,US drone strike,Confirmed,1,1,1,2,3,0,0,0,0,1,1,TBIJ (All)
+2016-07-01,Gardan,Shabwa,US drone strike,Confirmed,1,1,1,3,6,0,0,0,0,0,0,TBIJ (All)
+2016-07-04,Musaina,Shabwa,US drone strike,Confirmed,1,1,1,2,3,0,0,0,0,0,1,TBIJ (All)
+2016-07-08,Unknown,Central Yemen,US drone strike,Confirmed,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2016-07-10,Jabul,Mareb,US drone strike,Possible,1,1,1,0,0,0,0,0,0,4,4,TBIJ (All)
+2016-07-16,Al Uqlah,Shabwa,US drone strike,Confirmed,1,1,1,2,4,0,0,0,0,0,2,TBIJ (All)
+2016-08-04,Azzan,Shabwa,US drone strike,Confirmed,1,1,1,2,4,0,0,0,0,2,4,TBIJ (All)
+2016-08-24,Unknown,Shabwa,US drone strike,Confirmed,1,1,1,4,5,0,0,0,0,0,0,TBIJ (All)
+2016-08-30,Unknown,Shabwa,US air or drone strike ,Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-09-04,Unknown,Shabwa,US air or drone strike,Confirmed,1,1,1,6,9,0,0,0,0,0,0,TBIJ (All)
+2016-09-13,Radaa area,Bayda ,US drone strike ,Confirmed,1,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2016-09-20,Wadi Abida,Marib,"US drone or air strike
+",Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-09-22,Sawmaa district,Bayda,US air or drone strike,Confirmed,1,1,1,2,3,0,0,0,0,0,0,TBIJ (All)
+2016-09-23,Unknown,Mareb,US drone strike,Confirmed,1,1,1,3,5,0,0,0,0,0,0,TBIJ (All)
+2016-09-29,Unknown,Bayda,US air or drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-10-06,Unknown,Shabwah,US air or drone strike,Confirmed,0,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-10-12,North of the Bab el-Mandeb strait,-,US cruise missle strike,Confirmed,0,3,3,0,0,0,0,0,0,0,0,TBIJ (All)
+2016-10-18,Unknown,Shabwah,US air or drone strike,Confirmed,1,1,1,3,8,0,0,0,0,2,2,TBIJ (All)
+2016-10-21,Unknown,Marib,US air or drone strike,Confirmed,0,1,1,5,5,0,0,0,0,0,0,TBIJ (All)
+2016-11-21,Unknown,Bayda,US air or drone strike,Confirmed,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2016-11-24,Sawmaah,Bayda,US air or drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2016-11-30,Unknown,Hadramout,US air or drone strike,Confirmed,1,1,1,3,3,0,0,0,0,0,0,TBIJ (All)
+2016-12-13,Unknown,Marib/Al Jawf,US air or drone strike,Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)
+2016-12-29,Sawmaah,Bayda ,US air or drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2017-01-08,Unknown,Bayda,US air or drone strike,Confirmed,1,1,1,1,1,0,0,0,0,0,0,TBIJ (All)
+2017-01-20,Sawmaah,Bayda,US air or drone strike,Confirmed,1,1,1,5,7,0,0,0,0,0,0,TBIJ (All)
+2017-01-28,Yakla,Bayda,"US air and ground operation
+Special forces air assault and air support, possibly drone",Confirmed,0,1,1,39,39,25,25,10,10,7,7,TBIJ (All)
+2017-01-30,Baihan,Shabwa,US air or drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2017-03-02,Unknown,Across central Yemen ,US air or drone strikes,Confirmed,0,25,25,2,12,0,0,0,0,0,0,TBIJ (All)
+2017-03-03,Unknown,Yemen,US air or drone strikes,Confirmed,0,5,10,1,8,0,0,0,0,0,0,TBIJ (All)
+2017-03-04,Ahwar,Abyan ,US air or drone strike,Confirmed,1,1,1,2,2,0,0,0,0,0,0,TBIJ (All)
+2017-03-06,Unknown,Multiple provinces,US air or drone strikes,Confirmed,0,9,4,11,11,2,2,2,2,0,0,TBIJ (All)
+2017-03-29,Unknown,Abyan ,US air or drone strike,Possible,1,1,1,4,4,0,0,0,0,0,0,TBIJ (All)

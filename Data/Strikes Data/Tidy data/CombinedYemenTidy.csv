@@ -1,0 +1,633 @@
+Date,Location,Province,TotalKilledMin,TotalKilledMax,CiviliansKilledMin,CiviliansKilledMax,SourceConfirmed
+2002-11-03,Marib,Marib,6,6,NA,NA,NAF
+2009-12-17,Al Majalah,Abyan,55,75,41,41,NAF
+2009-12-24,Rafd,Shabwah,30,30,NA,NA,NAF
+2010-05-25,Wadi Abida,Marib,6,8,4,6,NAF
+2011-05-05,Jahwa,Shabwah,2,2,NA,NA,NAF
+2011-06-03,Zinjibar,Abyan,8,12,4,4,NAF
+2011-07-14,Al Wadiya,Abyan,6,6,NA,NA,NAF
+2011-07-27,Zinjibar,Abyan,5,5,NA,NA,NAF
+2011-08-01,Zinjibar,Abyan,15,15,NA,NA,NAF
+2011-09-01,Zinjibar,Abyan,20,30,NA,NA,NAF
+2011-09-21,Shaqra,Abyan,10,10,NA,NA,NAF
+2011-09-21,Al Mahfad,Abyan,4,4,NA,NA,NAF
+2011-09-30,Khashef,Al Jawf,4,4,NA,NA,NAF
+2011-10-05,Zinjibar,Abyan,5,5,NA,NA,NAF
+2011-10-14,Unknown,Shabwah,16,33,NA,NA,NAF
+2011-12-23,Zinjibar,Abyan,1,1,NA,NA,NAF
+2012-01-30,Lawdar,Abyan,9,15,NA,NA,NAF
+2012-03-09,Jabra,Al Bayda,25,35,NA,NA,NAF
+2012-03-10,Jaar,Abyan,20,40,NA,NA,NAF
+2012-03-11,Jaar,Abyan,3,6,NA,NA,NAF
+2012-03-13,NA,Al Bayda,4,4,NA,NA,NAF
+2012-03-18,Jaar,Abyan,8,18,NA,NA,NAF
+2012-03-18,Zinjibar,Abyan,16,16,NA,NA,NAF
+2012-03-22,Zinjibar,Abyan,29,30,NA,NA,NAF
+2012-03-30,Azzan,Shabwah,6,6,1,1,NAF
+2012-04-01,Al Rahha,Lahij,38,43,NA,NA,NAF
+2012-04-07,Usalian,Shabwah,NA,NA,NA,NA,NAF
+2012-04-08,Al Kawd,Abyan,16,16,NA,NA,NAF
+2012-04-08,Unknown,Shabwah,8,8,NA,NA,NAF
+2012-04-11,Umm Ayn,Abyan,5,5,NA,NA,NAF
+2012-04-11,Lawdar,Abyan,10,12,NA,NA,NAF
+2012-04-14,Unknown,Al Bayda,3,7,NA,NA,NAF
+2012-04-16,Kharama,Shabwah,5,6,NA,NA,NAF
+2012-04-22,Sanda,Marib,3,4,NA,NA,NAF
+2012-04-23,Nasab,Shabwah,3,3,NA,NA,NAF
+2012-04-29,Unknown,Al Jawf,3,3,NA,NA,NAF
+2012-04-30,Zinjibar,Abyan,3,13,NA,NA,NAF
+2012-05-02,Jaar,Abyan,13,15,NA,NA,NAF
+2012-05-06,Rafd,Shabwah,2,2,NA,NA,NAF
+2012-05-10,Jaar,Abyan,8,8,NA,NA,NAF
+2012-05-10,Jaar,Abyan,8,8,NA,NA,NAF
+2012-05-10,Zinjibar,Abyan,2,4,NA,NA,NAF
+2012-05-10,Zinjibar,Abyan,2,4,NA,NA,NAF
+2012-05-12,Unknown,Shabwah,6,7,NA,NA,NAF
+2012-05-12,Unknown,Marib,4,10,NA,NA,NAF
+2012-05-15,Jaar,Abyan,11,33,NA,NA,NAF
+2012-05-17,Seiyoun,Hadramawt,3,3,1,1,NAF
+2012-05-19,Unknown,Al Bayda,2,2,NA,NA,NAF
+2012-05-28,Al Mukalla,Hadramawt,6,7,NA,NA,NAF
+2012-05-28,Radaa,Al Bayda,5,5,NA,NA,NAF
+2012-06-01,Al Mahfad,Abyan,11,12,NA,NA,NAF
+2012-06-13,Azzan,Shabwah,27,30,NA,NA,NAF
+2012-06-13,Azzan,Shabwah,9,9,NA,NA,NAF
+2012-06-25,Aden,Adan,3,3,NA,NA,NAF
+2012-07-03,Bayhan,Shabwah,2,5,NA,NA,NAF
+2012-08-04,Al Qatn,Hadramawt,3,5,NA,NA,NAF
+2012-08-06,Radaa,Al Bayda,7,7,NA,NA,NAF
+2012-08-07,Zoukaika,Hadramawt,2,3,NA,NA,NAF
+2012-08-28,Unknown,Hadramawt,2,2,NA,NA,NAF
+2012-08-29,Al Qatn,Hadramawt,5,5,2,2,NAF
+2012-08-31,Hawra,Hadramawt,5,8,NA,NA,NAF
+2012-09-02,Radaa,Al Bayda,12,12,12,12,NAF
+2012-09-05,Al Ain,Hadramawt,5,6,NA,NA,NAF
+2012-09-10,Al Ain,Hadramawt,6,7,NA,NA,NAF
+2012-10-04,Al Saeed,Shabwah,4,5,NA,NA,NAF
+2012-10-18,Jaar,Abyan,7,9,NA,NA,NAF
+2012-10-21,NA,Marib,3,4,NA,NA,NAF
+2012-10-28,Jbara,Sadah,6,6,NA,NA,NAF
+2012-11-07,Sayyan,Sana,1,3,NA,NA,NAF
+2012-11-28,NA,Sadah,1,1,NA,NA,NAF
+2012-12-24,Radaa,Al Bayda,2,2,NA,NA,NAF
+2012-12-24,Shehr,Hadramaut,3,5,NA,NA,NAF
+2012-12-28,Shehr,Hadramawt,2,2,NA,NA,NAF
+2012-12-29,Radaa,Al Bayda,3,3,NA,NA,NAF
+2013-01-03,Radaa,Al Bayda,3,3,NA,NA,NAF
+2013-01-19,Wadi Abida,Marib,4,6,NA,NA,NAF
+2013-01-21,Al Ateef,Marib,2,4,NA,NA,NAF
+2013-01-22,Bokaa,Al Jawf,3,4,NA,NA,NAF
+2013-01-23,Khawlan,Sana,4,9,2,2,NAF
+2013-01-23,Radaa,Al Bayda,7,7,NA,NA,NAF
+2013-04-17,Wessab,Dhamar,4,5,NA,NA,NAF
+2013-05-18,Al Mahfad,Abyan,4,4,NA,NA,NAF
+2013-05-20,Unknown,Al Bayda,2,2,NA,NA,NAF
+2013-06-01,Al Mahfad,Abyan,7,8,NA,NA,NAF
+2013-06-09,Mahashama,Al Jawf,4,8,1,1,NAF
+2013-07-27,Al Mahfad,Abyan,4,4,NA,NA,NAF
+2013-07-30,Saeed,Shabwah,3,3,NA,NA,NAF
+2013-08-01,Wadi Ser,Hadramawt,4,4,1,1,NAF
+2013-08-06,Wadi Abida,Marib,4,4,NA,NA,NAF
+2013-08-07,Markha,Shabwah,6,7,NA,NA,NAF
+2013-08-08,Wadi Abida,Marib,8,8,2,2,NAF
+2013-08-08,Al Ain,Hadramawt,2,3,NA,NA,NAF
+2013-08-08,Al Qatn,Hadramawt,3,4,NA,NA,NAF
+2013-08-10,el-Askariya,Lahij,2,3,NA,NA,NAF
+2013-08-30,Radaa,Al Bayda,3,6,NA,NA,NAF
+2013-11-19,Ghayl Ba Wazir,Hadramawt,3,4,NA,NA,NAF
+2013-11-25,Al Mahfad,Abyan,12,12,NA,NA,NAF
+2013-12-09,Al Qatn,Hadramawt,3,3,NA,NA,NAF
+2013-12-12,Radaa,Al Bayda,11,15,11,15,NAF
+2014-01-15,Shibam,Hadramawt,1,1,1,1,NAF
+2014-01-27,Wadi Obaida,Marib,3,3,NA,NA,NAF
+2014-03-03,Mayfaa,Shabwah,2,2,NA,NA,NAF
+2014-03-03,NA,Marib,2,2,NA,NA,NAF
+2014-03-10,NA,Marib,1,1,NA,NA,NAF
+2014-03-11,Wadi Abida,Sana,4,4,NA,NA,NAF
+2014-04-01,Shabwa,Abyan,3,3,NA,NA,NAF
+2014-04-19,Hazemiyah,Al Bayda,13,13,4,4,NAF
+2014-04-20,NA,Abyan,25,65,NA,NA,NAF
+2014-04-21,NA,Shabwah,3,3,NA,NA,NAF
+2014-05-12,Abieda Valley,Marib,6,6,NA,NA,NAF
+2014-08-09,Obeida Valley,Marib,3,3,NA,NA,NAF
+2014-08-16,Ahwar town,Abyan,3,3,NA,NA,NAF
+2014-09-11,NA,Shabwah,4,4,NA,NA,NAF
+2014-10-25,near Rada,Al Bayda,3,10,NA,NA,NAF
+2014-11-04,Radaa,Al Bayda,10,20,NA,NA,NAF
+2014-11-25,Hagr al-Saiaar,Hadramawt,7,7,NA,NA,NAF
+2014-12-06,NA,Shabwah,4,14,2,8,NAF
+2014-12-06,Wadi Abdan,Shabwah,9,9,NA,NA,NAF
+2015-01-26,Hareeb,Marib,3,3,NA,NA,NAF
+2015-01-31,Al Saeed,Shabwah,4,4,NA,NA,NAF
+2015-02-02,Maswara,Al Bayda,3,4,NA,NA,NAF
+2015-02-28,Bayhan,Shabwah,3,4,NA,NA,NAF
+2015-03-02,Markha,Shabwah,3,3,NA,NA,NAF
+2015-04-13,Al Mukalla,Hadramawt,6,6,NA,NA,NAF
+2015-04-16,Habban,Shabwah,2,2,NA,NA,NAF
+2015-04-19,Saeed,Shabwah,3,3,NA,NA,NAF
+2015-04-22,Al Mukalla,Hadramawt,7,7,NA,NA,NAF
+2015-05-11,Al Mukalla,Hadramawt,4,4,NA,NA,NAF
+2015-06-09,Al Mukalla,Hadramawt,3,3,NA,NA,NAF
+2015-06-12,Al Mukalla,Hadramawt,3,3,NA,NA,NAF
+2015-06-24,Al Mukalla,Hadramawt,4,4,NA,NA,NAF
+2015-06-25,Rafadh,Shabwah,5,5,NA,NA,NAF
+2015-07-11,Mukalla,Hadramawt,4,0,NA,NA,NAF
+2015-07-29,al-Mahfad,Abyan,4,5,NA,NA,NAF
+2015-08-11,Al Mukalla,Hadramawt,5,5,NA,NA,NAF
+2015-08-20,Harib,Marib,3,3,NA,NA,NAF
+2015-08-23,Mukalla,Hadramawt,4,4,NA,NA,NAF
+2015-08-27,Al Mukalla,Hadramawt,5,5,NA,NA,NAF
+2015-09-09,Mukalla,Hadramawt,3,4,NA,NA,NAF
+2015-09-12,Unknown,Al Jawf,4,4,NA,NA,NAF
+2015-09-21,Marib,Marib,2,2,NA,NA,NAF
+2015-12-22,Nata District,Shabwah,4,4,NA,NA,NAF
+2016-01-15,Ruqot,Shabwah,3,3,NA,NA,NAF
+2016-01-19,Sayoun,Hadramawt,2,2,NA,NA,NAF
+2016-02-03,Rodhoum,Shabwah,6,6,NA,NA,NAF
+2016-02-04,Maraqesha,Abyan,3,3,NA,NA,NAF
+2016-02-15,Huta,Lahij,3,3,NA,NA,NAF
+2016-02-29,NA,Hadramawt,3,3,NA,NA,NAF
+2016-03-04,Radhum,Shabwah,4,4,NA,NA,NAF
+2016-03-22,Mukalla,Hadramawt,56,56,NA,NA,NAF
+2016-03-26,al-Hudhn,Abyan,8,8,NA,NA,NAF
+2016-03-30,Azzan,Shabwah,2,2,NA,NA,NAF
+2016-04-23,NA,Marib,2,2,NA,NA,NAF
+2016-04-25,Azzan,Shabwah,2,2,NA,NA,NAF
+2016-04-25,NA,Abyan,2,2,NA,NA,NAF
+2016-04-26,Amoudiya,Abyan,6,6,NA,NA,NAF
+2016-04-28,NA,Shabwah,4,4,NA,NA,NAF
+2016-05-19,NA,Shabwah,4,4,NA,NA,NAF
+2016-06-08,NA,Al Bayda,2,2,NA,NA,NAF
+2016-06-10,East of Sanaa,Marib,2,2,NA,NA,NAF
+2016-06-12,Habban,Shabwah,2,6,NA,NA,NAF
+2016-07-01,NA,Shabwah,2,2,NA,NA,NAF
+2016-07-04,Al-Musaina,Shabwah,2,2,NA,NA,NAF
+2016-07-08,NA,Shabwah,1,1,NA,NA,NAF
+2016-07-10,Jabul,Marib,NA,NA,NA,NA,NAF
+2016-07-16,NA,Shabwah,6,6,NA,NA,NAF
+2016-08-04,Azzan,Shabwah,3,4,NA,NA,NAF
+2016-08-24,Nisab,Shabwah,2,5,NA,NA,NAF
+2016-08-24,East of Sana,Marib,4,4,NA,NA,NAF
+2016-08-30,Ataq,Shabwah,3,3,NA,NA,NAF
+2016-09-04,"Wadi Obeida Area, east of Sanaa",Marib,6,9,NA,NA,NAF
+2016-09-13,Radaa,Al Bayda,5,5,NA,NA,NAF
+2016-09-20,Wadi Abida,Marib,2,2,NA,NA,NAF
+2016-09-22,al-Sawmaa,Al Bayda,2,3,NA,NA,NAF
+2016-09-23,al-Naseem,Marib,3,5,NA,NA,NAF
+2016-09-29,al-Ridaa,Al Bayda,2,2,NA,NA,NAF
+2016-10-06,NA,Shabwah,2,2,NA,NA,NAF
+2016-10-18,Alhawtah,Shabwah,3,8,NA,NA,NAF
+2016-10-21,NA,Marib,5,5,NA,NA,NAF
+2016-11-20,NA,Al Bayda,1,1,NA,NA,NAF
+2016-11-24,NA,Al Bayda,2,2,NA,NA,NAF
+2016-11-30,NA,Hadramawt,3,3,NA,NA,NAF
+2016-12-13,"East of Sanaa, between Marib and al-Jawf",Marib,3,4,NA,NA,NAF
+2016-12-20,NA,Shabwah,3,3,NA,NA,NAF
+2016-12-29,Sawmaa,Al Bayda,2,2,NA,NA,NAF
+2017-01-08,Unknown,Al Bayda,1,1,NA,NA,NAF
+2017-01-21,Al Soumaa,Al Bayda,3,10,NA,NA,NAF
+2017-01-29,Yakla District,Al Bayda,17,37,4,23,NAF
+2017-01-30,Bayhan District,Shabwah,2,2,NA,NA,NAF
+2017-03-02,Shaqra,Abyan,NA,NA,NA,NA,NAF
+2017-03-02,Al Qayfa,Al Bayda,3,3,NA,NA,NAF
+2017-03-02,Yashbum Valley,Shabwah,4,4,NA,NA,NAF
+2017-03-02,Near Wadea district and Moujan district,Abyan,5,5,NA,NA,NAF
+2017-03-03,Yashbam Valley,Shabwah,8,8,NA,NA,NAF
+2017-03-04,al-Saeed,Shabwah,NA,NA,NA,NA,NAF
+2017-03-04,Ahwar,Abyan,2,2,NA,NA,NAF
+2017-03-06,Qifa,Al Bayda,3,3,NA,NA,NAF
+2017-03-06,Wadi Yashbum,Shabwah,2,2,NA,NA,NAF
+2017-03-06,Yakla,Al Bayda,2,2,2,2,NAF
+2002-11-03,Unknown,Marib,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2009-12-17,Al Majala,Abyan,55,58,44,44,"TBIJ (Confirmed, Possible)"
+2009-12-17,Arhab,Sanaa,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2009-12-24,Rafd,Shabwa,30,34,0,0,"TBIJ (Confirmed, Possible)"
+2010-01-12,Unknown,Shabwa,1,2,0,0,"TBIJ (Confirmed, Possible)"
+2010-01-15,Al Ajashir,Saada,0,6,0,0,"TBIJ (Confirmed, Possible)"
+2010-01-20,Erq al Shawan,Marib,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2010-01-31,N/A,Across Yemen,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2010-03-14,"Jeezat al Qotn
+Moudia district",Abyan,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2010-03-15,Moudia,Abyan,7,20,0,20,"TBIJ (Confirmed, Possible)"
+2010-05-24,Unknown,Marib,3,4,3,4,"TBIJ (Confirmed, Possible)"
+2011-05-05,Unknown,Shabwa,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2011-06-03,Zinjibar,Abyan,7,7,4,4,"TBIJ (Confirmed, Possible)"
+2011-06-10,Zinjibar,Abyan,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2011-06-10,Raia,Abyan,2,3,2,3,"TBIJ (Confirmed, Possible)"
+2011-06-18,Jaar,Abyan,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2011-07-14,"Wadeea district
+Mudiya",Abyan,6,50,30,30,"TBIJ (Confirmed, Possible)"
+2011-07-14,Unknown,Abyan,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2011-07-27,"Karadeef
+Zinjibar",Abyan,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2011-08-01,Al Khamila,Abyan,13,16,0,0,"TBIJ (Confirmed, Possible)"
+2011-08-24,Zinjibar,Abyan,30,30,0,0,"TBIJ (Confirmed, Possible)"
+2011-08-24,Arkoub,Abyan,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2011-08-25,Wadi Hassan,Abyan,8,8,0,0,"TBIJ (Confirmed, Possible)"
+2011-08-31,Unknown,Abyan,30,30,0,0,"TBIJ (Confirmed, Possible)"
+2011-09-05,Jaar,Abyan,3,7,3,7,"TBIJ (Confirmed, Possible)"
+2011-09-05,Jaar,Abyan,9,11,1,1,"TBIJ (Confirmed, Possible)"
+2011-09-07,Mahfed,Abyan,3,10,0,0,"TBIJ (Confirmed, Possible)"
+2011-09-21,Mahfed,Abyan,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2011-09-21,Shaqra,Abyan,6,7,0,0,"TBIJ (Confirmed, Possible)"
+2011-09-30,Unknown,Jawf,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2011-10-05,Al Arqoub,Abyan,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2011-10-14,Azzan,Shabwa,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2011-10-14,Azzan,Shabwa,7,9,2,2,"TBIJ (Confirmed, Possible)"
+2011-10-14,Unknown,Southern Yemen,15,17,0,0,"TBIJ (Confirmed, Possible)"
+2011-10-14,Azzan,Shabwa,2,2,1,2,"TBIJ (Confirmed, Possible)"
+2011-12-22,Zinjibar,Abyan,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2012-01-31,Lawder,Abyan,10,14,0,0,"TBIJ (Confirmed, Possible)"
+2012-01-31,Unknown,Abyan,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-09,Unknown,Bayda,23,34,2,2,"TBIJ (Confirmed, Possible)"
+2012-03-10,Jaar and Zinjibar,Abyan,24,24,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-11,"Jebel Khanfar
+Near Jaar",Abyan,3,6,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-13,Unknown,Bayda,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-18,Zinjibar,Abyan,14,18,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-18,Jaar,Abyan,8,8,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-22,Zinjibar,Abyan,29,30,0,0,"TBIJ (Confirmed, Possible)"
+2012-03-30,Azzan,Shabwa,5,5,1,1,"TBIJ (Confirmed, Possible)"
+2012-04-07,Unknown,Shabwa,0,8,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-08,Unknown,Abyan,16,16,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-11,Lawder,Abyan,10,14,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-14,Al Zahir,Bayda,3,7,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-16,Azzan,Shabwa,5,7,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-18,Lawder and Jaar,Abyan,6,10,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-21,Lawder,Abyan,12,17,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-22,Sanda,Marib,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-23,Nasab,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-23,Lawder,Abyan,0,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-26,Moudia,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-29,Unknown,Jawf,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-30,Lawder,Abyan,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-04-30,Jaar,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-02,Zinjibar,Abyan,10,15,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-06,Wadi Rafad,Shabwa,2,4,1,1,"TBIJ (Confirmed, Possible)"
+2012-05-10,Jaar,Abyan,5,12,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-10,Shaqra,Abyan,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-12,Al Hosoon,Marib,6,7,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-12,Unknown,Between Marib and Shabwa,10,10,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-12,Al Ain,Shabwa/Hadramout,6,10,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-14,Shaqra,Abyan,10,10,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-14,Lawder,Abyan,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-14,Jaar,Abyan,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-15,Jaar,Abyan,14,42,14,26,"TBIJ (Confirmed, Possible)"
+2012-05-16,Moudia,Abyan,16,16,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-17,Shibam,Hadhramout,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-17,Shaqra,Abyan,5,6,0,2,"TBIJ (Confirmed, Possible)"
+2012-05-19,Jaar,Abyan,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-19,Unknown,Bayda,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-20,Jaar,Abyan,0,9,0,0,"TBIJ (Confirmed, Possible)"
+2012-05-28,Manaseh,Bayda,3,5,0,2,"TBIJ (Confirmed, Possible)"
+2012-05-28,Mukalla,Abyan,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-01,Mahfed,Abyan,11,12,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-07,Moudia,Abyan,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-07,Jaar,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-07,Jaar,Abyan,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-11,Azzan,Shabwa,16,16,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-13,Jaar,Abyan,10,18,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-13,Azzan,Shabwa,9,9,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-15,Azzan,Shabwa,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-15,Shaqra,Abyan,5,7,5,7,"TBIJ (Confirmed, Possible)"
+2012-06-19,Unknown,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-20,Mahfed,Abyan,1,1,1,1,"TBIJ (Confirmed, Possible)"
+2012-06-20,Al Yafea,Bayda,5,30,0,0,"TBIJ (Confirmed, Possible)"
+2012-06-25,Mahfed,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-07-03,Bayhan,Shabwa,2,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-07-04,Mahfed,Abyan,3,13,0,0,"TBIJ (Confirmed, Possible)"
+2012-07-23,Mahfed,Abyan,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-08-04,Al Qotn,Hadhramout,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2012-08-06,Radaa,Bayda,7,7,0,0,"TBIJ (Confirmed, Possible)"
+2012-08-07,Al Qotn,Hadhramout,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-08-28,Qahb al-Hisan,Hadhramout,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-08-29,Al Qotn,Hadhramout,5,5,2,2,"TBIJ (Confirmed, Possible)"
+2012-08-31,Hawda,Hadhramout,8,8,0,0,"TBIJ (Confirmed, Possible)"
+2012-09-02,Radaa,Bayda,12,12,12,12,"TBIJ (Confirmed, Possible)"
+2012-09-05,Al Ain,Shabwa/Hadramout,4,6,1,4,"TBIJ (Confirmed, Possible)"
+2012-09-10,Al Ain,Shabwa/Hadramout,6,15,0,0,"TBIJ (Confirmed, Possible)"
+2012-09-20,Mahfed,Abyan,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-10-04,Al Saeed,Shabwa,3,6,0,0,"TBIJ (Confirmed, Possible)"
+2012-10-18,Jaar,Abyan,7,9,0,0,"TBIJ (Confirmed, Possible)"
+2012-10-21,Maarib,Marib,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-10-28,Wadi al Abu Jabara,Saada,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2012-11-07,Beit al Ahan,Sanaa,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2012-12-24,Manaseh,Bayda,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-12-24,Shehr,Hadhramout,3,7,0,0,"TBIJ (Confirmed, Possible)"
+2012-12-28,Shehr,Hadhramout,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2012-12-29,Manaseh,Bayda,3,4,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-01,Unknown,Shabwa,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-04,Radaa,Bayda,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-19,Wadi Abida,Marib,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-19,Wadi Abida,Marib,2,4,0,3,"TBIJ (Confirmed, Possible)"
+2013-01-19,Wadi Abida,Marib,4,6,0,4,"TBIJ (Confirmed, Possible)"
+2013-01-20,Al Kanais,Marib,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-21,Nakhla,Marib,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-22,Al Boka,Jawf,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2013-01-23,Khawlan,Sanaa,4,4,2,2,"TBIJ (Confirmed, Possible)"
+2013-01-23,Qayfa,Bayda,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2013-04-17,Wassab al Ali,Damar,4,4,0,4,"TBIJ (Confirmed, Possible)"
+2013-04-21,Wadi Abida,Marib,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2013-05-18,Mahfed,Abyan,4,9,0,0,"TBIJ (Confirmed, Possible)"
+2013-05-20,Radaa,Bayda,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2013-06-01,Mahfed,Abyan,7,8,0,0,"TBIJ (Confirmed, Possible)"
+2013-06-09,"Al Makashma/
+Khab al Shath",Jawf,2,7,1,1,"TBIJ (Confirmed, Possible)"
+2013-07-27,Mahfed,Abyan,4,9,0,0,"TBIJ (Confirmed, Possible)"
+2013-07-30,Al Saeed,Shabwa,3,4,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-01,Wadi Ser,Hadhramout,3,5,4,5,"TBIJ (Confirmed, Possible)"
+2013-08-06,Wadi Abida,Marib,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-07,Markha,Shabwa,6,8,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-08,Wadi Abida,Marib,3,8,2,2,"TBIJ (Confirmed, Possible)"
+2013-08-08,Al Ayoun,Hadhramout,2,7,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-08,Al Qotn,Hadhramout,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-10,Al Askariya,Lahj,2,5,0,0,"TBIJ (Confirmed, Possible)"
+2013-08-30,Manaseh,Bayda,4,6,0,0,"TBIJ (Confirmed, Possible)"
+2013-11-19,Ghayl Bawazir,Hadhramout,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2013-11-26,Mahfed,Abyan,12,12,0,0,"TBIJ (Confirmed, Possible)"
+2013-12-09,Al Qotn,Hadhramout,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2013-12-12,Radaa,Bayda,12,17,8,16,"TBIJ (Confirmed, Possible)"
+2013-12-27,Shibam,Hadhramout,1,6,0,0,"TBIJ (Confirmed, Possible)"
+2013-12-31,Mahfed,Abyan,2,6,0,0,"TBIJ (Confirmed, Possible)"
+2014-01-06,Radaa,Bayda,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2014-01-08,Al Qotn,Hadhramout,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2014-01-15,Shibam,Hadhramout,1,1,1,1,"TBIJ (Confirmed, Possible)"
+2014-01-24,Wadi Abida,Marib,3,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-02-03,Mahfed,Abyan,0,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-03-02,Shabwan,Marib,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-03-03,Mahfed,Abyan,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2014-03-03,Radhum,Shabwa,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-03-05,Khalek,Jawf,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-03-10,Wadi Abida,Marib,1,4,0,1,"TBIJ (Confirmed, Possible)"
+2014-03-12,Khab Wal Saaf,Jawf,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-04-01,Mahfed,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-04-19,Sawmaa,Bayda,13,21,3,8,"TBIJ (Confirmed, Possible)"
+2014-04-20,Mahfed,Abyan,24,31,1,1,"TBIJ (Confirmed, Possible)"
+2014-04-21,Usylan,Shabwa,3,4,1,1,"TBIJ (Confirmed, Possible)"
+2014-05-12,Wadi Abida,Marib,4,6,0,0,"TBIJ (Confirmed, Possible)"
+2014-06-04,Wadi Abida,Marib,3,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-06-13,Mafraq al Saeed,Marib,5,6,0,0,"TBIJ (Confirmed, Possible)"
+2014-06-21,Unknown,Bayda,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2014-08-09,Wadi Abida,Marib,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-08-16,Unknown,Hadhramout,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-09-11,Unknown,Shabwa,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2014-09-25,"Nasab
+Near Ataq",Shabwa,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2014-09-26,Khasaf,Jawf,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-10-15,"Bani Assaf
+Mayfaa",Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2014-10-24,Radaa,Bayda,3,10,0,10,"TBIJ (Confirmed, Possible)"
+2014-10-26,Radaa, Bayda,12,20,2,10,"TBIJ (Confirmed, Possible)"
+2014-11-04,Radaa, Bayda,9,20,0,0,"TBIJ (Confirmed, Possible)"
+2014-11-12,Azzan,Shabwa,6,8,0,0,"TBIJ (Confirmed, Possible)"
+2014-11-26,Hagr al Saiaar,Hadhramout,7,7,0,0,"TBIJ (Confirmed, Possible)"
+2014-12-06,Nasab,Shabwa,9,10,0,0,"TBIJ (Confirmed, Possible)"
+2014-12-06,Dafaar,Shabwa,11,11,8,8,"TBIJ (Confirmed, Possible)"
+2015-01-26,Hareeb,Shabwa/Mareb border,3,3,1,2,"TBIJ (Confirmed, Possible)"
+2015-01-31,Al Saeed,Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-02-02,Unknown,Bayda,3,6,0,0,"TBIJ (Confirmed, Possible)"
+2015-02-20,Al Houta,Shabwa,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-02-28,Bihan region,Shabwa,3,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-03-01,Markha district,Shabwa,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-04-12,Mukalla,Hadhramout,3,7,0,0,"TBIJ (Confirmed, Possible)"
+2015-04-17,Habban,Shabwa,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2015-04-19,Saeed district,Shabwa,2,6,0,0,"TBIJ (Confirmed, Possible)"
+2015-04-21,Mukalla,Hadramout,5,7,0,1,"TBIJ (Confirmed, Possible)"
+2015-05-08,Mafraq,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-05-10,Ataq,Shabwa,1,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-05-11,Mukalla,Hadramout,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-05-16,Unknown,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-05-22,Unknown,Shabwa,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-06-02,Unknown,Jawf,5,20,0,0,"TBIJ (Confirmed, Possible)"
+2015-06-09,Mukalla,Hadramout,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-06-25,Mukalla,Hadramout,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-06-26,Rafadh,Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-06-26,Mukalla,Hadramout,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-07-03,Mukalla,Hadramout,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-07-11,Mukalla,Hadramout,3,10,0,0,"TBIJ (Confirmed, Possible)"
+2015-07-29,Wadi Dikha,Abyan,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-08-12,Mukalla-Rukob road,Hadramout,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-08-21,Harib,Marib,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-08-23,Mukalla,Hadaramout,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-08-26,Mukalla,Hadramout,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-09-09,Mukalla,Hadramout,3,6,0,4,"TBIJ (Confirmed, Possible)"
+2015-09-11,Unknown,Jawf-Mareb border,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2015-09-12,Mukalla,Hadramout,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2015-09-21,Marib city,Marib,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2015-12-22,Nata district,Bayda-Shabwa border,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-01-15,Rafadh,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-01-19,Sayoun,Hadramout,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-02-03,Rawda city,Shabwa,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2016-02-03,Maraquesha,Abyan,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-02-15,Huta,Lahij,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-02-29,Unknown,Hadramout,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-04,Radhum,Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-22,Hajr (75km W of Mukalla),Hadramout,50,71,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-26,Al Hudhn and Naqeel al Hayala villages,Abyan,8,8,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-26,Zinjibar,Abyan,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-28,Mukalla,Hadramout,5,5,3,3,"TBIJ (Confirmed, Possible)"
+2016-03-30,Azzan,Shabwa,2,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-30,Mukalla,Hadramout,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-03,Mukalla,Hadramout,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-05,Zinjibar,Abyan,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-23,Alemien,Mareb,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-25,Zinjibar,Abyan,3,6,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-25,Azzan,Shabwa,2,10,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-28,Unknown,Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-05-19,Unknown,Shabwa,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-06-09,Unknown,Bayda,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-06-10,Unknown,Mareb,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-06-12,Haban,Shabwa,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-07-01,Gardan,Shabwa,3,6,0,0,"TBIJ (Confirmed, Possible)"
+2016-07-04,Musaina,Shabwa,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-07-08,Unknown,Central Yemen,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2016-07-10,Jabul,Mareb,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2016-07-16,Al Uqlah,Shabwa,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-08-04,Azzan,Shabwa,2,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-08-24,Unknown,Shabwa,4,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-08-30,Unknown,Shabwa,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-04,Unknown,Shabwa,6,9,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-13,Radaa area,Bayda ,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-20,Wadi Abida,Marib,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-22,Sawmaa district,Bayda,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-23,Unknown,Mareb,3,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-29,Unknown,Bayda,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-10-06,Unknown,Shabwah,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-10-12,North of the Bab el-Mandeb strait,-,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2016-10-18,Unknown,Shabwah,3,8,0,0,"TBIJ (Confirmed, Possible)"
+2016-10-21,Unknown,Marib,5,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-11-21,Unknown,Bayda,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2016-11-24,Sawmaah,Bayda,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-11-30,Unknown,Hadramout,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-12-13,Unknown,Marib/Al Jawf,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-12-29,Sawmaah,Bayda ,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2017-01-08,Unknown,Bayda,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2017-01-20,Sawmaah,Bayda,5,7,0,0,"TBIJ (Confirmed, Possible)"
+2017-01-28,Yakla,Bayda,39,39,25,25,"TBIJ (Confirmed, Possible)"
+2017-01-30,Baihan,Shabwa,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2017-03-02,Unknown,Across central Yemen ,2,12,0,0,"TBIJ (Confirmed, Possible)"
+2017-03-03,Unknown,Yemen,1,8,0,0,"TBIJ (Confirmed, Possible)"
+2017-03-04,Ahwar,Abyan ,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2017-03-06,Unknown,Multiple provinces,11,11,2,2,"TBIJ (Confirmed, Possible)"
+2017-03-29,Unknown,Abyan ,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2002-11-03,Unknown,Marib,6,6,0,0,TBIJ (Confirmed)
+2009-12-17,Al Majala,Abyan,55,58,44,44,TBIJ (Confirmed)
+2009-12-17,Arhab,Sanaa,0,0,0,0,TBIJ (Confirmed)
+2009-12-24,Rafd,Shabwa,30,34,0,0,TBIJ (Confirmed)
+2010-03-14,"Jeezat al Qotn
+Moudia district",Abyan,2,3,0,0,TBIJ (Confirmed)
+2010-05-24,Unknown,Marib,3,4,3,4,TBIJ (Confirmed)
+2011-05-05,Unknown,Shabwa,2,2,0,0,TBIJ (Confirmed)
+2011-06-03,Zinjibar,Abyan,7,7,4,4,TBIJ (Confirmed)
+2011-07-14,"Wadeea district
+Mudiya",Abyan,6,50,30,30,TBIJ (Confirmed)
+2011-08-01,Al Khamila,Abyan,13,16,0,0,TBIJ (Confirmed)
+2011-08-31,Unknown,Abyan,30,30,0,0,TBIJ (Confirmed)
+2011-09-07,Mahfed,Abyan,3,10,0,0,TBIJ (Confirmed)
+2011-09-21,Mahfed,Abyan,4,4,0,0,TBIJ (Confirmed)
+2011-09-30,Unknown,Jawf,4,4,0,0,TBIJ (Confirmed)
+2011-10-14,Azzan,Shabwa,0,0,0,0,TBIJ (Confirmed)
+2011-10-14,Azzan,Shabwa,7,9,2,2,TBIJ (Confirmed)
+2012-01-31,Lawder,Abyan,10,14,0,0,TBIJ (Confirmed)
+2012-01-31,Unknown,Abyan,0,0,0,0,TBIJ (Confirmed)
+2012-03-09,Unknown,Bayda,23,34,2,2,TBIJ (Confirmed)
+2012-03-10,Jaar and Zinjibar,Abyan,24,24,0,0,TBIJ (Confirmed)
+2012-03-11,"Jebel Khanfar
+Near Jaar",Abyan,3,6,0,0,TBIJ (Confirmed)
+2012-03-13,Unknown,Bayda,4,5,0,0,TBIJ (Confirmed)
+2012-03-22,Zinjibar,Abyan,29,30,0,0,TBIJ (Confirmed)
+2012-03-30,Azzan,Shabwa,5,5,1,1,TBIJ (Confirmed)
+2012-04-07,Unknown,Shabwa,0,8,0,0,TBIJ (Confirmed)
+2012-04-14,Al Zahir,Bayda,3,7,0,0,TBIJ (Confirmed)
+2012-04-16,Azzan,Shabwa,5,7,0,0,TBIJ (Confirmed)
+2012-04-22,Sanda,Marib,4,4,0,0,TBIJ (Confirmed)
+2012-04-23,Nasab,Shabwa,3,3,0,0,TBIJ (Confirmed)
+2012-05-06,Wadi Rafad,Shabwa,2,4,1,1,TBIJ (Confirmed)
+2012-05-12,Al Hosoon,Marib,6,7,0,0,TBIJ (Confirmed)
+2012-05-12,Unknown,Between Marib and Shabwa,10,10,0,0,TBIJ (Confirmed)
+2012-05-17,Shibam,Hadhramout,2,3,0,0,TBIJ (Confirmed)
+2012-05-28,Manaseh,Bayda,3,5,0,2,TBIJ (Confirmed)
+2012-06-13,Azzan,Shabwa,9,9,0,0,TBIJ (Confirmed)
+2012-06-25,Mahfed,Abyan,3,3,0,0,TBIJ (Confirmed)
+2012-07-03,Bayhan,Shabwa,2,5,0,0,TBIJ (Confirmed)
+2012-08-04,Al Qotn,Hadhramout,3,5,0,0,TBIJ (Confirmed)
+2012-08-06,Radaa,Bayda,7,7,0,0,TBIJ (Confirmed)
+2012-08-28,Qahb al-Hisan,Hadhramout,2,3,0,0,TBIJ (Confirmed)
+2012-08-29,Al Qotn,Hadhramout,5,5,2,2,TBIJ (Confirmed)
+2012-08-31,Hawda,Hadhramout,8,8,0,0,TBIJ (Confirmed)
+2012-09-02,Radaa,Bayda,12,12,12,12,TBIJ (Confirmed)
+2012-09-05,Al Ain,Shabwa/Hadramout,4,6,1,4,TBIJ (Confirmed)
+2012-09-10,Al Ain,Shabwa/Hadramout,6,15,0,0,TBIJ (Confirmed)
+2012-10-04,Al Saeed,Shabwa,3,6,0,0,TBIJ (Confirmed)
+2012-10-18,Jaar,Abyan,7,9,0,0,TBIJ (Confirmed)
+2012-10-21,Maarib,Marib,4,4,0,0,TBIJ (Confirmed)
+2012-10-28,Wadi al Abu Jabara,Saada,4,4,0,0,TBIJ (Confirmed)
+2012-11-07,Beit al Ahan,Sanaa,2,2,0,0,TBIJ (Confirmed)
+2013-01-04,Radaa,Bayda,3,3,0,0,TBIJ (Confirmed)
+2013-01-19,Wadi Abida,Marib,0,0,0,0,TBIJ (Confirmed)
+2013-01-19,Wadi Abida,Marib,2,4,0,3,TBIJ (Confirmed)
+2013-01-19,Wadi Abida,Marib,4,6,0,4,TBIJ (Confirmed)
+2013-01-21,Nakhla,Marib,2,4,0,0,TBIJ (Confirmed)
+2013-01-22,Al Boka,Jawf,3,5,0,0,TBIJ (Confirmed)
+2013-01-23,Khawlan,Sanaa,4,4,2,2,TBIJ (Confirmed)
+2013-04-17,Wassab al Ali,Damar,4,4,0,4,TBIJ (Confirmed)
+2013-05-18,Mahfed,Abyan,4,9,0,0,TBIJ (Confirmed)
+2013-06-09,"Al Makashma/
+Khab al Shath",Jawf,2,7,1,1,TBIJ (Confirmed)
+2013-07-27,Mahfed,Abyan,4,9,0,0,TBIJ (Confirmed)
+2013-07-30,Al Saeed,Shabwa,3,4,0,0,TBIJ (Confirmed)
+2013-08-01,Wadi Ser,Hadhramout,3,5,4,5,TBIJ (Confirmed)
+2013-08-06,Wadi Abida,Marib,4,4,0,0,TBIJ (Confirmed)
+2013-08-07,Markha,Shabwa,6,8,0,0,TBIJ (Confirmed)
+2013-08-08,Wadi Abida,Marib,3,8,2,2,TBIJ (Confirmed)
+2013-08-08,Al Ayoun,Hadhramout,2,7,0,0,TBIJ (Confirmed)
+2013-08-08,Al Qotn,Hadhramout,3,5,0,0,TBIJ (Confirmed)
+2013-08-10,Al Askariya,Lahj,2,5,0,0,TBIJ (Confirmed)
+2013-08-30,Manaseh,Bayda,4,6,0,0,TBIJ (Confirmed)
+2013-11-19,Ghayl Bawazir,Hadhramout,5,5,0,0,TBIJ (Confirmed)
+2013-12-12,Radaa,Bayda,12,17,8,16,TBIJ (Confirmed)
+2014-01-06,Radaa,Bayda,0,0,0,0,TBIJ (Confirmed)
+2014-01-08,Al Qotn,Hadhramout,2,2,0,0,TBIJ (Confirmed)
+2014-01-24,Wadi Abida,Marib,3,4,0,0,TBIJ (Confirmed)
+2014-03-02,Shabwan,Marib,2,3,0,0,TBIJ (Confirmed)
+2014-03-05,Khalek,Jawf,2,4,0,0,TBIJ (Confirmed)
+2014-04-19,Sawmaa,Bayda,13,21,3,8,TBIJ (Confirmed)
+2014-04-20,Mahfed,Abyan,24,31,1,1,TBIJ (Confirmed)
+2014-04-21,Usylan,Shabwa,3,4,1,1,TBIJ (Confirmed)
+2014-05-12,Wadi Abida,Marib,4,6,0,0,TBIJ (Confirmed)
+2014-06-13,Mafraq al Saeed,Marib,5,6,0,0,TBIJ (Confirmed)
+2014-08-09,Wadi Abida,Marib,3,3,0,0,TBIJ (Confirmed)
+2014-09-11,Unknown,Shabwa,4,5,0,0,TBIJ (Confirmed)
+2014-10-15,"Bani Assaf
+Mayfaa",Shabwa,4,4,0,0,TBIJ (Confirmed)
+2014-11-04,Radaa, Bayda,9,20,0,0,TBIJ (Confirmed)
+2014-11-12,Azzan,Shabwa,6,8,0,0,TBIJ (Confirmed)
+2014-11-26,Hagr al Saiaar,Hadhramout,7,7,0,0,TBIJ (Confirmed)
+2014-12-06,Nasab,Shabwa,9,10,0,0,TBIJ (Confirmed)
+2014-12-06,Dafaar,Shabwa,11,11,8,8,TBIJ (Confirmed)
+2015-01-26,Hareeb,Shabwa/Mareb border,3,3,1,2,TBIJ (Confirmed)
+2015-01-31,Al Saeed,Shabwa,4,4,0,0,TBIJ (Confirmed)
+2015-02-02,Unknown,Bayda,3,6,0,0,TBIJ (Confirmed)
+2015-04-12,Mukalla,Hadhramout,3,7,0,0,TBIJ (Confirmed)
+2015-04-17,Habban,Shabwa,2,2,0,0,TBIJ (Confirmed)
+2015-04-19,Saeed district,Shabwa,2,6,0,0,TBIJ (Confirmed)
+2015-04-21,Mukalla,Hadramout,5,7,0,1,TBIJ (Confirmed)
+2015-05-11,Mukalla,Hadramout,4,4,0,0,TBIJ (Confirmed)
+2015-05-16,Unknown,Shabwa,3,3,0,0,TBIJ (Confirmed)
+2015-05-22,Unknown,Shabwa,3,5,0,0,TBIJ (Confirmed)
+2015-06-09,Mukalla,Hadramout,3,3,0,0,TBIJ (Confirmed)
+2015-06-25,Mukalla,Hadramout,4,5,0,0,TBIJ (Confirmed)
+2015-07-03,Mukalla,Hadramout,4,4,0,0,TBIJ (Confirmed)
+2015-07-11,Mukalla,Hadramout,3,10,0,0,TBIJ (Confirmed)
+2015-07-29,Wadi Dikha,Abyan,4,5,0,0,TBIJ (Confirmed)
+2015-08-12,Mukalla-Rukob road,Hadramout,5,5,0,0,TBIJ (Confirmed)
+2015-08-23,Mukalla,Hadaramout,4,4,0,0,TBIJ (Confirmed)
+2015-08-26,Mukalla,Hadramout,5,5,0,0,TBIJ (Confirmed)
+2015-09-09,Mukalla,Hadramout,3,6,0,4,TBIJ (Confirmed)
+2015-09-12,Mukalla,Hadramout,4,5,0,0,TBIJ (Confirmed)
+2015-12-22,Nata district,Bayda-Shabwa border,4,4,0,0,TBIJ (Confirmed)
+2016-01-15,Rafadh,Shabwa,3,3,0,0,TBIJ (Confirmed)
+2016-01-19,Sayoun,Hadramout,2,2,0,0,TBIJ (Confirmed)
+2016-02-03,Rawda city,Shabwa,6,6,0,0,TBIJ (Confirmed)
+2016-02-03,Maraquesha,Abyan,3,3,0,0,TBIJ (Confirmed)
+2016-02-29,Unknown,Hadramout,3,3,0,0,TBIJ (Confirmed)
+2016-03-04,Radhum,Shabwa,4,4,0,0,TBIJ (Confirmed)
+2016-03-22,Hajr (75km W of Mukalla),Hadramout,50,71,0,0,TBIJ (Confirmed)
+2016-03-30,Azzan,Shabwa,2,5,0,0,TBIJ (Confirmed)
+2016-04-23,Alemien,Mareb,2,2,0,0,TBIJ (Confirmed)
+2016-04-25,Zinjibar,Abyan,3,6,0,0,TBIJ (Confirmed)
+2016-04-25,Azzan,Shabwa,2,10,0,0,TBIJ (Confirmed)
+2016-04-28,Unknown,Shabwa,4,4,0,0,TBIJ (Confirmed)
+2016-05-19,Unknown,Shabwa,4,4,0,0,TBIJ (Confirmed)
+2016-06-09,Unknown,Bayda,2,2,0,0,TBIJ (Confirmed)
+2016-06-10,Unknown,Mareb,2,2,0,0,TBIJ (Confirmed)
+2016-06-12,Haban,Shabwa,2,3,0,0,TBIJ (Confirmed)
+2016-07-01,Gardan,Shabwa,3,6,0,0,TBIJ (Confirmed)
+2016-07-04,Musaina,Shabwa,2,3,0,0,TBIJ (Confirmed)
+2016-07-08,Unknown,Central Yemen,1,1,0,0,TBIJ (Confirmed)
+2016-07-16,Al Uqlah,Shabwa,2,4,0,0,TBIJ (Confirmed)
+2016-08-04,Azzan,Shabwa,2,4,0,0,TBIJ (Confirmed)
+2016-08-24,Unknown,Shabwa,4,5,0,0,TBIJ (Confirmed)
+2016-08-30,Unknown,Shabwa,3,3,0,0,TBIJ (Confirmed)
+2016-09-04,Unknown,Shabwa,6,9,0,0,TBIJ (Confirmed)
+2016-09-13,Radaa area,Bayda ,5,5,0,0,TBIJ (Confirmed)
+2016-09-20,Wadi Abida,Marib,2,2,0,0,TBIJ (Confirmed)
+2016-09-22,Sawmaa district,Bayda,2,3,0,0,TBIJ (Confirmed)
+2016-09-23,Unknown,Mareb,3,5,0,0,TBIJ (Confirmed)
+2016-09-29,Unknown,Bayda,2,2,0,0,TBIJ (Confirmed)
+2016-10-06,Unknown,Shabwah,2,2,0,0,TBIJ (Confirmed)
+2016-10-12,North of the Bab el-Mandeb strait,-,0,0,0,0,TBIJ (Confirmed)
+2016-10-18,Unknown,Shabwah,3,8,0,0,TBIJ (Confirmed)
+2016-10-21,Unknown,Marib,5,5,0,0,TBIJ (Confirmed)
+2016-11-21,Unknown,Bayda,1,1,0,0,TBIJ (Confirmed)
+2016-11-24,Sawmaah,Bayda,2,2,0,0,TBIJ (Confirmed)
+2016-11-30,Unknown,Hadramout,3,3,0,0,TBIJ (Confirmed)
+2016-12-29,Sawmaah,Bayda ,2,2,0,0,TBIJ (Confirmed)
+2017-01-08,Unknown,Bayda,1,1,0,0,TBIJ (Confirmed)
+2017-01-20,Sawmaah,Bayda,5,7,0,0,TBIJ (Confirmed)
+2017-01-28,Yakla,Bayda,39,39,25,25,TBIJ (Confirmed)
+2017-01-30,Baihan,Shabwa,2,2,0,0,TBIJ (Confirmed)
+2017-03-02,Unknown,Across central Yemen ,2,12,0,0,TBIJ (Confirmed)
+2017-03-03,Unknown,Yemen,1,8,0,0,TBIJ (Confirmed)
+2017-03-04,Ahwar,Abyan ,2,2,0,0,TBIJ (Confirmed)
+2017-03-06,Unknown,Multiple provinces,11,11,2,2,TBIJ (Confirmed)

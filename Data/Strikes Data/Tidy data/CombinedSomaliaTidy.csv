@@ -1,0 +1,126 @@
+Date,Location,TotalKilledMin,TotalKilledMax,CiviliansKilledMin,CiviliansKilledMax,SourceConfirmed
+2003-03-19,Mogadishu in Banaadir,NA,NA,NA,NA,NAF
+2003-11-01,Coast of Somalia in Coast,NA,NA,NA,NA,NAF
+2004-06-30,Mogadishu in Banaadir,NA,NA,NA,NA,NAF
+2007-01-07,Ras Kamboni in Lower Juba,8,12,NA,NA,NAF
+2007-01-08,Ras Kamboni in Lower Juba,8,12,NA,NA,NAF
+2007-01-08,Ras Kamboni in Lower Juba,8,12,NA,NA,NAF
+2007-01-08,Hayi in Lower Juba,22,31,22,31,NAF
+2007-01-08,Hayi in Lower Juba,22,31,22,31,NAF
+2007-01-23,Waldena in Lower Juba,8,8,NA,NA,NAF
+2007-06-01,Bargal in Puntland,6,12,NA,NA,NAF
+2008-03-02,Dhobley in Gedo,6,6,6,6,NAF
+2008-05-01,Dhuusamareeb in Central Regions,8,30,NA,NA,NAF
+2009-09-14,Barawe in Lower Shabelle,6,9,NA,NA,NAF
+2011-04-06,Dhobley in Gedo,1,1,NA,NA,NAF
+2011-06-23,Kismayo in Lower Juba,1,2,NA,NA,NAF
+2011-09-23,Kismayo in Lower Juba,NA,NA,NA,NA,NAF
+2011-11-14,Afgoye in Lower Shabelle,NA,NA,NA,NA,NAF
+2012-01-21,Elasha Biyaha in Banaadir,1,1,NA,NA,NAF
+2012-02-24,K60 in Lower Shabelle,4,4,NA,NA,NAF
+2013-10-04,Barawe in Lower Shabelle,5,5,NA,NA,NAF
+2013-10-28,Jilib in Middle Juba,2,2,NA,NA,NAF
+2014-01-26,Hawai in Lower Shabelle,5,5,NA,NA,NAF
+2014-09-01,near Barawe in Lower Shabelle,6,6,NA,NA,NAF
+2014-12-29,Saakow in Middle Juba,3,3,NA,NA,NAF
+2015-01-31,Dinsoor in Bay District,2,2,NA,NA,NAF
+2015-03-12,Abaq Xaluul in Gedo,1,1,NA,NA,NAF
+2015-07-16,Bardere in Gedo,30,30,NA,NA,NAF
+2015-12-02,Kuunyo-Barrow in Lower Shabelle,3,3,NA,NA,NAF
+2015-12-22,Shanta-Ameriko in Lower Shabelle,5,5,NA,NA,NAF
+2016-03-05,Raso in Central Regions,150,150,NA,NA,NAF
+2016-03-09,Awdhegele in Central Regions,1,15,NA,NA,NAF
+2016-03-31,in Middle Juba,3,3,NA,NA,NAF
+2016-04-11,Yontoy in Lower Juba,NA,NA,NA,NA,NAF
+2016-04-11,Yontoy in Lower Juba,14,16,3,3,NAF
+2016-05-12,in Lower Shabelle,5,5,NA,NA,NAF
+2016-05-12,West of Mogadishu in Banaadir,5,5,NA,NA,NAF
+2016-05-27,in Central Regions,1,1,NA,NA,NAF
+2016-08-10,Saakow in Middle Juba,3,3,NA,NA,NAF
+2016-08-30,Gobanale in null,2,2,NA,NA,NAF
+2016-09-05,Tortorow in Lower Shabelle,4,4,NA,NA,NAF
+2016-09-26,Kismayo in Lower Juba,9,9,NA,NA,NAF
+2016-09-28,Galkayo in Puntland,10,10,NA,NA,NAF
+2017-01-07,Gaduud in Gedo,NA,NA,NA,NA,NAF
+2007-01-07,Ras Kamboni,8,10,2,2,"TBIJ (Confirmed, Possible)"
+2007-01-09,"Hayo, Garer, Bankajirow and Badmadow, Ras Kamboni",5,10,0,0,"TBIJ (Confirmed, Possible)"
+2007-01-09,Hayo,4,31,4,31,"TBIJ (Confirmed, Possible)"
+2007-01-23,Waldena,8,8,0,0,"TBIJ (Confirmed, Possible)"
+2007-06-01,Bargal,8,12,0,0,"TBIJ (Confirmed, Possible)"
+2008-03-03,Dhobley,0,6,0,4,"TBIJ (Confirmed, Possible)"
+2008-05-01,Dusa Marreb,8,15,5,10,"TBIJ (Confirmed, Possible)"
+2009-09-14,Barawe,2,6,0,0,"TBIJ (Confirmed, Possible)"
+2011-04-03,Dhobley,1,36,0,0,"TBIJ (Confirmed, Possible)"
+2011-06-23,Kismayo,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2011-07-06,Juba,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2011-09-25,Kismayo,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2011-11-14,Afgoye,0,2,0,0,"TBIJ (Confirmed, Possible)"
+2012-01-21,Elasha Biyaha,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2012-02-24,Lower Shabelle,3,7,0,1,"TBIJ (Confirmed, Possible)"
+2012-04-17,"Gumh, Puntland",0,0,0,0,"TBIJ (Confirmed, Possible)"
+2013-10-05,"Barawe, Shabeellaha Hoose",1,7,0,0,"TBIJ (Confirmed, Possible)"
+2013-10-28,"Jillib, Middle Juba",2,3,0,0,"TBIJ (Confirmed, Possible)"
+2014-01-26,"Hawai, Lower Shabelle",2,9,0,2,"TBIJ (Confirmed, Possible)"
+2014-08-01,"Barawe, Lower Shabelle",6,6,0,0,"TBIJ (Confirmed, Possible)"
+2014-12-29,Saakow,2,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-01-31,"Dugule, Lower Shabelle",40,60,0,0,"TBIJ (Confirmed, Possible)"
+2015-01-31,"Dinsoor, Bay Region",2,9,0,4,"TBIJ (Confirmed, Possible)"
+2015-03-12,"Abaq Xaluul village, Baardheere, Gedo region",3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-07-15,"Baardheere, Gedo Region",2,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-07-15,"Baardheere, Gedo Region",0,0,0,0,"TBIJ (Confirmed, Possible)"
+2015-11-21,"Balad Amin, Lower Shabelle",5,10,0,0,"TBIJ (Confirmed, Possible)"
+2015-11-29,"Yasooman, Ceeldheer and Ceel Lahelay villages, Hiraan region",0,0,0,0,"TBIJ (Confirmed, Possible)"
+2015-12-02,"Kunyo-Barow, Lower Shabelle",3,3,0,0,"TBIJ (Confirmed, Possible)"
+2015-12-21,"Kuntuwarey district, Lower Shabelle",5,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-05,"Raso Camp, Hiraaan",150,200,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-08,"Awdhegle, Lower Shabelle",19,19,0,0,"TBIJ (Confirmed, Possible)"
+2016-03-31,"Jillib, Middle Juba",3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-01,Unknown,0,22,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-02,Unknown,6,6,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-06,"Jillib, Middle Juba",8,8,0,0,"TBIJ (Confirmed, Possible)"
+2016-04-11,Lower Juba,8,12,3,3,"TBIJ (Confirmed, Possible)"
+2016-05-12,"Afgoye, Lower Shabelle",5,5,0,0,"TBIJ (Confirmed, Possible)"
+2016-05-27,South-central Somalia,1,1,0,0,"TBIJ (Confirmed, Possible)"
+2016-06-21,Southern Somalia,3,3,0,0,"TBIJ (Confirmed, Possible)"
+2016-08-30,Near Gobanale,2,2,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-05,Tortoroow,4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-26,"Caba, near Kismayo",4,4,0,0,"TBIJ (Confirmed, Possible)"
+2016-09-28,"Galcayo, Galmudug ",10,22,0,2,"TBIJ (Confirmed, Possible)"
+2017-01-07,Gaduug,0,0,0,0,"TBIJ (Confirmed, Possible)"
+2007-01-07,Ras Kamboni,8,10,2,2,TBIJ (Confirmed)
+2007-01-09,"Hayo, Garer, Bankajirow and Badmadow, Ras Kamboni",5,10,0,0,TBIJ (Confirmed)
+2007-01-23,Waldena,8,8,0,0,TBIJ (Confirmed)
+2007-06-01,Bargal,8,12,0,0,TBIJ (Confirmed)
+2008-03-03,Dhobley,0,6,0,4,TBIJ (Confirmed)
+2008-05-01,Dusa Marreb,8,15,5,10,TBIJ (Confirmed)
+2009-09-14,Barawe,2,6,0,0,TBIJ (Confirmed)
+2011-06-23,Kismayo,2,2,0,0,TBIJ (Confirmed)
+2012-01-21,Elasha Biyaha,1,1,0,0,TBIJ (Confirmed)
+2012-02-24,Lower Shabelle,3,7,0,1,TBIJ (Confirmed)
+2013-10-05,"Barawe, Shabeellaha Hoose",1,7,0,0,TBIJ (Confirmed)
+2013-10-28,"Jillib, Middle Juba",2,3,0,0,TBIJ (Confirmed)
+2014-01-26,"Hawai, Lower Shabelle",2,9,0,2,TBIJ (Confirmed)
+2014-08-01,"Barawe, Lower Shabelle",6,6,0,0,TBIJ (Confirmed)
+2014-12-29,Saakow,2,3,0,0,TBIJ (Confirmed)
+2015-01-31,"Dinsoor, Bay Region",2,9,0,4,TBIJ (Confirmed)
+2015-03-12,"Abaq Xaluul village, Baardheere, Gedo region",3,3,0,0,TBIJ (Confirmed)
+2015-07-15,"Baardheere, Gedo Region",2,3,0,0,TBIJ (Confirmed)
+2015-07-15,"Baardheere, Gedo Region",0,0,0,0,TBIJ (Confirmed)
+2015-11-21,"Balad Amin, Lower Shabelle",5,10,0,0,TBIJ (Confirmed)
+2015-12-02,"Kunyo-Barow, Lower Shabelle",3,3,0,0,TBIJ (Confirmed)
+2015-12-21,"Kuntuwarey district, Lower Shabelle",5,5,0,0,TBIJ (Confirmed)
+2016-03-05,"Raso Camp, Hiraaan",150,200,0,0,TBIJ (Confirmed)
+2016-03-08,"Awdhegle, Lower Shabelle",19,19,0,0,TBIJ (Confirmed)
+2016-03-31,"Jillib, Middle Juba",3,3,0,0,TBIJ (Confirmed)
+2016-04-01,Unknown,0,22,0,0,TBIJ (Confirmed)
+2016-04-02,Unknown,6,6,0,0,TBIJ (Confirmed)
+2016-04-06,"Jillib, Middle Juba",8,8,0,0,TBIJ (Confirmed)
+2016-04-11,Lower Juba,8,12,3,3,TBIJ (Confirmed)
+2016-05-12,"Afgoye, Lower Shabelle",5,5,0,0,TBIJ (Confirmed)
+2016-05-27,South-central Somalia,1,1,0,0,TBIJ (Confirmed)
+2016-06-21,Southern Somalia,3,3,0,0,TBIJ (Confirmed)
+2016-08-30,Near Gobanale,2,2,0,0,TBIJ (Confirmed)
+2016-09-05,Tortoroow,4,4,0,0,TBIJ (Confirmed)
+2016-09-26,"Caba, near Kismayo",4,4,0,0,TBIJ (Confirmed)
+2016-09-28,"Galcayo, Galmudug ",10,22,0,2,TBIJ (Confirmed)
+2017-01-07,Gaduug,0,0,0,0,TBIJ (Confirmed)

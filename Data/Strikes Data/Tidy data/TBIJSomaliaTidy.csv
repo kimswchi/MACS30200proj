@@ -1,0 +1,51 @@
+Date,Location,ConfirmedUSAttack,DroneStrike,AttackType,StrikesMin,StrikesMax,TotalKilledMin,TotalKilledMax,CiviliansKilledMin,CiviliansKilledMax,ChildrenKilledMin,ChildrenKilledMax,TotalInjuredMin,TotalInjuredMax
+2007-01-07,Ras Kamboni,Confirmed,0,Air assault - AC-130 Gunship,1,1,8,10,2,2,0,1,1,3
+2007-01-09,"Hayo, Garer, Bankajirow and Badmadow, Ras Kamboni",Confirmed,0,Air assault - AC-130 Gunship,1,1,5,10,0,0,0,0,4,5
+2007-01-09,Hayo,Possible,0,Air assault - helicopter,1,1,4,31,4,31,0,1,0,0
+2007-01-23,Waldena,Confirmed,0,"Air assault - AC-130 Gunship
+Ground operation - capture mission",1,1,8,8,0,0,0,0,0,0
+2007-06-01,Bargal,Confirmed,0,Naval operation - USS Chafee shore bombardment,1,1,8,12,0,0,0,0,0,0
+2008-03-03,Dhobley,Confirmed,0,"Naval operation - cruise missile
+Possible air operation - AC-130 Gunship",1,1,0,6,0,4,0,0,3,8
+2008-05-01,Dusa Marreb,Confirmed,0,"Naval operation - cruise missiles
+Possible air assault - AC-130 Gunship",1,1,8,15,5,10,0,0,0,0
+2009-09-14,Barawe,Confirmed,0,"Air operation - helicopter
+Ground assault - body retrieval",1,1,2,6,0,0,0,0,2,2
+2011-04-03,Dhobley,Possible,0,Air operation - airstrike,1,1,1,36,0,0,0,0,0,0
+2011-06-23,Kismayo,Confirmed,1,"Air operation - drone strike
+Helicopter raid",1,1,2,2,0,0,0,0,2,3
+2011-07-06,Juba,Possible,1,Air operation - drone or airstrike,1,1,0,0,0,0,0,0,0,0
+2011-09-25,Kismayo,Possible,1,Air operation - drone strike,1,1,0,0,0,0,0,0,0,0
+2011-11-14,Afgoye,Possible,1,Air operation - drone strike,1,1,0,2,0,0,0,0,0,0
+2012-01-21,Elasha Biyaha,Confirmed,1,Air operation - drone strike,1,1,1,1,0,0,0,0,0,0
+2012-02-24,Lower Shabelle,Confirmed,1,Air operation - drone strike,1,1,3,7,0,1,0,0,0,0
+2012-04-17,"Gumh, Puntland",Possible,0,Air operation - airstrike,1,1,0,0,0,0,0,0,2,2
+2013-10-05,"Barawe, Shabeellaha Hoose",Confirmed,0,Ground operation - amphibious assault,1,1,1,7,0,0,0,0,1,1
+2013-10-28,"Jillib, Middle Juba",Confirmed,1,Air operation - drone strike,1,1,2,3,0,0,0,0,0,0
+2014-01-26,"Hawai, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,2,9,0,2,0,2,0,1
+2014-08-01,"Barawe, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,6,6,0,0,0,0,0,0
+2014-12-29,Saakow,Confirmed,1,Air operation - drone strike,1,1,2,3,0,0,0,0,0,0
+2015-01-31,"Dugule, Lower Shabelle",Possible,1,Air operation - drone strike,1,1,40,60,0,0,0,0,0,0
+2015-01-31,"Dinsoor, Bay Region",Confirmed,1,Air operation - drone strike,1,1,2,9,0,4,0,0,0,4
+2015-03-12,"Abaq Xaluul village, Baardheere, Gedo region",Confirmed,1,Air operation - drone strike,1,1,3,3,0,0,0,0,0,0
+2015-07-15,"Baardheere, Gedo Region",Confirmed,1,Air operation - drone strike,1,1,2,3,0,0,0,0,0,0
+2015-07-15,"Baardheere, Gedo Region",Confirmed,1,Air operation - drone strike,5,5,0,0,0,0,0,0,0,0
+2015-11-21,"Balad Amin, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,5,10,0,0,0,0,0,0
+2015-11-29,"Yasooman, Ceeldheer and Ceel Lahelay villages, Hiraan region",Possible,0,Air operation - airstrike,1,1,0,0,0,0,0,0,0,0
+2015-12-02,"Kunyo-Barow, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,3,3,0,0,0,0,0,0
+2015-12-21,"Kuntuwarey district, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,5,5,0,0,0,0,0,0
+2016-03-05,"Raso Camp, Hiraaan",Confirmed,1,Air operation - drone or airstrike,1,1,150,200,0,0,0,0,0,0
+2016-03-08,"Awdhegle, Lower Shabelle",Confirmed,0,Ground operation - Joint US-Somali helicopter assault,1,1,19,19,0,0,0,0,0,0
+2016-03-31,"Jillib, Middle Juba",Confirmed,1,Air operation - drone strike,1,1,3,3,0,0,0,0,0,0
+2016-04-01,Unknown,Confirmed,1,Air operation - drone strike,1,1,0,22,0,0,0,0,0,0
+2016-04-02,Unknown,Confirmed,1,Air operation - drone strike,1,1,6,6,0,0,0,0,0,0
+2016-04-06,"Jillib, Middle Juba",Confirmed,1,Air operation - drone strike,1,1,8,8,0,0,0,0,0,0
+2016-04-11,Lower Juba,Confirmed,1,Air operation - drone strike,1,1,8,12,3,3,0,0,0,0
+2016-05-12,"Afgoye, Lower Shabelle",Confirmed,1,Air operation - drone strike,1,1,5,5,0,0,0,0,0,0
+2016-05-27,South-central Somalia,Confirmed,1,Air operation - drone or airstrike,1,1,1,1,0,0,0,0,0,0
+2016-06-21,Southern Somalia,Confirmed,1,Air operation - drone or airstrike,1,1,3,3,0,0,0,0,0,0
+2016-08-30,Near Gobanale,Confirmed,1,Air operation - drone or airstrike,1,1,2,2,0,0,0,0,0,0
+2016-09-05,Tortoroow,Confirmed,1,Air operation - drone or airstrike,2,2,4,4,0,0,0,0,0,0
+2016-09-26,"Caba, near Kismayo",Confirmed,1,Air operation - drone or airstrike,1,1,4,4,0,0,0,0,0,0
+2016-09-28,"Galcayo, Galmudug ",Confirmed,1,Air operation - drone or airstrike,1,1,10,22,0,2,0,0,3,16
+2017-01-07,Gaduug,Confirmed,0,Air operation - drone or airstrike,1,1,0,0,0,0,0,0,0,0

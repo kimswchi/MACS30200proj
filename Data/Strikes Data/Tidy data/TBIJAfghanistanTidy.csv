@@ -1,0 +1,348 @@
+Date,Village.local.area,District,Province,AttackType,DroneStrike,ConfirmedUSAttack,US.only.source.,Counter..terrorism..force.protection.or.strategic.effects.,Reported.target.group.,Time,Reported.target.type,StrikesMin,StrikesMax,TotalKilledMin,TotalKilledMax,CiviliansKilledMin,CiviliansKilledMax,ChildrenKilledMin,ChildrenKilledMax,TotalInjuredMin,TotalInjuredMax
+2015-01-01,Unknown,Spera,Khost,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-01-03,Unknown,Gayan,Paktika,US strike,0,0,0,NA,NA,Early morning/late evening,Convoy,1,1,18,18,0,0,0,0,0,0
+2015-01-03,Unknown,Spera,Khost,US strike,0,1,0,FP,Haqqani,Early morning,Convoy,1,1,7,7,0,0,0,0,0,0
+2015-01-06,Unknown,Dara I Pech,Kunar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-01-07,Unknown,Unknown,Logar,US strike,1,0,0,NA,NA,NA,NA,1,1,3,3,0,0,0,0,0,0
+2015-01-08,Chikanawr,Lal Pura,Nangarhar,US strike,1,0,0,NA,Insurgents,Late at night,Compound,1,1,6,6,0,0,0,0,3,3
+2015-01-11,Chikanawr,Lal Pura,Nangarhar,US strike,1,0,0,NA,Taliban,Morning,NA,1,1,8,8,0,0,0,0,3,3
+2015-01-16,Unknown,Nazyan,Nangarhar,US strike,1,0,1,NA,NA,NA,NA,1,1,3,3,0,0,0,0,0,0
+2015-01-17,Unknown,Lal Pura,Nangarhar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-01-19,Unknown,Khugyani,Nangarhar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-02-08,Azankarez,Kajak,Helmand,US strike,1,1,0,FP,ISIS,NA,NA,1,1,6,8,0,0,0,0,0,0
+2015-02-10,Unknown,Khas Kunar,Kunar,US strike,1,1,0,FP,Taliban - Khorasan Group / ISIS,NA,"
+-",1,1,2,2,0,0,0,0,0,0
+2015-02-11,Unknown,Nazyan,Nangarhar,US strike,0,1,0,FP,TTP,NA,Compound,1,1,2,9,0,0,0,0,0,0
+2015-02-18,Fathi Khani,Khogyani,Nangarhar,US strike,1,0,0,NA,Taliban,Afternoon,NA,1,1,8,8,0,0,0,0,0,0
+2015-03-02,Unknown,Alishir,Khost,US strike,1,0,0,NA,NA,Unknown,NA,1,1,1,1,0,1,0,0,0,0
+2015-03-10,Mamond,Achin,Nangarhar,US strike,0,1,0,FP,Taliban,NA,Corolla vehicle,1,1,6,6,0,0,0,0,0,0
+2015-03-11,Unknown,Sarakani,Kunar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-03-13,Unknown,Lal Pura,Nangarhar,US strike,1,1,0,FP,Taliban,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-03-18,Unknown,Chinar Khor,Kunar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,1,1
+2015-03-23,Unknown,Nazyan,Nangarhar,US strike,1,1,0,FP,"Lashkar e Islam, TTP and Abdullah Azam Brigade",NA,Hideout,1,1,9,13,0,0,0,0,0,0
+2015-03-24,Unknown,Unknown,Kunar,US strike,1,0,0,NA,TTP,NA,NA,1,1,11,11,0,0,0,0,0,0
+2015-03-25,Unknown,Sia Gird,Parwan,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-03-26,Unknown,Zurmat,Paktia,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,1,1
+2015-04-12,Unknown,Dara I Pech,Kunar,US strike,1,1,0,FP,Taliban,5.30am,Hideouts,1,1,3,3,0,0,0,0,0,0
+2015-04-28,Degal,Chapa Darre,Kunar,US strike,1,1,0,FP,Taliban,NA,NA,1,1,3,3,0,0,0,0,0,0
+2015-05-03,Unknown,Mohmand Dara,Nangarhar,US strike,1,1,0,FP,Taliban,1700,Convoy,1,1,12,12,0,0,0,0,0,0
+2015-05-04,"Dabili, Landi Basawal area",Mohmand Dara,Nangarhar,US strike,1,1,0,FP,Taliban,Night,Hideout,1,1,17,17,0,0,0,0,0,0
+2015-05-07,Unknown,Khas Khar,Kunar,US strike,1,0,0,NA,Insurgents,NA,Vehicle,1,1,6,7,0,1,0,1,0,0
+2015-05-07,Unknown,Goshti,Nangarhar,US strike,1,1,0,FP,"""Rebels""",Late,Vehicle,1,1,4,4,0,0,0,0,0,0
+2015-05-09,Machi Megi,Lal Pura,Nangarhar,US strike,1,1,0,FP,Taliban,NA,Hideout,1,1,13,13,0,0,0,0,0,0
+2015-05-14,Unknown,"Bati Kot
+",Nangarhar,US strike,1,1,0,Possible CT,Taliban,Night,Vehicle,1,1,4,4,0,0,0,0,1,1
+2015-05-15,"Various: Chahardahi in Bati Kot, Bandar Darah in Dur Baba, Murdai in Achin","Various: Nazyan, Bati Kot, Bandar Darah, Dur Baba, Achin",Nangarhar,US strike,1,1,0,FP,Taliban,Night,Vehicles and at least one hideout,4,4,5,41,0,0,0,0,0,0
+2015-05-21,Katar village,Watapor,Kunar,US strike,1,1,0,FP,Taliban,"Evening
+",NA,1,1,4,5,0,0,0,0,0,0
+2015-05-27,Unknown,Want Waigal,Nuristan,US strike,1,1,0,FP,Taliban,NA,NA,1,1,5,5,0,0,0,0,0,0
+2015-05-28,Unknown,Watapor,Kunar,US strike,1,1,0,FP,Taliban,NA,NA,1,1,1,1,0,0,0,0,0,0
+2015-05-31,Unknown,Baraki Barak,Logar,US strike,0,1,0,NA,NA,NA,NA,1,1,2,3,0,3,0,2,0,0
+2015-06-03,Shogam area,Shigal,Kunar,US strike,1,1,0,FP,"-
+",Night,Hideout,1,1,3,6,0,0,0,0,0,0
+2015-06-04,Unknown,Achin,Nangarhar,US strike,1,1,0,FP,Taliban,1830,Hideout,1,1,1,1,0,0,0,0,0,0
+2015-06-04,Unknown,Chapahar,Nangarhar,US strike,1,1,0,FP,Taliban,Late,Vehicle,1,1,6,6,0,1,0,0,0,0
+2015-06-04,Unknown,Chapahar,Nangarhar,US strike,1,0,0,NA,Taliban,Late,Two vehicles,1,1,11,11,0,0,0,0,0,0
+2015-06-05,Ali Shir,Tere Zayi,Khost,US strike,1,1,0,CT,Taliban,NA,Two vehicles,1,1,14,14,14,14,0,0,0,0
+2015-06-07,Unknown,Chapa Dara,Kunar,US strike,1,1,0,FP,Taliban,Evening,Hideout,1,1,1,1,0,0,0,0,0,0
+2015-06-08,Samso,Lal Pura,Nangarhar,US strike,1,1,0,FP,Taliban / ISIS,NA,Hideout,1,1,7,7,0,5,0,5,0,0
+2015-06-08,Unknown,Lal Pura,Nangarhar,US strike,1,0,0,NA,Insurgents,NA,Vehicle,1,1,3,3,0,0,0,0,0,0
+2015-06-11,Maroufkhil,Khushamand,Paktika,US strike,1,0,0,NA,Arabs making bombs for Taliban,08:00,"Unclear - they were reportedly making bombs so could be hideout but possibly a ""gathering"" as vehicles destroyed.",1,1,30,30,0,0,0,0,0,0
+2015-06-11,Jarkani,Yousufkhil,Paktika,US strike,1,0,0,NA,Insurgents,NA,A motorcylce,1,1,2,2,0,0,0,0,0,0
+2015-06-14,Unknown,Dangam,Kunar,US strike,1,1,0,FP,Taliban,NA,Up to three buildings - house,1,1,7,15,0,5,0,5,0,0
+2015-06-15,Unknown,Chak e Wardak,Wardak,US strike,0,1,1,NA,NA,NA,NA,1,1,2,2,2,2,0,0,0,0
+2015-06-18,Unknown,Chazi Abad,Kunar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-06-19,Unknown,Mohmand Dara,Nangarhar,US strike,1,0,0,NA,NA,1000,Two vehicles,1,1,8,8,0,0,0,0,0,0
+2015-06-19,Kamar Kandaw,Haska Meena,Nangarhar,US strike,1,0,0,NA,NA,Afternoon,On foot,1,1,4,7,0,0,0,0,0,0
+2015-06-20,Unknown,"Kanish
+",Nuristan,US strike,1,0,0,NA,TTP,Late at night,Hideouts,1,1,4,9,0,0,0,0,0,0
+2015-06-21,Barikaab Dab,Bati Kot,Nangarhar,US strike,1,1,0,NA,NA,1730,NA,1,1,6,7,0,0,0,0,0,0
+2015-06-26,"Unknown
+",Unknown,Nuristan,US strike,0,1,1,FP,NA,Night,NA,1,1,6,6,0,0,0,0,0,0
+2015-06-27,"Unknown
+",Unknown,Paktika,US strike,1,1,0,FP,AQ,Night,NA,1,1,1,1,0,0,0,0,0,0
+2015-06-27,Mardish,Want Waigal,Nuristan,US strike,1,0,0,NA,Taliban,Night,Hideouts,1,1,5,5,0,0,0,0,3,3
+2015-06-30,Machi Megi,Lal Pura,Nangarhar,US strike,1,0,0,NA,Taliban,Night,Hideouts,1,1,4,14,0,0,0,0,12,12
+2015-07-04,Unknown,Ghanikhel,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,12,12,0,0,0,0,0,0
+2015-07-04,Unknown,Chappa Dara,Kunar,US strike,1,0,0,NA,TTP,NA,NA,1,1,1,1,0,0,0,0,0,0
+2015-07-04,Unknown,Dara I Pech,Nangarhar,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-07-05,Unknown,Chaparhar,Nangarhar,US strike,1,0,0,NA,Taliban,NA,Hideouts,1,1,3,3,0,0,0,0,0,0
+2015-07-06,Unknown,Achin,Nangarhar,US strike,1,1,0,FP,ISIS,Noon,"-
+",1,1,12,12,0,0,0,0,0,0
+2015-07-06,Unknown,Achin,Nangarhar,US strike,1,1,0,FP,ISIS,1400,NA,1,1,13,37,0,0,0,0,0,0
+2015-07-07,Unknown,Achin,Nangarhar,US strike,1,1,0,FP,ISIS,NA,NA,1,1,11,49,0,0,0,0,0,4
+2015-07-07,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,18,18,0,0,0,0,0,0
+2015-07-07,Unknown,Haska Meena,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,25,25,0,0,0,0,0,0
+2015-07-07,Unknown,Bati Kot,Nangarhar,US strike,1,0,0,NA,Taliban / ISIS,NA,NA,1,1,4,4,0,0,0,0,2,2
+2015-07-08,Tangi,Dih Bala,Nangarhar,US strike,1,0,0,NA,ISIS,Night,Gathering,1,1,25,52,0,0,0,0,0,0
+2015-07-10,"Unknown
+",Achin,Nangarhar,US strike,1,1,0,Possible CT,ISIS,Night,Gathering,1,1,30,31,0,0,0,0,0,0
+2015-07-11,"Unknown
+",Bermal,Paktika,US strike,1,1,0,Probable CT,AQ,NA,NA,1,1,3,3,0,0,0,0,0,0
+2015-07-12,Maidnak and Chehal Gazi,Achin,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,2,2,12,12,0,0,0,0,0,0
+2015-07-14,"Unknown
+","Haska Mina
+",Nangarhar,US strike,1,0,0,NA,Taliban,Night,Gathering,1,1,28,28,0,0,0,0,0,0
+2015-07-16,Unknown,Tor Khail,Wardak,US strike,1,0,0,NA,Haqqani,Morning,Gathering,1,1,8,16,0,0,0,0,0,0
+2015-07-16,Unknown,"Haska Mina
+",Nangarhar,US strike,1,0,0,NA,Taliban,Afternoon,NA,1,1,6,6,0,0,0,0,0,0
+2015-07-20,Cheltan,Baraki Barak,Logar,US strike,0,1,0,NA,Friendly Fire,7.30,ANA Outpost,1,1,7,10,0,0,0,0,5,6
+2015-07-26,Chaknawr,Lal Pura,Nangarhar,US strike,1,0,0,NA,NA,Afternoon,Vehicle,1,1,5,6,0,0,0,0,0,0
+2015-07-29,Harun Baba,Haska Mina and Pachiragam,Nangarhar,US strike,1,1,0,FP,ISIS,Night,Vehicle,2,2,12,20,0,0,0,0,0,0
+2015-08-02,Cholzi,Baraki Barak,Logar,US strike,1,0,0,NA,Taliban,20:00,NA,1,1,4,4,0,0,0,0,0,0
+2015-08-04,Unknown,"Sherzad, Haska Mina and Deh Bala",Nangarhar and Paktika,US strike,1,1,0,FP,Taliban,16.00-19.00,Building and convoy,7,7,56,66,0,0,0,0,0,0
+2015-08-08,Gorgori,Haska Mina,Nangarhar,US strike,1,0,0,NA,Taliban,12:00,NA,1,1,10,10,0,0,0,0,0,0
+2015-08-09,Unknown,Nazyan,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,2,6,0,0,0,0,0,0
+2015-08-10,Shonkorok Valley,Shegal,Kunar,US strike,1,0,0,NA,Taliban,NA,Hideout,1,1,3,3,0,0,0,0,0,0
+2015-08-17,Unknown,Day Mirdad,Wardak,US strike,1,1,0,FP,NA,Night,NA,1,1,4,5,0,0,0,0,0,0
+2015-08-17,Unknown,Chak,Wardak,US strike,1,0,0,NA,NA,Night,NA,1,1,2,3,0,0,0,0,0,0
+2015-08-23,Unknown,Musa Qala,Helmand,US strike,0,1,0,NA,NA,NA,NA,2,3,40,40,0,0,0,0,0,0
+2015-08-26,Kotikhil,"Shirzad
+",Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,4,4,0,0,0,0,0,0
+2015-08-27,Unknown,Musa Qala,Helmand,US strike,0,1,0,NA,Taliban,NA,NA,2,2,0,0,0,0,0,0,0,0
+2015-08-30,Unknown,Musa Qala,Helmand,US strike,0,1,0,NA,Taliban,NA,NA,13,13,0,0,0,0,0,0,0,0
+2015-08-31,Unknown,Nahr e Saraj,Helmand,US strike,0,1,1,NA,NA,NA,NA,1,1,2,2,2,2,0,0,0,0
+2015-09-01,Unknown,Musa Qala,Helmand,US strike,0,1,0,NA,Taliban,NA,NA,6,6,0,0,0,0,0,0,0,0
+2015-09-06,Unknown,Garamser,Helmand,US strike,1,1,0,NA,Friendly Fire,NA,NA,1,1,11,31,0,0,0,0,4,4
+2015-09-06,Unknown,Maiwand,Kandahar,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2015-09-08,Unknown,Ghazi Abad,Kunar,US strike,1,0,0,NA,Taliban,1000,Hideout,1,1,2,2,0,0,0,0,0,0
+2015-09-10,Unknown,Gomal,Paktika,US strike,1,1,0,FP,Taliban,NA,Two vehicles,1,1,5,15,0,0,0,0,0,0
+2015-09-13,Marsangi,Lal Pura,Nangarhar,US strike,1,0,0,NA,Taliban,NA,Police vehicle,1,1,4,5,0,0,0,0,2,2
+2015-09-17,Melawe,Nazyan,Nangarhar,US strike,1,0,0,NA,ISIS,Evening,"ISIS Camp
+",1,1,5,5,0,0,0,0,0,0
+2015-09-29,Kunduz airport,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,09.00-09.15,Tank,1,1,0,0,0,0,0,0,0,0
+2015-09-29,Kunduz airport,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,23.30,NA,1,1,0,0,0,0,0,0,0,0
+2015-09-30,Kunduz airport,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,01.00,NA,1,1,0,24,0,0,0,0,0,0
+2015-09-30,Kunduz airport,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,17.00,NA,1,1,0,0,0,0,0,0,0,0
+2015-09-30,Kunduz airport,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,17.00,NA,1,1,0,0,0,0,0,0,0,0
+2015-09-30,Kunduz city,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,Night,NA,1,1,3,3,0,0,0,0,0,0
+2015-10-02,Kunduz city,Kunduz city,Kunduz,US strike,0,1,0,NA,NA,NA,Warehouse,1,1,0,0,0,0,0,0,0,0
+2015-10-02,Kunduz city,Kunduz city,Kunduz,US strike,0,1,0,NA,NA,NA,Mansion and one other house destroyed. Other houses severely damaged.,1,1,0,0,0,0,0,0,0,0
+2015-10-03,Kunduz city,Kunduz city,Kunduz,US strike,0,1,0,FP,Taliban,02.15,MSF Hospital,1,1,42,42,42,42,3,3,27,27
+2015-10-05,Kunduz city,Kunduz city,Kunduz,US strike,0,1,1,NA,NA,NA,One Humvee,5,5,0,0,0,0,0,0,0,0
+2015-10-11,Unknown,Shurabak,Kandahar,US strike,0,1,0,CT,AQ,Over several days,"AQIS camps, one 30 square miles the other one square mile. ",63,63,100,200,0,0,0,0,50,50
+2015-10-13,Unknown,Unknown,Nangarhar,US strike,0,0,0,NA,ISIS,NA,Vehicle,1,1,6,6,0,0,0,0,0,0
+2015-10-19,Unknown,Kharwar,Logar,US strike,0,0,0,NA,Taliban,Night,Four vehicles,1,1,0,20,0,0,0,0,0,0
+2015-10-23,Unknown,Nazyan,Nangarhar,US strike,1,0,0,NA,ISIS,Morning,House,1,1,6,6,0,0,0,0,3,3
+2015-10-23,Mamand or Bandar,Achin,Nangarhar,US strike,0,0,0,NA,ISIS,11.00,House,1,1,8,10,0,0,0,0,0,0
+2015-10-23,Bandar,Achin,Nangarhar,US strike,0,0,0,NA,NA,Afternoon,Checkpost,1,1,3,3,0,0,0,0,0,0
+2015-10-23,Abdul Khel,Achin,Nangarhar,US strike,0,0,0,NA,NA,Afternoon,Checkpost,1,1,10,10,0,0,0,0,0,0
+2015-10-27,Syah Cho,Achin,Nangarhar,US strike,0,0,0,NA,Taliban,NA,Vehicle,1,1,11,12,0,1,0,0,0,0
+2015-10-29,Unknown,Nazyan,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Compound,1,1,3,4,0,0,0,0,0,0
+2015-10-29,Unknown,Ghazi Abad,Kunar,US strike,1,0,0,NA,AQ,Evening,NA,1,1,3,3,0,0,0,0,0,0
+2015-10-29,Unknown,Lal Pura,Kunar,US strike,1,0,0,NA,TTP,NA,Hideout,1,1,4,4,0,0,0,0,2,2
+2015-10-31,"Choni Sar area, Shultan valley",Shigal,Kunar,US strike,1,0,0,NA,TTP,Night,NA,1,1,2,2,0,0,0,0,0,0
+2015-11-04,Unknown,Achin,Nangarhar,US air and Afghan ground operation,0,0,0,NA,ISIS,Afternoon,NA,1,1,0,29,0,0,0,0,0,0
+2015-11-08,Gulai,Ghanikhil,Nangarhar,US strike,1,0,0,NA,Taliban,Afternoon,Hideout,1,1,3,3,0,0,0,0,1,1
+2015-11-14,Landi Kambo,Khogyani,Nangarhar,US strike,1,0,0,NA,Taliban,NA,Vehicle,1,1,12,13,0,0,0,0,0,0
+2015-11-17,Unknown,Behsood,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,8,8,0,0,0,0,0,0
+2015-11-18,Unknown,Babrak Thana,Khost,US strike,1,0,0,NA,NA,NA,Training camp,1,1,21,50,0,0,0,0,0,0
+2015-11-24,Dabila,Mohmand Dara,Nangarhar,US strike,1,0,0,NA,Taliban,1700,- ,1,1,2,2,0,0,0,0,0,0
+2015-11-24,Unknown,Behsood,Nangarhar,US strike,1,0,0,NA,Taliban,Night,Vehicles,1,1,8,8,0,0,0,0,0,0
+2015-11-25,"Gagi Mountain, Ali Shir",Tere Zayi,Khost,US strike,1,0,0,NA,TTP,Night,Hideout,2,2,10,16,0,0,0,0,20,20
+2015-12-03,Nakora,Chapa Dara,Kunar,US strike,1,0,0,NA,TTP,Night,- ,1,1,3,3,0,0,0,0,0,0
+2015-12-08,Ador,Khogyani,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,11,11,0,0,0,0,0,0
+2015-12-13,Unknown,"Marja, Sangin and Babaji",Helmand,US strike with US and Afghan ground operation,0,0,0,NA,Taliban,NA,NA,3,3,0,0,0,0,0,0,0,0
+2015-12-15,Sher Khan village,Deh Yak,Ghazni,US air and Afghan ground operation,0,0,0,NA,Taliban,NA,NA,1,1,9,9,0,0,0,0,0,0
+2015-12-19,Unknown,Bati Kot,Nangarhar,US air and ground operations,1,1,0,FP,Taliban,NA,Hideout,1,1,3,3,0,0,0,0,2,2
+2015-12-22,28th canal area,Ghani Khel,Nangarhar,US air and ground operations,1,0,0,NA,Taliban,NA,NA,1,1,3,3,0,0,0,0,0,0
+2015-12-23,Sangin,Sangin,Helmand,US strike,1,1,1,FP,Taliban,Night,NA,2,2,0,0,0,0,0,0,0,0
+2015-12-23,Atewishtama Wyala,Ghanikhel,Nangarhar,US strike,1,0,0,NA,Taliban,Afternoon,NA,1,1,3,3,0,0,0,0,0,0
+2015-12-29,Masboud valley,Alishang,Laghman,US strike,1,0,0,NA,Taliban,Afternoon,NA,1,1,2,2,0,0,0,0,0,0
+2016-01-02,Shaltan Darra,Shegal,Kunar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,5,5,0,0,0,0,2,2
+2016-01-06,Unknown,Majah,Helmand,US strike,0,1,1,NA,NA,NA,NA,12,12,0,0,0,0,0,0,0,0
+2016-01-08,"Maktab village, Pekha",Achin,Nangarhar,US strike,1,1,0,CT,ISIS,Afternoon (after Friday prayers),Mass public execution,1,1,17,20,0,0,0,0,2,2
+2016-01-08,Unknown,Kharkhez,Kandahar,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-01-08,Unknown,Bermal,Paktika,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-01-09,Unknown,Achin,Nangarhar,US strike,1,1,0,FP,ISIS,NA,Hideouts,1,1,20,20,0,0,0,0,2,2
+2016-01-09,Unknown,Shegal,Kunar,US strike,1,1,0,FP,TTP,0800,NA,1,1,10,10,1,1,1,1,0,0
+2016-01-10,Unknown,Bermal,Paktika,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-01-10,Unknown,Bermal,Paktika,US strike,0,1,1,FP,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-01-14,"Abdulkhelo area, Bandar locality",Achin,Nangarhar,US strike,1,1,0,FP,ISIS,1600,House,1,1,12,12,0,0,0,0,0,0
+2016-01-16,Unkown,Deh Bala,Nangarhar,US strike,0,0,0,NA,NA,Afternoon,NA,8,8,17,17,0,0,0,0,0,0
+2016-01-16,Shabi Tangi,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,Late,NA,1,1,22,22,0,0,0,0,0,0
+2016-01-19,Deh Sarak,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,1400-1500,Vehicle,1,1,5,5,0,0,0,0,0,0
+2016-01-19,Deh Sarak,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,1400-1500,Vehicle,1,1,5,5,0,0,0,0,0,0
+2016-01-22,Khawajakhel,Arghandab,Zabul,US strike,1,0,0,NA,NA,Late,NA,1,1,3,3,0,0,0,0,0,0
+2016-01-22,Unknown,Unknown,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-01-22,Abdulkhel area,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,3,3,0,0,0,0,0,0
+2016-01-22,Gorgori,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,10,10,0,0,0,0,0,0
+2016-01-23,Bandar,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Noon,NA,1,1,3,3,0,0,0,0,0,0
+2016-01-23,Nargusi,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,6,6,0,0,0,0,0,0
+2016-01-24,Gurguri,Deh Bala,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,13,13,0,0,0,0,0,0
+2016-01-24,Bandar Khwar,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,4,4,0,0,0,0,0,0
+2016-01-25,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,Taliban,Late,NA,1,1,5,5,0,0,0,0,0,0
+2016-02-01,Momand,Achin,Nangarhar,US strike,1,1,0,CT,ISIS,1900-2000,"Radio station, ""Internet facility"", court, hideout",2,4,21,29,0,0,0,0,0,0
+2016-02-01,Unknown,Bermal or Gomal,Paktika,US strike,1,0,0,NA,TTP,NA,NA,1,1,19,19,0,0,0,0,0,0
+2016-02-02,Bandar,Achin,Nangarhar,US strike,1,1,0,FP,ISIS,1600,NA,1,1,3,4,0,0,0,0,0,0
+2016-02-04,"Daman, Marghay",Bermal,Paktika,US strike,1,0,0,NA,TTP,NA,NA,1,1,10,15,0,0,0,0,0,0
+2016-02-04,Shiltan,Shegal,Kunar,US strike,1,1,0,CT,TTP,Night,NA,1,1,3,3,0,0,0,0,0,0
+2016-02-05,Unknown,Achin,Nangarhar,US strike,1,1,0,NA,ISIS,NA,Vehicle and gathering,1,2,16,16,0,0,0,0,0,0
+2016-02-08,Bazaar,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Bazaar,1,1,11,11,0,0,0,0,2,2
+2016-02-08,Unknown,Nad Ali and Greshk,Helmand,US strike,1,0,0,NA,Taliban,Night,Vehicle,1,2,15,15,0,0,0,0,10,10
+2016-02-11,Unknown,Gomal,Paktika,US strike,1,1,0,CT,Taliban,NA,Two vehicles,1,1,13,18,0,0,0,0,0,0
+2016-02-15,Unknown,Nazyan,Nangarhar,US strike,0,1,0,CT,NA,NA,NA,1,1,15,15,0,0,0,0,0,0
+2016-02-17,Raghi,Gomal,Paktika,US strike,1,0,0,NA,Taliban,NA,Hideout,1,1,6,6,0,0,0,0,0,0
+2016-02-18,Raghi,Gomal,PAktika,US strike,1,0,0,NA,NA,NA,Vehicle,1,1,6,6,0,0,0,0,0,0
+2016-02-22,Pekha Khwar,Achin,Nangarhar,US strike,1,1,0,CT,ISIS,NA,NA,1,1,22,25,0,0,0,0,0,0
+2016-02-22,Dand e Ghori,Pul-e-Khumri,Baghlan,US strike,1,0,0,NA,Taliban,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-02-26,Dadul,Gomal,Paktika,US strike,1,1,0,CT,AQ,NA,Two motorcycles,1,1,3,3,0,0,0,0,0,0
+2016-02-28,Mamand Dara and Pekha,Achin,Nangarhar,US strike,1,1,0,CT,ISIS,Late afternoon,NA,1,1,7,9,0,0,0,0,0,0
+2016-03-05,Mamond Dara,Achin,Nangarhar,US strike,1,1,0,CT,ISIS,Night,NA,1,1,15,15,0,0,0,0,0,0
+2016-03-21,Khwargai,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,2.30pm,"""Saracha"" vehicle",1,1,8,8,0,0,0,0,0,0
+2016-03-22,Janajal Ghondie,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,14:00,NA,1,1,2,8,0,0,0,0,0,0
+2016-03-22,Bandar,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,Late afternon,Horse,1,1,5,5,0,0,0,0,0,0
+2016-03-26,Unknown,Achin or Mamand Dara,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,11,11,0,0,0,0,0,0
+2016-04-05,Unknown,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,Early morning,Vehicle and motorbike,1,1,6,6,0,0,0,0,0,0
+2016-04-07,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,4,4,0,0,0,0,0,0
+2016-04-07,Unknown,Dehrawood,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,3,3,0,0,0,0,0,0
+2016-04-07,Nematabad,Gomal,Paktika,US strike,1,1,0,CT,AQ,NA,NA,1,1,14,21,14,21,0,0,0,0
+2016-04-14,Unknown,Achin,Nangarhar,US strike,0,1,1,CT,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-04-19,Shadal,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,House,1,1,5,5,0,0,0,0,0,0
+2016-04-20,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,4,4,0,0,0,0,0,0
+2016-04-28,Narai Obam,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,15,15,0,0,0,0,0,0
+2016-04-30,Unknown,Chaparhar and Haska Mina,Nangarhar,US strike,1,0,0,NA,NA,NA,NA,1,1,38,38,0,0,0,0,0,0
+2016-05-07,Unknown,Khanashin,Helmand,US strike,1,1,0,NA,NA,NA,Vehicle,1,1,0,1,0,0,0,0,2,3
+2016-05-09,Nahr Sufi,Chahar Dara,Kunduz,US strike,1,0,0,NA,Taliban,NA,Vehicle,1,1,12,12,0,0,0,0,0,0
+2016-05-12,Zarmakhel,Pacheragam,Nangarhar,US strike,0,1,0,CT,Reportedly Taliban,10:30,Vehicle,1,1,1,1,0,0,0,0,1,1
+2016-05-16,Gandeel,Watapor,Kunar,US strike,1,1,0,FP,ISIS,NA,Hideout,1,1,3,3,0,0,0,0,0,0
+2016-05-17,Unknown,Shahjoy,Zabul,US strike,1,1,0,CT,AQ,NA,NA,1,1,5,5,0,0,0,0,0,0
+2016-05-18,Mohammd Ghous,Ab Band,Ghazni,US strike,1,0,0,NA,Taliban,05:00,NA,1,1,1,1,0,0,0,0,0,0
+2016-05-22,Asqalan,Kunduz city,Kunduz,US strike,1,0,0,NA,Taliban,NA,Vehicle,1,1,13,13,0,0,0,0,0,0
+2016-05-22,Karkani,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Morning,NA,1,1,9,9,0,0,0,0,0,0
+2016-05-26,Sarobi,Achin,Nangarhar,US strike,1,0,0,"-
+",ISIS,Morning,Bomb-rigged car,1,1,6,6,0,0,0,0,0,0
+2016-05-26,Pirakhel,Wazir,Nangarhar,US strike,1,0,0,NA,ISIS,Morning,NA,1,1,4,4,0,0,0,0,0,0
+2016-05-26,Unknown,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-05-26,Elbak,Unknown,Kandahar,US strike,1,1,1,FP,Taliban,Night,NA,3,3,7,7,0,0,0,0,2,2
+2016-05-29,Kangari Kando,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,6,6,0,0,0,0,0,0
+2016-05-29,Kata Sang,Shaha Wali Kot,Kandahar,US strike,1,1,0,FP,Taliban,NA,NA,1,1,17,22,0,0,0,0,0,0
+2016-05-29,Unknown,De Bala,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-05-29,Unknown,Sayedabad,Maidan Wardak,US strike,1,0,0,NA,ISIS,NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-06-02,Kharkot,Gayan,Paktika,US strike,1,0,0,NA,Taliban,14:00,NA,1,1,10,10,0,0,0,0,0,0
+2016-06-08,Unknown,Sar Rawza,Paktika,US strike,1,0,0,NA,Haqqani,Night,Vehicle,1,1,2,2,0,0,0,0,0,0
+2016-06-11,Sargardan,Hesarak,Nangarhar,US strike,1,0,0,NA,Taliban,NA,Vehicle,1,1,6,6,0,0,0,0,0,0
+2016-06-11,Unknown,Azara,Logar,US strike,1,0,0,NA,Taliban,NA,Vehicle,1,1,11,11,0,3,0,0,0,0
+2016-06-11,Ghwagezai,Hesarak,Nangarhar,US strike,1,0,0,NA,Taliban,Night,Vehicle,1,1,6,6,0,0,0,0,0,0
+2016-06-14,Karkanai,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,10,10,0,0,0,0,0,0
+2016-06-15,Karkanai,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,21:00,NA,1,1,21,21,0,0,0,0,0,0
+2016-06-18,Taraki,Dasht e Archi,Nangarhar,US strike ,1,0,0,NA,Taliban,Night,Vehicle,1,1,8,8,0,0,0,0,0,0
+2016-06-18,"Dara e Mohmand, Mazdaki, Abdulkhail",Achin,Nangarhar,US strike,1,1,0,CT,ISIS,NA,NA,1,1,23,27,0,0,0,0,0,0
+2016-06-21,Moghul Qeshlag,Imam Sahib,Kunduz,US strike,1,0,0,NA,Taliban,Midday,Hideout,1,1,5,5,0,0,0,0,0,0
+2016-06-22,Pir Shah Khelo,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,Late afternoon,NA,1,1,4,4,0,0,0,0,0,0
+2016-06-23,Rahmati and Marsing,Lal Pura,Nangarhar,US strike,1,0,0,NA,Taliban,Night,"Car, motorcycle",2,2,7,7,0,0,0,0,3,3
+2016-06-24,Unknown,Unknown,Unknown,US strike,0,1,1,NA,Taliban,NA,"""Taliban positions""",2,2,0,0,0,0,0,0,0,0
+2016-06-25,Sarak Payin,Chahar Dara,Kunduz,US strike,1,1,0,NA,Taliban,NA,Taliban prison,2,2,7,16,0,15,0,0,0,0
+2016-06-26,Unknown,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,16:00,Hideout,1,1,30,30,0,0,0,0,0,0
+2016-06-27,Unknown,Chahar Dara,Kunduz,US strike,1,0,0,NA,Taliban,NA,NA,1,1,4,16,0,0,0,0,0,0
+2016-06-28,Hazrat Sultan,Kunduz city,Kunduz,US strike,1,0,0,NA,Taliban,NA,NA,1,1,14,14,0,0,0,0,8,8
+2016-06-29,Unknown,Gortipa,Kunduz,US strike,1,0,0,NA,Taliban,NA,NA,1,1,10,10,0,0,0,0,0,0
+2016-06-29,Unknown,Dasht e Archi,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,10,10,0,0,0,0,0,0
+2016-07-03,Unknown,Ab Band,Ghazni,US strike,1,0,0,NA,Taliban,NA,NA,1,1,12,12,0,0,0,0,0,0
+2016-07-03,Mamond and Pekha,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Night,"Hideouts
+",2,2,19,19,0,0,0,0,0,0
+2016-07-03,Wazir,Khogyani,Nangarhar,US strike,1,0,0,NA,Taliban,Afternoon,Vehicles,1,1,11,11,0,0,0,0,3,5
+2016-07-05,Unknown,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,12,12,0,0,0,0,0,0
+2016-07-08,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,16,16,0,0,0,0,0,0
+2016-07-09,Mamond Dara,Achin,Nangarhar,US strike,1,1,0,CT,IS/TTP,NA,NA,1,1,4,8,0,0,0,0,0,0
+2016-07-09,Unknown,Kot,Nangarhar,US strike,0,1,1,CT,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-07-11,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,4,4,0,0,0,0,0,0
+2016-07-13,Mamond Dara,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,12,12,0,0,0,0,0,0
+2016-07-13,"Kharawa, Landai and Kochiano-ghnodai",Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Radio station,3,3,26,26,0,0,0,0,0,0
+2016-07-14,Bandar Khwar and Dah Sarak,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,2,2,12,12,0,0,0,0,2,2
+2016-07-14,Peera Khel,Khogyani,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,4,4,0,0,0,0,3,3
+2016-07-15,Reg Shahidan,"Maiwand
+",Helmand,US strike,1,0,0,NA,Taliban/smugglers,Night,Vehicles,1,1,30,30,0,0,0,0,2,2
+2016-07-16,Spin Zaea,Nazyano,Nangarhar,US strike,1,0,0,NA,ISIS,Late,NA,1,1,15,15,0,0,0,0,0,0
+2016-07-16,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,6,6,0,0,0,0,0,0
+2016-07-19,Sangin,Sangin,Helmand,US strike,0,1,1,NA,Taliban,NA,NA,2,2,0,0,0,0,0,0,0,0
+2016-07-19,Bandar,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,5,5,0,0,0,0,0,0
+2016-07-20,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,15,15,0,0,0,0,0,0
+2016-07-23,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,8,8,0,0,0,0,0,0
+2016-07-23,Unknown,Achin,Nangarhar,US strike,0,1,1,CT,ISIS,NA,NA,2,2,0,0,0,0,0,0,0,0
+2016-07-26,Unknown,Achin,Nangarhar,US strike,0,1,0,CT,ISIS,NA,NA,1,1,1,1,0,0,0,0,0,0
+2016-07-27,Pekhi Kali,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,6,6,0,0,0,0,3,3
+2016-07-27,Milwa Kand,Nazian,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,2,2,0,0,0,0,0,0
+2016-07-31,Unknown ,Unknown ,Unknown,US strike,0,1,1,NA,- ,NA,NA,63,63,0,0,0,0,0,0,0,0
+2016-08-01,Zarghoon village,Nad Ali,Helmand,US strike,1,0,0,NA,Taliban,Night,NA,1,1,2,2,0,0,0,0,0,0
+2016-08-11,Unknown,Unknown,Helmand,US strike,1,1,0,NA,NA,NA,NA,25,25,0,0,0,0,0,0,0,0
+2016-08-12,Unknown,Khoshamand,Paktika,US strike,1,0,0,NA,Taliban,NA,House,1,1,20,25,0,5,0,4,25,25
+2016-08-13,Pekha,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,Night,NA,1,1,2,2,0,0,0,0,0,0
+2016-08-22,Unknown,Kot,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,4,4,0,0,0,0,0,0
+2016-08-24,Unknown,Unknown,Kunduz,US strike,0,1,1,NA,NA,NA,NA,10,10,0,0,0,0,0,0,0,0
+2016-08-25,Unknown,Nad Ali,Helmand,US strike,1,1,0,NA,Taliban,Night,Taliban HQ and bomb making factory or prison,2,2,24,32,0,8,0,0,0,0
+2016-08-29,Unknown,Jani Khil,Paktia,US strike,1,1,0,SE,Taliban,NA,NA,4,4,8,120,0,0,0,0,0,0
+2016-08-30,Unknown,Lal Pura,Nangarhar,US strike,0,0,0,NA,Taliban,NA,NA,1,1,6,6,0,0,0,0,3,3
+2016-08-31,Unknown,Deh Bala,Nangarhar,US strike,0,0,0,NA,ISIS,NA,NA,8,8,17,17,0,0,0,0,0,0
+2016-08-31,Unknown ,Unknown,Unknown,US strike,0,1,1,NA,NA,NA,NA,26,26,0,0,0,0,0,0,0,0
+2016-09-02,Keen Kalai,Spera,Khost,US strike,0,0,0,NA,Haqqani,10:00,NA,1,1,7,7,0,0,0,0,0,0
+2016-09-09,Tarin Kot,Tarin Kot,Uruzgan,US strike,0,0,0,SE,NA,NA,NA,3,3,0,0,0,0,0,0,0,0
+2016-09-10,Qarya e Surkh,Khak e Safid,Farah,US strike,1,0,0,NA,NA,Night,Militant hideout ,1,1,4,4,0,0,0,0,0,0
+2016-09-17,Unknown,Unknown,Uruzgan,US strike,0,1,1,5 SE 1 CT,NA,NA,NA,6,6,0,0,0,0,0,0,0,0
+2016-09-18,Saki,Tarin Kot,Uruzgan,US strike,0,1,0,FP,NA,Night,NA,2,2,7,8,0,0,0,0,0,0
+2016-09-22,Dastandar,Kot ,Nangarhar ,US strike ,0,0,0,NA,NA,Night,Vehicle,1,1,7,7,0,0,0,0,0,0
+2016-09-22,Spinajai ,Nazyan,Nangarhar,US strike ,0,0,0,NA,ISIS,Night,NA,1,1,5,5,0,0,0,0,0,0
+2016-09-22,Tawar Tangi,Hesarak,Nangarhar,US strike ,0,0,0,NA,Taliban,Night,NA,1,1,18,18,0,0,0,0,6,6
+2016-09-24,Unknown,Bermal,Paktika,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-09-25,Unknown,Bermal,Paktika ,US strike,0,1,1,NA,NA,NA,NA,1,1,0,0,0,0,0,0,0,0
+2016-09-28,Unknown,Achin ,Nangarhar ,US strike,1,1,0,CT,ISIS,03:00,House,1,1,18,21,15,15,0,0,13,27
+2016-09-30,Unknown,Unknown,Unknown,US strike,0,1,1,NA,NA,NA,NA,121,121,0,0,0,0,0,0,0,0
+2016-10-03,Unknown,Kunduz city,Kunduz,US strike,0,1,1,NA,Taliban ,NA,NA,12,12,0,0,0,0,0,0,0,0
+2016-10-03,Unknown ,Nawa-i-Barakzayi,Helmand,"US air operation with use of drone, F16 jets and Apache helicopter",1,1,0,NA,Taliban,NA,NA,3,3,12,12,0,0,0,0,0,0
+2016-10-04,Abdul Khel,Achin,Nangarhar,US strike,1,0,0,NA,ISIS,NA,NA,1,1,13,13,0,0,0,0,2,2
+2016-10-08,Unknown ,Achin and Deh Bala ,Nangarhar,US strike ,0,1,1,NA,NA,NA,NA,6,6,0,0,0,0,0,0,0,0
+2016-10-17,Unknown ,Farah and Bakwah ,Farah ,US strike ,0,1,0,FP,Taliban,NA,NA,6,6,70,70,0,0,0,0,30,30
+2016-10-19,Unknown ,Seyagerd,Parwan ,US strike,1,0,0,NA,Taliban ,NA,NA,1,1,8,8,0,0,0,0,0,0
+2016-10-22,Koz-Pachir village , Pachiragam,Nangarhar ,US strike ,1,1,0,NA,NA,Before noon,NA,1,1,5,5,0,0,0,0,0,0
+2016-10-23,Unknown ,Unknown ,Kunduz,US strike ,1,1,0,CT,al Qaeda ,NA,command-and-control locations ,1,1,3,3,0,0,0,0,0,0
+2016-10-28,Unknown,Sherzad,Nangarhar ,US strike ,0,1,0,FP,Taliban ,NA,House ,1,1,2,4,2,4,0,0,0,30
+2016-10-28,Aligal village,Ghaziabad,Kunar,US strike,1,0,0,NA,Insurgents,Late,NA,1,1,5,5,0,0,0,0,0,0
+2016-10-30,Janjal Shaga and Shaistagar,Achin,Nangarhar,US helicopter strikes,0,0,0,NA,ISIS,Night,Heavy machine gun destroyed,2,2,11,11,0,0,0,0,0,0
+2016-10-31,Unknown,Dangam and Ghaziabad,Kunar,US strike,0,0,0,NA,Insurgents,NA,NA,2,2,9,9,0,0,0,0,0,0
+2016-10-31,Unknown ,Unknown ,Unknown,US strike ,0,1,1,NA,NA,NA,NA,138,138,0,0,0,0,0,0,0,0
+2016-11-03,Boz village,Kunduz city,Kunduz,US strike,0,1,0,FP,NA,Early morning,Civilian houses ,2,2,58,59,32,33,20,20,53,62
+2016-11-04,Diwal-i-Surkh,Khak e Safid,Farah,US strike,1,0,0,NA,Taliban,Afternoon,NA,1,1,5,5,0,0,0,0,0,0
+2016-11-09,Mamandara area,Achin ,Nangarhar,US strike,1,0,0,NA,Taliban and Isis,Late night,NA,1,2,11,14,0,0,0,0,0,0
+2016-11-11,Mamandara and Moragi areas,Achin ,Nangarhar ,US strike ,0,0,0,NA,ISIS,Overnight,NA,2,2,13,14,0,0,0,0,0,0
+2016-11-12,Lataband area,Achin,Nangarhar ,US strike,1,0,0,NA,ISIS,Late night,NA,1,1,13,13,0,0,0,0,0,0
+2016-11-18,Lagharjoi area,Kot ,Nangarhar ,US strike,1,0,0,NA,ISIS,Late night,NA,1,1,7,7,0,0,0,0,0,0
+2016-11-19,Shah Karez,Zumat,Paktia,US strike,1,0,0,NA,Taliban,NA,NA,1,1,1,1,0,0,0,0,2,2
+2016-11-20,Mamandari ,Achin ,Nangarhar ,US strike,1,0,0,NA,ISIS,Late night,NA,1,1,2,2,0,0,0,0,0,0
+2016-11-27,Gorgori,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,11am or afternoon,NA,1,1,7,7,0,0,0,0,3,3
+2016-12-11,Langari,Haska Mena,Nangarhar,US strike,1,0,0,NA,ISIS,Late,Hideout,1,1,7,7,0,0,0,0,0,0
+2016-12-15,Kharga ,Haska Mena,Nangarhar,US strike ,1,0,0,NA,ISIS,NA,NA,1,1,4,6,0,0,0,0,0,0
+2016-12-15,Pekha,Achin,Nangarhar ,US strike ,1,0,0,NA,ISIS,NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-12-24,Ambarkhani,Bati Kot,Nangarhar,US strike,1,0,0,NA,Taliban,NA,NA,1,1,1,1,0,0,0,0,4,4
+2016-12-24,Bandar,Achin,Nangarhar,US strike,1,0,0,NA,"""Foreign rebels""",NA,NA,1,1,2,2,0,0,0,0,0,0
+2016-12-27,Langar Kandaw,Achin,Nangarhar,US strike ,1,0,0,NA,ISIS,NA,NA,1,1,3,3,0,0,0,0,0,0
+2016-12-28,Papin,Haska Mena,Nangarhar,US strike ,1,0,0,NA,ISIS,Early morning,NA,1,1,2,2,0,0,0,0,1,1
+2016-12-28,Gandi-Bagh,Charparhar,Nangarhar ,US strike ,1,0,0,NA,Taliban,Night,NA,1,1,3,3,0,0,0,0,7,7
+2016-12-31,NA,NA,NA,US strike,0,1,1,NA,NA,NA,NA,454,449,0,0,0,0,0,0,0,0
+2017-01-10,Aziz Kala,Sabri,Khost,US strike,1,0,0,NA,Haqqani,Evening,Car,1,1,4,4,0,0,0,0,0,0
+2017-01-15,Unknown,Musa Qala,Helmand,US strike ,0,0,0,NA,Taliban ,NA,NA,1,1,15,15,0,0,0,0,10,10
+2017-01-20,Bandr Khor ,Achin,Nangarhar ,US strike ,1,0,0,NA,ISIS,NA,NA,1,1,4,6,0,0,0,0,0,0
+2017-01-27,Bandar ,Achin,Nangarhar ,US strike ,1,0,0,NA,NA,Night,Fighters' positions ,1,1,7,7,0,0,0,0,0,0
+2017-01-28,Unknown,NA,Nangarhar,US strike,1,0,0,NA,ISIS,NA,Hideout,1,1,7,7,0,0,0,0,0,0
+2017-01-31,Unknown,Sangin ,Helmand,US strike,0,1,1,NA,Taliban,NA,Taliban fighting positions,10,10,0,0,0,0,0,0,0,0
+2017-01-31,NA,NA,NA,US strike,0,1,1,NA,NA,NA,NA,21,21,0,0,0,0,0,0,0,0
+2017-02-01,Unknown,Achin,Nangarhar,US strike,1,0,0,NA,NA,Morning,NA,1,2,2,12,0,0,0,0,0,0
+2017-02-02,Unknown,NA,Khost ,US strike ,1,0,0,NA,NA,NA,Vehicle,1,1,5,6,0,0,0,0,0,0
+2017-02-03,Unknown,Achin and Haska Mina ,Nangarhar ,US strike ,1,0,0,NA,NA,NA,NA,2,2,21,21,0,0,0,0,6,6
+2017-02-06,Kharko area,Garamser ,Helmand,US strike ,0,0,0,NA,NA,NA,NA,1,1,6,6,0,0,0,0,0,0
+2017-02-06,Char Wazi area,Haska Mena,Nangarhar,US strike ,1,0,0,NA,NA,Night,NA,1,1,2,2,0,0,0,0,3,3
+2017-02-08,Pekhar Khor area and Nari Oba area,Achin and Haska Mena ,Nangarhar,US strike ,1,1,0,CT,ISIS,NA,NA,2,2,11,11,0,0,0,0,6,6
+2017-02-10,Unknown,Sangin,Helmand,US strike ,0,1,0,NA,NA,NA,NA,2,2,18,68,18,18,0,8,0,19
+2017-02-11,Unknown,Sangin,Helmand,US strike ,0,1,1,NA,NA,Past week,NA,28,28,NA,NA,NA,NA,NA,NA,NA,NA
+2017-02-19,Unknown,Nawa,Ghazni,US strike ,1,0,0,NA,Taliban,NA,Hideout ,1,1,1,1,0,0,0,0,2,2
+2017-02-20,Bandar,Achin,Nangarhar ,US strike ,1,0,0,NA,NA,NA,Vehicle ,1,1,12,12,0,0,0,0,0,0
+2017-02-23,Umomi Bagh,Garamser,Helmand,US strike ,0,0,0,NA,Taliban,NA,Gathering,1,1,11,11,0,0,0,0,0,0
+2017-02-26,Unknown,Dashti Archi,Kunduz,US strike ,1,1,0,NA,Taliban,3.20pm local time ,NA,1,1,5,9,0,0,0,0,0,0
+2017-02-27,Sangini ,Charparhar,Nangarhar,US strike ,1,0,0,NA,Taliban ,Late night,NA,1,1,2,2,0,0,0,0,3,3
+2017-02-28,Unknown,Unknown ,Unknown ,US strike ,0,1,1,NA,NA,NA,NA,118,117,0,0,0,0,0,0,0,0
+2017-03-01,Chaknoro,Lal Pura,Nangarhar,US strike,1,0,0,NA,NA,NA,NA,1,1,6,6,0,0,0,0,1,1
+2017-03-09,Lam,Between Nish and Khakriz districts,Kandahar,US strike,0,0,0,NA,NA,NA,NA,1,1,20,20,0,0,0,0,0,0
+2017-03-13,Raasni,Gilan,Ghazni,US strike,1,0,0,NA,NA,NA,Vehicles ,1,1,3,3,0,0,0,0,0,0
+2017-03-18,Unknown ,Unknown,Nangarhar ,US strike,0,1,1,NA,NA,NA,NA,12,12,0,0,0,0,0,0,0,0
+2017-03-18,Unknown ,Unknown,Paktika ,US strike,1,1,0,NA,NA,NA,NA,2,2,2,2,0,0,0,0,0,0
+2017-03-19,Unknown ,Unknown,Nangarhar ,US strike,0,1,1,NA,NA,NA,NA,20,20,0,0,0,0,0,0,0,0
+2017-03-19,Unknown ,Unknown,Paktika ,US strike,1,1,0,CT,NA,NA,NA,1,1,4,4,0,0,0,0,0,0

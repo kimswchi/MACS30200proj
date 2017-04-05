@@ -1,0 +1,44 @@
+Date,Location,TotalKilledMin,TotalKilledMax,MilitantsKilledMin,MilitantsKilledMax,CiviliansKilledMin,CiviliansKilledMax,UnknownKilledMin,UnknownKilledMax,Target,LeadersKilled,Description,NumLeadersKilled
+2003-03-19,Mogadishu in Banaadir,NA,NA,NA,NA,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2003-11-01,Coast of Somalia in Coast,NA,NA,NA,NA,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2004-06-30,Mogadishu in Banaadir,NA,NA,NA,NA,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-07,Ras Kamboni in Lower Juba,8,12,8,12,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-08,Ras Kamboni in Lower Juba,8,12,8,12,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-08,Ras Kamboni in Lower Juba,8,12,8,12,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-08,Hayi in Lower Juba,22,31,NA,NA,22,31,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-08,Hayi in Lower Juba,22,31,NA,NA,22,31,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-01-23,Waldena in Lower Juba,8,8,8,8,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2007-06-01,Bargal in Puntland,6,12,6,12,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0
+2008-03-02,Dhobley in Gedo,6,6,NA,NA,6,6,NA,NA,Al-Qaeda,NA,NA,0.0
+2008-05-01,Dhuusamareeb in Central Regions,8,30,8,11,NA,NA,NA,NA,Al-Shabaab,"Aden Hashi Ayro,Sheikh Muhidin Mohamud Omar",Top Al Shabaab Commander; leader,2.0
+2009-09-14,Barawe in Lower Shabelle,6,9,6,9,NA,NA,NA,NA,Al-Shabaab,Saleh Ali Saleh Nabhan,Cell leader in Kenya,1.0
+2011-04-06,Dhobley in Gedo,1,1,1,1,NA,NA,NA,NA,Al-Shabaab,Hassan Abdurrahman Gumarey,Commander,1.0
+2011-06-23,Kismayo in Lower Juba,1,2,1,2,NA,NA,NA,NA,Al-Shabaab,Jabreel Malik Muhammed,Senior member,1.0
+2011-09-23,Kismayo in Lower Juba,NA,NA,NA,NA,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2011-11-14,Afgoye in Lower Shabelle,NA,NA,NA,NA,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2012-01-21,Elasha Biyaha in Banaadir,1,1,1,1,NA,NA,NA,NA,Al-Shabaab,Bilal al-Berjawi,Commander,1.0
+2012-02-24,K60 in Lower Shabelle,4,4,4,4,NA,NA,NA,NA,Al-Shabaab,"Mohamed Sakr,Abu Ibrahim,Akram",NA,3.0
+2013-10-04,Barawe in Lower Shabelle,5,5,5,5,NA,NA,NA,NA,Al-Shabaab,Abdukadir Mohamed Abdukadir,Unclear,1.0
+2013-10-28,Jilib in Middle Juba,2,2,2,2,NA,NA,NA,NA,Al-Shabaab,Ibrahim Ali Abdi,Top explosives expert,1.0
+2014-01-26,Hawai in Lower Shabelle,5,5,5,5,NA,NA,NA,NA,Al-Shabaab,Ahmed Mohammed Amey,Commander,1.0
+2014-09-01,near Barawe in Lower Shabelle,6,6,6,6,NA,NA,NA,NA,Al-Shabaab,Ahmed Abdi Godane,Co-founder of Al-Shabaab,1.0
+2014-12-29,Saakow in Middle Juba,3,3,3,3,NA,NA,NA,NA,Al-Shabaab,Tahlil Abdishakur,Intelligence chief,1.0
+2015-01-31,Dinsoor in Bay District,2,2,2,2,NA,NA,NA,NA,Al-Shabaab,Yusef Dheeq,Head of external operations,1.0
+2015-03-12,Abaq Xaluul in Gedo,1,1,1,1,NA,NA,NA,NA,Al-Shabaab,Adan Garar,Top al-Shabaab leader,1.0
+2015-07-16,Bardere in Gedo,30,30,30,30,NA,NA,NA,NA,Al-Shabaab,"Jama Dere,Ismael Jabhad",Deputy commander for Lower Juba and senior military commander,2.0
+2015-12-02,Kuunyo-Barrow in Lower Shabelle,3,3,3,3,NA,NA,NA,NA,Al-Shabaab,Abdirahman Sandhere,Senior Fighter-Al-Shabaab,1.0
+2015-12-22,Shanta-Ameriko in Lower Shabelle,5,5,5,5,NA,NA,NA,NA,Al-Shabaab,Ahmed Omar,Senior Al-Shabaab Commander,1.0
+2016-03-05,Raso in Central Regions,150,150,150,150,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-03-09,Awdhegele in Central Regions,1,15,1,15,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-03-31,in Middle Juba,3,3,3,3,NA,NA,NA,NA,Al-Shabaab,Hassan Ali Dhoore,Dhoore helped facilitate a deadly Christmas Day 2014 attack at the airport and a March 2015 attack at the Maka al-Mukarramah hotel.,1.0
+2016-04-11,Yontoy in Lower Juba,NA,NA,NA,NA,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-04-11,Yontoy in Lower Juba,14,16,11,13,3,3,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-05-12,in Lower Shabelle,5,5,5,5,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-05-12,West of Mogadishu in Banaadir,5,5,5,5,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-05-27,in Central Regions,1,1,1,1,NA,NA,NA,NA,Al-Shabaab,Abdullahi Haji Da'ud,"Al-Shabaab senior military commander; principal coordinator of al-Shabaab's militia attacks in Somalia, Kenya, and Uganda; head of the Amniyat, al-Shabaab's Security and Intelligence Branch.",1.0
+2016-08-10,Saakow in Middle Juba,3,3,3,3,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-08-30,Gobanale in null,2,2,2,2,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-09-05,Tortorow in Lower Shabelle,4,4,4,4,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-09-26,Kismayo in Lower Juba,9,9,9,9,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0
+2016-09-28,Galkayo in Puntland,10,10,NA,NA,NA,NA,10,10,Al-Shabaab,NA,NA,0.0
+2017-01-07,Gaduud in Gedo,NA,NA,NA,NA,NA,NA,NA,NA,Al-Shabaab,NA,NA,0.0

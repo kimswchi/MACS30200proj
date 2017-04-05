@@ -1,0 +1,200 @@
+Date,Location,Province,TotalKilledMin,TotalKilledMax,MilitantsKilledMin,MilitantsKilledMax,CiviliansKilledMin,CiviliansKilledMax,UnknownKilledMin,UnknownKilledMax,Target,LeadersKilled,Description,NumLeadersKilled,SourceConfirmed
+2002-11-03,Marib,Marib,6,6,6,6,NA,NA,NA,NA,AQAP,"Qaed Salim Sunian al-Harithi, Kamal Derwish",Harithi was al-Qaeda's chief operative in Yemen and a suspect in the bombing of the USS Cole; Derwish was an al-Qaeda operative,2.0,NAF
+2009-12-17,Al Majalah,Abyan,55,75,14,34,41,41,NA,NA,AQAP,Saleh al-Qazimi,al-Qaeda commander,1.0,NAF
+2009-12-24,Rafd,Shabwah,30,30,30,30,NA,NA,NA,NA,AQAP,Mohammed Ahmed Saleh Omair,Mid-level al-Qaeda commander,1.0,NAF
+2010-05-25,Wadi Abida,Marib,6,8,2,2,4,6,NA,NA,AQAP,Mohammed Saeed bin Jameel,Al Qaeda Operative,1.0,NAF
+2011-05-05,Jahwa,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,"Musaed Mubarak Aldaghery, Abdullah Mubarak Aldaghery",Both men were al-Qaeda operatives,2.0,NAF
+2011-06-03,Zinjibar,Abyan,8,12,4,8,4,4,NA,NA,AQAP,Abu Ali al-Harithi ,Harithi was a mid-level al-Qaeda operative,1.0,NAF
+2011-07-14,Al Wadiya,Abyan,6,6,6,6,NA,NA,NA,NA,AQAP,Hadi Mohammad Ali,al-Qaeda member,1.0,NAF
+2011-07-27,Zinjibar,Abyan,5,5,5,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2011-08-01,Zinjibar,Abyan,15,15,15,15,NA,NA,NA,NA,AQAP,Naser al-Shadadi,Senior al-Qaeda commander,1.0,NAF
+2011-09-01,Zinjibar,Abyan,20,30,20,30,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2011-09-21,Shaqra,Abyan,10,10,10,10,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2011-09-21,Al Mahfad,Abyan,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2011-09-30,Khashef,Al Jawf,4,4,4,4,NA,NA,NA,NA,AQAP,"Anwar Al-Awlaki, Samir Khan",Awlaki was AQAP's chief propagandist; Khan created AQAP's Inspire magazine,2.0,NAF
+2011-10-05,Zinjibar,Abyan,5,5,5,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2011-10-14,Unknown,Shabwah,16,33,7,9,NA,NA,9,24,AQAP,NA,NA,0.0,NAF
+2011-12-23,Zinjibar,Abyan,1,1,1,1,NA,NA,NA,NA,AQAP,Abdulrahman al-Wuhayshi,Related to AQAP leader Nasser al-Wahishi,1.0,NAF
+2012-01-30,Lawdar,Abyan,9,15,9,15,NA,NA,NA,NA,AQAP,Abdel-Munem al-Fatahani,Fatahani was linked to the bombing of the USS Cole and the 2002 Limburg oil tanker attack,1.0,NAF
+2012-03-09,Jabra,Al Bayda,25,35,16,25,NA,NA,9,10,NA,Abdulwahhab al-Homaiqani,AQAP Commander,1.0,NAF
+2012-03-10,Jaar,Abyan,20,40,20,40,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-03-11,Jaar,Abyan,3,6,3,6,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-03-13,NA,Al Bayda,4,4,4,4,NA,NA,NA,NA,AQAP,Nasser al-Thafri,Senior al-Qaeda operative,1.0,NAF
+2012-03-18,Jaar,Abyan,8,18,8,18,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-03-18,Zinjibar,Abyan,16,16,16,16,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-03-22,Zinjibar,Abyan,29,30,29,30,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-03-30,Azzan,Shabwah,6,6,5,5,1,1,NA,NA,AQAP,Khadim Usamah,Doctor who pioneered surgically implanted explosives,1.0,NAF
+2012-04-01,Al Rahha,Lahij,38,43,38,43,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-04-07,Usalian,Shabwah,NA,NA,NA,NA,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-04-08,Al Kawd,Abyan,16,16,16,16,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-04-08,Unknown,Shabwah,8,8,8,8,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-04-11,Umm Ayn,Abyan,5,5,5,5,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-04-11,Lawdar,Abyan,10,12,10,12,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-04-14,Unknown,Al Bayda,3,7,3,7,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-04-16,Kharama,Shabwah,5,6,5,6,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-04-22,Sanda,Marib,3,4,3,4,NA,NA,NA,NA,AQAP,Mohammed Al-Umda,"4th most-wanted terrorist in Yemen, convicted for participating in the 2002 Limburg oil tanker attack",1.0,NAF
+2012-04-23,Nasab,Shabwah,3,3,3,3,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2012-04-29,Unknown,Al Jawf,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-04-30,Zinjibar,Abyan,3,13,3,13,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-02,Jaar,Abyan,13,15,13,15,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-06,Rafd,Shabwah,2,2,2,2,NA,NA,NA,NA,Ansar al-Sharia,"Fahd al-Quso, Fahed Salem al-Akdam",Senior al-Qaeda leaders; Quso was convicted for playing a role in bombing of USS Cole,2.0,NAF
+2012-05-10,Jaar,Abyan,8,8,8,8,NA,NA,NA,NA,AQAP,Kheldoon Al Sayed,"The second man in Abyan after the Emir Al Khadir Hussein Al Jadani, according to the Yemen Observer",1.0,NAF
+2012-05-10,Jaar,Abyan,8,8,8,8,NA,NA,NA,NA,AQAP,Jallad,Militant in charge of armaments for AQAP,1.0,NAF
+2012-05-10,Zinjibar,Abyan,2,4,2,4,NA,NA,NA,NA,Ansar al-Sharia,Kheldoon Al Sayed,"The second man in Abyan after the Emir Al Khadir Hussein Al Jadani, according to the Yemen Observer",1.0,NAF
+2012-05-10,Zinjibar,Abyan,2,4,2,4,NA,NA,NA,NA,Ansar al-Sharia,Jallad,Militant in charge of armaments for AQAP,1.0,NAF
+2012-05-12,Unknown,Shabwah,6,7,6,7,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-12,Unknown,Marib,4,10,4,10,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-15,Jaar,Abyan,11,33,6,25,NA,NA,5,8,AQAP,NA,NA,0.0,NAF
+2012-05-17,Seiyoun,Hadramawt,3,3,2,2,1,1,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-19,Unknown,Al Bayda,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-05-28,Al Mukalla,Hadramawt,6,7,6,7,NA,NA,NA,NA,AQAP,Qaid al-Dahab,"Local al-Qaeda leader, brother-in-law to Anwar al-Awlaki",1.0,NAF
+2012-05-28,Radaa,Al Bayda,5,5,5,5,NA,NA,NA,NA,AQAP,Qaid al-Dahab,"Local al-Qaeda leader, brother-in-law to Anwar al-Awlaki",1.0,NAF
+2012-06-01,Al Mahfad,Abyan,11,12,11,12,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-06-13,Azzan,Shabwah,27,30,27,30,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-06-13,Azzan,Shabwah,9,9,9,9,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-06-25,Aden,Adan,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-07-03,Bayhan,Shabwah,2,5,2,5,NA,NA,NA,NA,AQAP,"Fahd Saleh al-Anjaf al-Harithi, Hassan Ali al-Ishaqi",Senior al-Qaeda figures,2.0,NAF
+2012-08-04,Al Qatn,Hadramawt,3,5,3,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-08-06,Radaa,Al Bayda,7,7,7,7,NA,NA,NA,NA,AQAP,Abdullah Awad al-Masri,al-Qaeda bomb maker,1.0,NAF
+2012-08-07,Zoukaika,Hadramawt,2,3,2,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-08-28,Unknown,Hadramawt,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-08-29,Al Qatn,Hadramawt,5,5,3,3,2,2,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-08-31,Hawra,Hadramawt,5,8,5,8,NA,NA,NA,NA,AQAP,Khaled Batis,A top al Qaeda militant wanted for his role in the 2002 attack on the Limburg oil tanker,1.0,NAF
+2012-09-02,Radaa,Al Bayda,12,12,NA,NA,12,12,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-09-05,Al Ain,Hadramawt,5,6,5,6,NA,NA,NA,NA,AQAP,Murad Ben Salem,Senior al-Qaeda member,1.0,NAF
+2012-09-10,Al Ain,Hadramawt,6,7,6,7,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-10-04,Al Saeed,Shabwah,4,5,4,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2012-10-18,Jaar,Abyan,7,9,7,9,NA,NA,NA,NA,AQAP,Nader al-Shaddadi,One of the top al-Qaeda leaders in the region,1.0,NAF
+2012-10-21,NA,Marib,3,4,3,4,NA,NA,NA,NA,AQAP,"Sanad Abdulla al-Aqili, Abdullah Oraidan",Local al-Qaeda operatives,2.0,NAF
+2012-10-28,Jbara,Sadah,6,6,4,4,NA,NA,2,2,AQAP,NA,NA,0.0,NAF
+2012-11-07,Sayyan,Sana,1,3,1,3,NA,NA,NA,NA,AQAP,Adnan al Qadhi,Wanted for 2008 bombing of U.S. Embassy in Sanaa,1.0,NAF
+2012-11-28,NA,Sadah,1,1,1,1,NA,NA,NA,NA,AQAP,Said Shihri,"AQAP's deputy leader and co founder one of the first inmates of the American prison at GuantÃ¡namo Bay, Cuba.",1.0,NAF
+2012-12-24,Radaa,Al Bayda,2,2,2,2,NA,NA,NA,NA,AQAP,Abdel-Raouf Naseeb,Mid-level al-Qaeda operative,1.0,NAF
+2012-12-24,Shehr,Hadramaut,3,5,3,5,NA,NA,NA,NA,AQAP,Abdel-Raouf Naseeb,Mid-level al-Qaeda operative,1.0,NAF
+2012-12-28,Shehr,Hadramawt,2,2,2,2,NA,NA,NA,NA,AQAP,Abdullah Bawazir,Chief architect behind a 2011 mass prison break that freed dozens of fighters,1.0,NAF
+2012-12-29,Radaa,Al Bayda,3,3,3,3,NA,NA,NA,NA,AQAP,Saleh Mohammed al Ameri,A prominent local fighter,1.0,NAF
+2013-01-03,Radaa,Al Bayda,3,3,3,3,NA,NA,NA,NA,AQAP,Moqbel Ebad Al Zawbah,Senior al-Qaeda figure,1.0,NAF
+2013-01-19,Wadi Abida,Marib,4,6,4,6,NA,NA,NA,NA,AQAP,Ismaeel Bin Saeed Bin Jameel,Local al-Qaeda operative,1.0,NAF
+2013-01-21,Al Ateef,Marib,2,4,2,4,NA,NA,NA,NA,AQAP,"Ahmed al-Ziadi, Qasem Naser Tuaiman, Ali Saleh Tuaiman",Ziadi was a suspected AQAP leader in Marib; the Tuaimans were militants freed by Yemeni authorities in April 2012 after several months in prison,3.0,NAF
+2013-01-22,Bokaa,Al Jawf,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-01-23,Khawlan,Sana,4,9,2,7,2,2,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-01-23,Radaa,Al Bayda,7,7,5,5,NA,NA,2,2,AQAP,NA,NA,0.0,NAF
+2013-04-17,Wessab,Dhamar,4,5,2,3,NA,NA,2,2,AQAP,Hamid al Radmi,Alleged Local AQAP leader,1.0,NAF
+2013-05-18,Al Mahfad,Abyan,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-05-20,Unknown,Al Bayda,2,2,2,2,NA,NA,NA,NA,AQAP,"Abd Rabbo Mokbal Mohammed Jarallah al-Zouba, Abbad Mossad Abbad Khobzi",Local al-Qaeda operatives,2.0,NAF
+2013-06-01,Al Mahfad,Abyan,7,8,7,8,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-06-09,Mahashama,Al Jawf,4,8,3,7,1,1,NA,NA,AQAP,Saleh Hassan Huraydan,Senior al-Qaeda leader,1.0,NAF
+2013-07-27,Al Mahfad,Abyan,4,4,4,4,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2013-07-30,Saeed,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-01,Wadi Ser,Hadramawt,4,4,3,3,1,1,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-06,Wadi Abida,Marib,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-07,Markha,Shabwah,6,7,6,7,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-08,Wadi Abida,Marib,8,8,6,6,2,2,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-08,Al Ain,Hadramawt,2,3,2,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-08,Al Qatn,Hadramawt,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-10,el-Askariya,Lahij,2,3,2,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-08-30,Radaa,Al Bayda,3,6,3,6,NA,NA,NA,NA,AQAP,Qaid Ahmad Nasser Al Dhahab,Local senior al-Qaeda leader,1.0,NAF
+2013-11-19,Ghayl Ba Wazir,Hadramawt,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-11-25,Al Mahfad,Abyan,12,12,12,12,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-12-09,Al Qatn,Hadramawt,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2013-12-12,Radaa,Al Bayda,11,15,NA,NA,11,15,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-01-15,Shibam,Hadramawt,1,1,NA,NA,1,1,NA,NA,NA,NA,NA,0.0,NAF
+2014-01-27,Wadi Obaida,Marib,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-03-03,Mayfaa,Shabwah,2,2,2,2,NA,NA,NA,NA,Unclear,NA,NA,0.0,NAF
+2014-03-03,NA,Marib,2,2,2,2,NA,NA,NA,NA,Unclear,NA,NA,0.0,NAF
+2014-03-10,NA,Marib,1,1,1,1,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-03-11,Wadi Abida,Sana,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-04-01,Shabwa,Abyan,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-04-19,Hazemiyah,Al Bayda,13,13,9,9,4,4,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-04-20,NA,Abyan,25,65,25,65,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-04-21,NA,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-05-12,Abieda Valley,Marib,6,6,6,6,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-08-09,Obeida Valley,Marib,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-08-16,Ahwar town,Abyan,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-09-11,NA,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-10-25,near Rada,Al Bayda,3,10,3,10,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2014-11-04,Radaa,Al Bayda,10,20,10,20,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-11-25,Hagr al-Saiaar,Hadramawt,7,7,7,7,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-12-06,NA,Shabwah,4,14,2,6,2,8,NA,NA,AQAP,NA,NA,0.0,NAF
+2014-12-06,Wadi Abdan,Shabwah,9,9,9,9,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-01-26,Hareeb,Marib,3,3,2,2,NA,NA,1,1,AQAP,NA,NA,0.0,NAF
+2015-01-31,Al Saeed,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-02-02,Maswara,Al Bayda,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-02-28,Bayhan,Shabwah,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-03-02,Markha,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-04-13,Al Mukalla,Hadramawt,6,6,6,6,NA,NA,NA,NA,AQAP,Ibrahim al-Rubeish,AQAP Spokesman,1.0,NAF
+2015-04-16,Habban,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-04-19,Saeed,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-04-22,Al Mukalla,Hadramawt,7,7,7,7,NA,NA,NA,NA,AQAP,Muhannad Ghallab,"AQAP Spokesman, Senior Commander",1.0,NAF
+2015-05-11,Al Mukalla,Hadramawt,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-06-09,Al Mukalla,Hadramawt,3,3,3,3,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-06-12,Al Mukalla,Hadramawt,3,3,3,3,NA,NA,NA,NA,AQAP,Nasir al Wuhayshi,"AQAP Head, Al Qaeda Number Two",1.0,NAF
+2015-06-24,Al Mukalla,Hadramawt,4,4,4,4,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-06-25,Rafadh,Shabwah,5,5,5,5,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-07-11,Mukalla,Hadramawt,4,0,4,NA,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-07-29,al-Mahfad,Abyan,4,5,4,5,NA,NA,NA,NA,Ansar al-Sharia,NA,NA,0.0,NAF
+2015-08-11,Al Mukalla,Hadramawt,5,5,5,5,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-08-20,Harib,Marib,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-08-23,Mukalla,Hadramawt,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-08-27,Al Mukalla,Hadramawt,5,5,5,5,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-09-09,Mukalla,Hadramawt,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-09-12,Unknown,Al Jawf,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2015-09-21,Marib,Marib,2,2,2,2,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2015-12-22,Nata District,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-01-15,Ruqot,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-01-19,Sayoun,Hadramawt,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-02-03,Rodhoum,Shabwah,6,6,6,6,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-02-04,Maraqesha,Abyan,3,3,3,3,NA,NA,NA,NA,AQAP,Jalal Baleedi/Abu Hamza,"Top AQAP commander, who may have recently defected to become the leader of the Islamic State's Yemen affiliate, had a $5 million bounty on him offered by the U.S. State Department",1.0,NAF
+2016-02-15,Huta,Lahij,3,3,NA,NA,NA,NA,3,3,Al-Qaeda,NA,NA,0.0,NAF
+2016-02-29,NA,Hadramawt,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-03-04,Radhum,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-03-22,Mukalla,Hadramawt,56,56,56,56,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-03-26,al-Hudhn,Abyan,8,8,8,8,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-03-30,Azzan,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-04-23,NA,Marib,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-04-25,Azzan,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-04-25,NA,Abyan,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-04-26,Amoudiya,Abyan,6,6,6,6,NA,NA,NA,NA,AQAP,Abu Sameh al-Zinjibari,NA,1.0,NAF
+2016-04-28,NA,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-05-19,NA,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-06-08,NA,Al Bayda,2,2,2,2,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-06-10,East of Sanaa,Marib,2,2,2,2,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-06-12,Habban,Shabwah,2,6,2,6,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-07-01,NA,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-07-04,Al-Musaina,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-07-08,NA,Shabwah,1,1,1,1,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-07-10,Jabul,Marib,NA,NA,NA,NA,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-07-16,NA,Shabwah,6,6,6,6,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-08-04,Azzan,Shabwah,3,4,3,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-08-24,Nisab,Shabwah,2,5,2,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-08-24,East of Sana,Marib,4,4,4,4,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-08-30,Ataq,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-09-04,"Wadi Obeida Area, east of Sanaa",Marib,6,9,6,9,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-09-13,Radaa,Al Bayda,5,5,5,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-09-20,Wadi Abida,Marib,2,2,2,2,NA,NA,NA,NA,AQAP,Abu Yaqin Al Waeli,Local AQAP commander,1.0,NAF
+2016-09-22,al-Sawmaa,Al Bayda,2,3,2,3,NA,NA,NA,NA,AQAP,Abdallah al-Sanaani,Regional AQAP commander,1.0,NAF
+2016-09-23,al-Naseem,Marib,3,5,3,5,NA,NA,NA,NA,AQAP,Abu Khaled al-Sanaani,Local AQAP commander,1.0,NAF
+2016-09-29,al-Ridaa,Al Bayda,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-10-06,NA,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-10-18,Alhawtah,Shabwah,3,8,3,8,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-10-21,NA,Marib,5,5,5,5,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-11-20,NA,Al Bayda,1,1,1,1,NA,NA,NA,NA,AQAP,Al-Abi,Senior al-Qaeda leader,1.0,NAF
+2016-11-24,NA,Al Bayda,2,2,2,2,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-11-30,NA,Hadramawt,3,3,3,3,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-12-13,"East of Sanaa, between Marib and al-Jawf",Marib,3,4,3,4,NA,NA,NA,NA,Al-Qaeda,NA,NA,0.0,NAF
+2016-12-20,NA,Shabwah,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2016-12-29,Sawmaa,Al Bayda,2,2,2,2,NA,NA,NA,NA,AQAP,Jalal al-Seydi,Emir of Loder,1.0,NAF
+2017-01-08,Unknown,Al Bayda,1,1,1,1,NA,NA,NA,NA,AQAP,Abd al-Ghani al-Rasas,Senior AQAP leader and facilitator in al Bayda,1.0,NAF
+2017-01-21,Al Soumaa,Al Bayda,3,10,3,10,NA,NA,NA,NA,AQAP,Abu Anis al-Abi,AQAP field commander,1.0,NAF
+2017-01-29,Yakla District,Al Bayda,17,37,13,14,4,23,NA,NA,AQAP,"Abdul-Raouf al-Dhahab, Sultan al-Dhahab, Seif al-Nims",NA,3.0,NAF
+2017-01-30,Bayhan District,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-02,Shaqra,Abyan,NA,NA,NA,NA,NA,NA,NA,NA,AQAP,"Usayd al-Adnani, Qassem Khalil","AQAP emir in Abyan province (al-Adnani), Unspecified (Khalil)",2.0,NAF
+2017-03-02,Al Qayfa,Al Bayda,3,3,3,3,NA,NA,NA,NA,AQAP,"Usayd al-Adnani, Qassem Khalil","AQAP emir in Abyan province (al-Adnani), Unspecified (Khalil)",2.0,NAF
+2017-03-02,Yashbum Valley,Shabwah,4,4,4,4,NA,NA,NA,NA,AQAP,"Usayd al-Adnani, Qassem Khalil","AQAP emir in Abyan province (al-Adnani), Unspecified (Khalil)",2.0,NAF
+2017-03-02,Near Wadea district and Moujan district,Abyan,5,5,5,5,NA,NA,NA,NA,AQAP,"Usayd al-Adnani, Qassem Khalil","AQAP emir in Abyan province (al-Adnani), Unspecified (Khalil)",2.0,NAF
+2017-03-03,Yashbam Valley,Shabwah,8,8,8,8,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-04,al-Saeed,Shabwah,NA,NA,NA,NA,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-04,Ahwar,Abyan,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-06,Qifa,Al Bayda,3,3,3,3,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-06,Wadi Yashbum,Shabwah,2,2,2,2,NA,NA,NA,NA,AQAP,NA,NA,0.0,NAF
+2017-03-06,Yakla,Al Bayda,2,2,NA,NA,2,2,NA,NA,AQAP,NA,NA,0.0,NAF
