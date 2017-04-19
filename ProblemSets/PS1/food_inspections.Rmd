@@ -1,0 +1,182 @@
+---
+title: "MACS 30200 PS 1"
+author: "Soo Wan Kim"
+date: "April 16, 2017"
+output: word_document
+---
+
+```{r setup, cache=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggmap)
+library(knitr)
+
+#read in data
+food <- read.csv("Food_Inspections.csv", na.strings = c(""))
+
+food2 <- food %>%
+  transform(Inspection.Date = as.Date(Inspection.Date, "%m/%d/%Y")) %>%
+  transform(Violations = as.character(Violations)) %>%
+  #standardize food establishment names
+  transform(DBA.Name = as.character(DBA.Name)) %>% 
+  transform(DBA.Name = toupper(DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(DBA.Name == "MC DONALD'S" | DBA.Name == "MC DONALDS",
+                                "MCDONALD'S", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("MCDONALD", DBA.Name), "MCDONALD'S", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("SUBWAY", DBA.Name), "SUBWAY", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(grepl("DUNKIN DONUTS", DBA.Name) & 
+                                grepl("BASKIN ROBBINS", DBA.Name), 
+                              "DUNKIN DONUTS/BASKIN ROBBINS", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("POTBELLY SANDWICH", DBA.Name), 
+                              "POTBELLY SANDWICH WORKS", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(DBA.Name == "KFC", "KENTUCKY FRIED CHICKEN", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(grepl("JIMMY JOHN", DBA.Name), "JIMMY JOHN'S", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("POPEYE", DBA.Name), "POPEYE'S", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("7", DBA.Name) & grepl("ELEVEN", DBA.Name), 
+                              "7-ELEVEN", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("CITGO", DBA.Name), "CITGO", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(grepl("STARBUCKS", DBA.Name), "STARBUCKS", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("HAROLD'S CHICKEN", DBA.Name), 
+                              "HAROLD'S CHICKEN", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(grepl("CHIPOTLE", DBA.Name), "CHIPOTLE", DBA.Name)) %>%
+  transform(DBA.Name = ifelse(grepl("SEE THRU CHINESE", DBA.Name), 
+                              "SEE THRU CHINESE KITCHEN", DBA.Name)) %>% 
+  transform(DBA.Name = ifelse(grepl("J & J FISH", DBA.Name), "J & J FISH & CHICKEN", DBA.Name)) %>%
+  #standardize facility type
+  transform(Facility.Type = as.character(Facility.Type)) %>%
+  transform(Facility.Type = toupper(Facility.Type)) %>% 
+  transform(Facility.Type = ifelse(grepl("1023", Facility.Type), 
+                                   "CHILDREN'S SERVICES FACILITY", Facility.Type)) %>% 
+  transform(Facility.Type = ifelse(grepl("BANQUET", Facility.Type), 
+                                   "BANQUET HALL", Facility.Type)) %>%
+  #standardize inspection type
+  transform(Inspection.Type = as.character(Inspection.Type)) %>%
+  transform(Inspection.Type = toupper(Inspection.Type)) %>% 
+  transform(Inspection.Type = ifelse(grepl("CANVAS", Inspection.Type), 
+                                   "CANVASS", Inspection.Type))
+  
+```
+
+## Food Inspections Dataset
+
+The [Food Inspections Dataset](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data)[1] contains information on inspections of food establishments in Chicago from 2010 to the present. Curated by the Chicago Department of Public Health (CDPH), it is downloadable through the City of Chicago's Open Data Portal. As of April 16, 2017, the dataset contained information on `r nrow(food2)` inspections carried out on `r length(unique(food2$License..))` individual establishments in `r length(unique(food2$Zip))` zipcodes. 
+
+The City of Chicago describes the data collection methodology as follows:
+
+> Inspections are performed by staff from the Chicago Department of Public Health's Food Protection Program using a standardized procedure. The results of the inspection are inputted into a database, then reviewed and approved by a State of Illinois Licensed Environmental Health Practitioner (LEHP). 
+
+Studies that have used this dataset include the [Food Inspection Forecasting Project](https://chicago.github.io/food-inspections-evaluation/)[2] carried out by the City of Chicago's advanced analytics team and the Chicago Department of Public Health to predict critical violations at food establishments, and a [CDC report](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6332a1.htm)[3] examining the outcomes of [Foodborne Chicago](https://www.foodbornechicago.org/), an online platform where the public can report restaurant-related food poisoning to the CDPH.
+
+The variables included in the dataset are as follows:
+
+### Tables and visualizations
+
+#### The thirty most common facility types by risk level
+
+```{r}
+top_fac_type <- head(dplyr::count(dplyr::filter(food2, !is.na(Facility.Type)),
+                                    Facility.Type, sort = TRUE), 30)[1]
+
+food_filt <- food2 %>%
+  filter(Facility.Type %in% top_fac_type$Facility.Type) %>%
+  transform(Risk = ifelse(Risk == "Risk 1 (High)", 1, ifelse(Risk == "Risk 2 (Medium)", 2, 3))) %>%
+  group_by(Facility.Type) %>%
+  summarize(mean_risk = mean(Risk, na.rm = TRUE), tot = n()) %>%
+  arrange(mean_risk)
+
+food_filt
+```
+
+#### Top thirty businesses that failed the most inspections
+
+```{r}
+top_fail <- head(count(filter(food2, Results == "Fail"),
+           DBA.Name, sort=TRUE), 30)[1]
+
+food_filt2 <- food2 %>%
+  filter(DBA.Name %in% top_fail$DBA.Name) %>%
+  group_by(DBA.Name) %>%
+  summarize(tot = n(), fail = sum(Results == "Fail")) %>%
+  mutate(perc_fail = fail/tot*100) %>%
+  arrange(desc(perc_fail)) %>%
+  select(-fail)
+
+food_filt2
+```
+
+#### Where inspections take place
+
+```{r}
+map <- get_map(location = 'Chicago', source = "google", maptype = "roadmap",
+                   crop = FALSE, zoom = 11)
+
+ggmap(map) + 
+  geom_point(data = food2, 
+             aes(x = Longitude, y = Latitude), 
+             color = "blue", alpha = 0.5, size = 0.1) + 
+  labs(title = "Food Inspections, Chicago 2010 - 2017",
+       caption = "Source: Food Inspections, Chicago Department of Public Health") + 
+      theme(axis.title.x=element_blank(),
+            axis.text.x=element_blank(),
+            axis.ticks.x=element_blank(),
+            axis.title.y=element_blank(),
+            axis.text.y=element_blank(),
+            axis.ticks.y=element_blank(),
+            legend.position = "None")
+```
+
+
+#### Distribution of inspection failure rate, by zip code
+
+```{r}
+food_filt3 <- filter(food2, !is.na(Zip)) %>%
+  group_by(Zip) %>%
+  summarize(tot = n(), fail = sum(Results == "Fail")) %>%
+  mutate(perc_fail = fail/tot*100) %>%
+  filter(tot > 10) %>% 
+  arrange(desc(perc_fail)) %>%
+  select(-fail)
+
+summary(food_filt3$perc_fail)
+
+food_filt3 <- food_filt3 %>%
+  mutate(fail_lvl = ifelse(perc_fail < 16, "<16%", ifelse(perc_fail > 22, ">22%", "In between")))
+```
+```{r echo=TRUE}
+ggplot(food_filt3, aes(perc_fail)) + 
+  geom_histogram(bins = 50) + 
+  labs(title = "Histogram of inspection failure rate by zip",
+       x = "Percentage of inspections failed", 
+       y = "Count") + 
+  theme_bw()
+
+food2 <- left_join(food2, food_filt3, by = "Zip")
+
+ggmap(map) + 
+  geom_point(data = filter(food2, !is.na(fail_lvl)), 
+             aes(x = Longitude, y = Latitude, color = fail_lvl), 
+             alpha = 0.2, size = 0.5) + 
+  labs(title = "Food Inspections by Zip Code Cluster",
+       subtitle = "Based on average inspection failure rate",
+       color = "Avg. failure rate by zip",
+       caption = "Source: Food Inspections, Chicago Department of Public Health") + 
+  scale_color_manual(values = c("<16%" = "blue",
+                                "In between" = "green",
+                                ">22%" = "red")) + 
+      theme(axis.title.x=element_blank(),
+            axis.text.x=element_blank(),
+            axis.ticks.x=element_blank(),
+            axis.title.y=element_blank(),
+            axis.text.y=element_blank(),
+            axis.ticks.y=element_blank(),
+            legend.position = "bottom")
+```
+
+### Citations
+
+[1] Chicago Department of Public Health. 2017. Food Inspections Dataset. Accessed April 16, 2017. https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5
+
+[2] City Of Chicago. Food Inspection Forecasting. Accessed April 19, 2017. https://chicago.github.io/food-inspections-evaluation/.
+
+[3] Harris, Jenine K., Raed Mansour, Bechara Choucair, Joe Olson, Cory Nissen, and Jay Bhatt. "Health Department Use of Social Media to Identify Foodborne Illness - Chicago, Illinois, 2013-2014." Morbidity and Mortality Weekly Report. Centers for Disease Control and Prevention, August 15, 2014. https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6332a1.htm.
