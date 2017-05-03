@@ -1,0 +1,121 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+
+
+\begin{document}
+
+\begin{flushleft}
+  \textbf{\large{Problem Set \#2}} \\
+  MACS 30200\\
+  Soo Wan Kim
+\end{flushleft}
+
+\noindent\textbf {Part (a)}
+\vspace{5mm}
+\\
+\indent
+The research question for Grimmer (2014) is: “How do legislators present their work to constituents?” \\
+
+\noindent
+\textbf {Part (b)} 
+\vspace{5mm}
+\\
+\indent
+Grimmer analyzed a collection of press releases from the US House of Representatives. It consists of every press release from every House office from 2005 to 2010, around 170,000 documents total. He argues that press releases are a useful source because they contain information not found in congressional floor speeches, and directly influence independent media coverage. He also surmises that the press releases from the years 2005 to 2010 should be particularly informative because multiple destabilizing events took place during this time, including shifts in party control over the presidency and Congress.
+\\\\
+\noindent\textbf {Part (c).} 
+\vspace{5mm}
+\\
+\indent
+Grimmer cites a previous study of his (Grimmer 2013) where he finds that legislators express their priorities on a position taking/credit claiming spectrum. 
+\\\\
+\noindent\textbf {Part (d).} 
+\vspace{5mm}
+\\
+\indent
+The paper is partly a descriptive study and partly an identification exercise. The research question is rather broad, and to arrive at specific cause-and-effect relationships between chosen forms of representation and determining factors Grimmer must first identify the chosen forms of representation. Thus, he dedicates a section of the paper to describe the major topics covered in the press releases as discovered using his model, and to validate his model. Then, in the final section he examines the relationship between legislators’ expressed priorities (the amount of releases they dedicate to a topic) and changes in the political landscape. Specifically, he looks at two topics, credit claiming and position taking.
+\\\\
+\noindent\textbf {Part (e).} 
+\vspace{5mm}
+\\
+\indent
+Grimmer uses a topic model that estimates two sets of topics in a hierarchy. It estimates a set of granular, issue-specific topics (e.g. farming, trade, stimulus funding) and nests them into a set of coarse topics covering broad categories regarding legislators’ use of language (e.g. position taking/advertising, credit claiming, national politics). This stratified approach is helpful in that it bypasses the need to pick the number of topics and then manually group the topics into broader categories. \\
+\\
+\indent
+Following previous studies, Grimmer assumes 44 granular topics and 8 coarse topics. With these specifications he finds seven distinct coarse topics: position taking/advertising, credit claiming, military support/budget, national politics, district positions, national security, and district meetings. However, building on a previous study where he found that legislators’ expressed priorities lie on a position taking/credit claiming spectrum, he focuses on the relative proportion of releases belonging to each of the position taking and credit claiming topics rather than all seven coarse topics. Looking at the variation in proportions over time, Grimmer finds that legislators are responsive to political changes. In particular, after the 2008 election Republicans moved toward the position taking end (criticisms of Democrats), whereas Democrats moved toward the credit claiming end (defending their policies). At the same time, the proportions are largely similar from year to year, indicating that legislators keep to a long-term style or strategy.
+\vspace{5mm}
+\\
+\noindent\textbf {Part (f).} 
+\vspace{5mm}
+\\
+\indent
+Because validating the topic model is crucial to validating the conclusions of the study, I propose that Grimmer expands on the validation examples and correlations in section four. Specifically, he should provide more textual examples from press releases for all of the coarse topics to show that the model’s categorizations are accurate. However, as noted by Grimmer, ``validating each of the individual [coarse] topics is infeasible for this single chapter.'' To save space, then, he could provide a supplement in the form of an appendix or an online supplements page.
+\\
+\\
+\indent
+Also, in the last section, Grimmer illustrates trends in expressed priorities in terms of aggregate yearly proportions by party. This approach runs the danger of treating parties as monoliths and downplaying margins of error. I recommend editing figure 3 or adding another set of plots that show within-party variation, such as by employing scatter plots with smoothing lines and confidence intervals.
+
+
+\end{document}
