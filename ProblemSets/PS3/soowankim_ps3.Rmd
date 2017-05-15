@@ -17,19 +17,14 @@ library(lmtest)
 library(car)
 
 set.seed(1234)
-
+theme_set(theme_minimal())
 setwd("~/GitHub/MACS30200proj/ProblemSets/PS3")
+
 
 biden <- read.csv("data/biden.csv")
 ```
 
 ## Regression diagnostics
-
-Estimate the following linear regression model of attitudes towards Joseph Biden:
-
-Y= \beta_0 + \beta_1X_1
-
-where Y is the Joe Biden feeling thermometer, X1 is age, X2 is gender, and X3 is education. Report the parameters and standard errors.
 
 ```{r}
 biden1 <- biden %>%
@@ -42,7 +37,7 @@ tidy(lr_mod1)
 ### Part 1
 **Test the model to identify any unusual and/or influential observations. Identify how you would treat these observations moving forward with this research. Note you do not actually have to estimate a new model, just explain what you would do. This could include things like dropping observations, respecifying the model, or collecting additional variables to control for this influential effect.**
 
-```{r}
+```{r bubble_plot}
 # add key statistics
 bid1_augment <- biden1 %>%
   mutate(hat = hatvalues(lr_mod1),
@@ -63,26 +58,89 @@ ggplot(bid1_augment, aes(hat, student)) +
   theme(legend.position = "none")
 ```
 
-```{r}
-bid1_augment %>%
-  filter(hat > 2 * mean(hat))
+The bubble plot shows many observations with high discrepancy and some observations with high leverage as well as high discrepancy.
 
-bid1_augment %>%
+```{r outlier_numerical_rules_of_thumb}
+bid1_hat <- bid1_augment %>%
+  filter(hat > 2 * mean(hat))
+nrow(bid1_hat)
+
+bid1_stud <- bid1_augment %>%
   filter(abs(student) > 2)
 
-bid1_augment %>%
+bid1_inf <- bid1_augment %>%
   filter(cooksd > 4 / (nrow(.) - (length(coef(lr_mod1)) - 1) - 1))
 ```
 
+Using the hat-values test, I find `nrow(bid1_hat)` observations with unusually high leverage. Using the studentized residuals test, I find `nrow(bid1_stud)` highly discrepant observations. Using the influence test, I find `nrow(bid1_inf)` highly influential observations. Looking through the observations, I do not find any that are obviously miscoded. The high discrepancy observations have unusually low values for `biden`, whereas the high leverage observations have unusually high values for `age` and unusually low values for `educ`'. 
+
+```{r variable_density_plots}
+#Biden thermometer
+ggplot(biden1, aes(biden)) + 
+  geom_density() + 
+  geom_density(data = bid1_hat, mapping = aes(biden), color = "red") + 
+  geom_density(data = bid1_stud, mapping = aes(biden), color = "blue") + 
+  geom_density(data = bid1_inf, mapping = aes(biden), color = "green") + 
+  labs(title = "Density plot of Biden feeling thermometer measures",
+       x = "Biden feeling thermometer reading",
+       y = "Density",
+       caption = "Black: Entire set, NA values omitted\n
+       Red: High leverage observations\n
+       Blue: High discrepancy observerations\n
+       Green: High influence observations")
+
+#Age
+ggplot(biden1, aes(age)) + 
+  geom_density() + 
+  geom_density(data = bid1_hat, mapping = aes(age), color = "red") + 
+  geom_density(data = bid1_stud, mapping = aes(age), color = "blue") + 
+  geom_density(data = bid1_inf, mapping = aes(age), color = "green") + 
+  labs(title = "Density plot of age",
+       x = "Age",
+       y = "Density",
+       caption = "Black: Entire set, NA values omitted\n
+       Red: High leverage observations\n
+       Blue: High discrepancy observerations\n
+       Green: High influence observations")
+
+#Gender
+ggplot(biden1, aes(female)) + 
+  geom_density() + 
+  geom_density(data = bid1_hat, mapping = aes(female), color = "red") + 
+  geom_density(data = bid1_stud, mapping = aes(female), color = "blue") + 
+  geom_density(data = bid1_inf, mapping = aes(female), color = "green") + 
+  labs(title = "Density plot of gender",
+       x = "Gender (0 = Male, 1 = Female)",
+       y = "Frequency",
+       caption = "Black: Entire set, NA values omitted\n
+       Red: High leverage observations\n
+       Blue: High discrepancy observerations\n
+       Green: High influence observations")
+
+#Education
+ggplot(biden1, aes(educ)) + 
+  geom_density() + 
+  geom_density(data = bid1_hat, mapping = aes(educ), color = "red") + 
+  geom_density(data = bid1_stud, mapping = aes(educ), color = "blue") + 
+  geom_density(data = bid1_inf, mapping = aes(educ), color = "green") + 
+  labs(title = "Density plot of education level",
+       x = "Years of schooling",
+       y = "Density",
+       caption = "Black: Entire set, NA values omitted\n
+       Red: High leverage observations\n
+       Blue: High discrepancy observerations\n
+       Green: High influence observations")
+```
+
+
+Since the only weird thing about these observations are the extreme values and there is nothing to suggest that these are caused by measurement error, miscoding, or anything else that invalidates the observations, I would keep them in the dataset. Instead of dropping the unusual observations I would try to mitigate error by respecifying the model. Specifically, I would add party identification as another independent variable because I suspect party identification is an important determinant of attitudes toward Biden. I could also transform the variables to reduce skewness and variance by taking logs, power transformations, etc. 
 
 ### Part 2
 **Test for non-normally distributed errors. If they are not normally distributed, propose how to correct for them.**
 
-```{r}
+```{r error_distribution_plots}
 car::qqPlot(lr_mod1)
-```
 
-```{r}
 augment(lr_mod1, biden1) %>%
   mutate(.student = rstudent(lr_mod1)) %>%
   ggplot(aes(.student)) +
@@ -91,11 +149,18 @@ augment(lr_mod1, biden1) %>%
        y = "Estimated density")
 ```
 
+The quantile comparison plot and the density plot of studentized residuals indicate that the errors are not normally distributed. To correct for this, I would take log or power transformations of variables to make their values more normally distributed.
 
 ### Part 3 
 **Test for heteroscedasticity in the model. If present, explain what impact this could have on inference.**
 
-```{r}
+```{r breusch_pagan_test}
+bptest(lr_mod1)
+```
+
+The result of the Breusch-Pagan test indicates that heteroscedasticity is present.
+
+```{r heteroscedasticity_graphical_test}
 biden1 %>%
   add_predictions(lr_mod1) %>%
   add_residuals(lr_mod1) %>%
@@ -103,37 +168,23 @@ biden1 %>%
   geom_point(alpha = .2) +
   geom_hline(yintercept = 0, linetype = 2) +
   geom_quantile(method = "rqss", lambda = 5, quantiles = c(.05, .95)) +
-  labs(title = "Homoscedastic variance of error terms",
+  labs(title = "Variance of error terms",
        x = "Predicted values",
        y = "Residuals")
 ```
 
-```{r}
-bptest(lr_mod1)
-```
+From graphing the residuals against predicted values, it looks like residuals become more negative as predicted values increase. This suggests the model systematically overestimates or underestimates Biden warmth based on combinations of independent variable values.
 
 ### Part 4
 **Test for multicollinearity. If present, propose if/how to solve the problem.**
 
-```{r}
-summary(lr_mod1)
-
-ggplot(biden1, aes(age, educ)) + 
-  geom_point() + 
-  geom_smooth()
-
+```{r vif_test}
 vif(lr_mod1)
 ```
 
+The VIF statistic is less than 10 for all variables, which indicates multicollinearity is not present. 
+
 ### Interaction terms
-
-Estimate the following linear regression model:
-
-
-
-where Y is the Joe Biden feeling thermometer, X1 is age, and X2 is education. Report the parameters and standard errors.
-
-Again, employ listwise deletion in this section prior to estimating the regression model.
 
 ```{r}
 biden2 <- biden %>%
