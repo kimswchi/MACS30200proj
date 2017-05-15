@@ -1,0 +1,166 @@
+---
+title: 'Problem Set #3: Regression Diagnostics, Interaction Terms, and Missing Data'
+author: "Soo Wan Kim"
+date: "May 11, 2017"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(modelr)
+library(broom)
+library(lmtest)
+library(car)
+
+set.seed(1234)
+
+setwd("~/GitHub/MACS30200proj/ProblemSets/PS3")
+
+biden <- read.csv("data/biden.csv")
+```
+
+## Regression diagnostics
+
+Estimate the following linear regression model of attitudes towards Joseph Biden:
+
+Y= \beta_0 + \beta_1X_1
+
+where Y is the Joe Biden feeling thermometer, X1 is age, X2 is gender, and X3 is education. Report the parameters and standard errors.
+
+```{r}
+biden1 <- biden %>%
+  na.omit()
+
+lr_mod1 <- lm(biden ~ age + female + educ, data = biden1)
+tidy(lr_mod1)
+```
+
+### Part 1
+**Test the model to identify any unusual and/or influential observations. Identify how you would treat these observations moving forward with this research. Note you do not actually have to estimate a new model, just explain what you would do. This could include things like dropping observations, respecifying the model, or collecting additional variables to control for this influential effect.**
+
+```{r}
+# add key statistics
+bid1_augment <- biden1 %>%
+  mutate(hat = hatvalues(lr_mod1),
+         student = rstudent(lr_mod1),
+         cooksd = cooks.distance(lr_mod1))
+
+# draw bubble plot
+ggplot(bid1_augment, aes(hat, student)) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_point(aes(size = cooksd), shape = 1) +
+  geom_text(data = bid1_augment %>%
+              arrange(-cooksd) %>%
+              slice(1:10),
+            aes(label = biden)) +
+  scale_size_continuous(range = c(1, 20)) +
+  labs(x = "Leverage",
+       y = "Studentized residual") +
+  theme(legend.position = "none")
+```
+
+```{r}
+bid1_augment %>%
+  filter(hat > 2 * mean(hat))
+
+bid1_augment %>%
+  filter(abs(student) > 2)
+
+bid1_augment %>%
+  filter(cooksd > 4 / (nrow(.) - (length(coef(lr_mod1)) - 1) - 1))
+```
+
+
+### Part 2
+**Test for non-normally distributed errors. If they are not normally distributed, propose how to correct for them.**
+
+```{r}
+car::qqPlot(lr_mod1)
+```
+
+```{r}
+augment(lr_mod1, biden1) %>%
+  mutate(.student = rstudent(lr_mod1)) %>%
+  ggplot(aes(.student)) +
+  geom_density(adjust = .5) +
+  labs(x = "Studentized residuals",
+       y = "Estimated density")
+```
+
+
+### Part 3 
+**Test for heteroscedasticity in the model. If present, explain what impact this could have on inference.**
+
+```{r}
+biden1 %>%
+  add_predictions(lr_mod1) %>%
+  add_residuals(lr_mod1) %>%
+  ggplot(aes(pred, resid)) +
+  geom_point(alpha = .2) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_quantile(method = "rqss", lambda = 5, quantiles = c(.05, .95)) +
+  labs(title = "Homoscedastic variance of error terms",
+       x = "Predicted values",
+       y = "Residuals")
+```
+
+```{r}
+bptest(lr_mod1)
+```
+
+### Part 4
+**Test for multicollinearity. If present, propose if/how to solve the problem.**
+
+```{r}
+summary(lr_mod1)
+
+ggplot(biden1, aes(age, educ)) + 
+  geom_point() + 
+  geom_smooth()
+
+vif(lr_mod1)
+```
+
+### Interaction terms
+
+Estimate the following linear regression model:
+
+
+
+where Y is the Joe Biden feeling thermometer, X1 is age, and X2 is education. Report the parameters and standard errors.
+
+Again, employ listwise deletion in this section prior to estimating the regression model.
+
+```{r}
+biden2 <- biden %>%
+  na.omit()
+
+lr_mod2 <- lm(biden ~ age*educ, data = biden2)
+tidy(lr_mod2)
+```
+
+#### Part 1
+Evaluate the marginal effect of age on Joe Biden thermometer rating, conditional on education. Consider the magnitude and direction of the marginal effect, as well as its statistical significance.
+
+#### Part 2
+Evaluate the marginal effect of education on Joe Biden thermometer rating, conditional on age. Consider the magnitude and direction of the marginal effect, as well as its statistical significance.
+
+```{r}
+
+```
+
+### Missing data
+
+Estimate the following linear regression model of attitudes towards Joseph Biden:
+
+
+
+where Y is the Joe Biden feeling thermometer, X1 is age, X2 is gender, and X3 is education. This time, use multiple imputation to account for the missingness in the data. Consider the multivariate normality assumption and transform any variables as you see fit for the imputation stage. Calculate appropriate estimates of the parameters and the standard errors and explain how the results differ from the original, non-imputed model.
+
+```{r}
+
+```
