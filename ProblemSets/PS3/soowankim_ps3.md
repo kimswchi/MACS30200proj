@@ -549,4 +549,4 @@ tidy(lr_mod1) %>%
 </tbody>
 </table>
 
-The estimates from the imputed model are fairly similar to non-imputed models. Standard errors are slightly smaller for some variables in the imputed model compared to the non-imputed model without list-wise deletion of missing observations. Standard errors are actually smaller overall for the non-imputed model with list-wise deletion, showing that list-wise deletion is not necessarily a bad strategy compared to multiple imputation.
+The estimates from the imputed model are fairly similar to non-imputed models. Standard errors are slightly smaller for some variables in the imputed model compared to the non-imputed model without list-wise deletion of missing observations. Standard errors are actually smaller overall for the non-imputed model with list-wise deletion, showing that multiple imputation does not necessarily outperform list-wise deletion in terms of precision.
