@@ -13,17 +13,50 @@ biden1 <- biden %>%
 
 lr_mod1 <- lm(biden ~ age + female + educ, data = biden1)
 tidy(lr_mod1) %>%
-  kable()
+  kable(format = "html")
 ```
 
-
-
-term             estimate   std.error   statistic     p.value
-------------  -----------  ----------  ----------  ----------
-(Intercept)    68.6210140   3.5960047   19.082571   0.0000000
-age             0.0418792   0.0324858    1.289154   0.1975099
-female          6.1960695   1.0966970    5.649755   0.0000000
-educ           -0.8887126   0.2246918   -3.955251   0.0000794
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 68.6210140 </td>
+   <td style="text-align:right;"> 3.5960047 </td>
+   <td style="text-align:right;"> 19.082571 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> age </td>
+   <td style="text-align:right;"> 0.0418792 </td>
+   <td style="text-align:right;"> 0.0324858 </td>
+   <td style="text-align:right;"> 1.289154 </td>
+   <td style="text-align:right;"> 0.1975099 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 6.1960695 </td>
+   <td style="text-align:right;"> 1.0966970 </td>
+   <td style="text-align:right;"> 5.649755 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> educ </td>
+   <td style="text-align:right;"> -0.8887126 </td>
+   <td style="text-align:right;"> 0.2246918 </td>
+   <td style="text-align:right;"> -3.955251 </td>
+   <td style="text-align:right;"> 0.0000794 </td>
+  </tr>
+</tbody>
+</table>
 
 ### Part 1
 **Test the model to identify any unusual and/or influential observations. Identify how you would treat these observations moving forward with this research. Note you do not actually have to estimate a new model, just explain what you would do. This could include things like dropping observations, respecifying the model, or collecting additional variables to control for this influential effect.**

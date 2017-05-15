@@ -36,7 +36,7 @@ biden1 <- biden %>%
 
 lr_mod1 <- lm(biden ~ age + female + educ, data = biden1)
 tidy(lr_mod1) %>%
-  kable()
+  kable(format = "html")
 ```
 
 ### Part 1
