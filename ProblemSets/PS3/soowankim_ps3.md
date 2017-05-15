@@ -12,16 +12,21 @@ biden1 <- biden %>%
   na.omit()
 
 lr_mod1 <- lm(biden ~ age + female + educ, data = biden1)
-tidy(lr_mod1)
+pander(tidy(lr_mod1))
 ```
 
-```
-##          term    estimate  std.error statistic      p.value
-## 1 (Intercept) 68.62101396 3.59600465 19.082571 4.337464e-74
-## 2         age  0.04187919 0.03248579  1.289154 1.975099e-01
-## 3      female  6.19606946 1.09669702  5.649755 1.863612e-08
-## 4        educ -0.88871263 0.22469183 -3.955251 7.941295e-05
-```
+
+--------------------------------------------------------
+   term      estimate   std.error   statistic   p.value 
+----------- ---------- ----------- ----------- ---------
+(Intercept)   68.62       3.596       19.08    4.337e-74
+
+    age      0.04188     0.03249      1.289     0.1975  
+
+  female      6.196       1.097       5.65     1.864e-08
+
+   educ      -0.8887     0.2247      -3.955    7.941e-05
+--------------------------------------------------------
 
 ### Part 1
 **Test the model to identify any unusual and/or influential observations. Identify how you would treat these observations moving forward with this research. Note you do not actually have to estimate a new model, just explain what you would do. This could include things like dropping observations, respecifying the model, or collecting additional variables to control for this influential effect.**

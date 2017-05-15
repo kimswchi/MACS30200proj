@@ -19,6 +19,7 @@ library(car)
 library(stringr)
 library(Amelia)
 library(GGally)
+library(pander)
 
 set.seed(1234)
 theme_set(theme_minimal())
@@ -34,7 +35,7 @@ biden1 <- biden %>%
   na.omit()
 
 lr_mod1 <- lm(biden ~ age + female + educ, data = biden1)
-tidy(lr_mod1)
+pander(tidy(lr_mod1))
 ```
 
 ### Part 1
