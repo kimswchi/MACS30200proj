@@ -63,7 +63,7 @@ ggplot(bid1_augment, aes(hat, student)) +
   theme(legend.position = "none")
 ```
 
-The bubble plot shows many observations with high discrepancy and some observations with high leverage as well as high discrepancy.
+The bubble plot shows many observations with high discrepancy and some observations with high leverage as well as high discrepancy (high influence).
 
 ```{r outlier_numerical_rules_of_thumb}
 bid1_hat <- bid1_augment %>%
@@ -195,7 +195,8 @@ biden2 <- biden %>%
   na.omit()
 
 lr_mod2 <- lm(biden ~ age*educ, data = biden2)
-tidy(lr_mod2)
+tidy(lr_mod2) %>%
+  kable(format = "html")
 ```
 
 #### Part 1
@@ -248,7 +249,7 @@ instant_effect(lr_mod2, "educ") %>%
        y = "Estimated marginal effect")
 ```
 
-Increasing age increases the Biden thermometer rating for education levels between 0 and 13 years of education, and decreases it for education levels 15 and above. The effects are statistically significant for education levels between 0 and 12 years and between 16 and 17 years; that is, the confidence intervals exclude 0 for those ranges. Looking only at the statistically significant marginal effects, a one-year increase in age increases the Biden rating by about 0.1 to 0.7 points for education levels between 0 and 12 years, and decreases the Biden rating by about 0.1 to 0.2 points for education levels between 16 and 17 years.
+Increasing age increases the Biden thermometer rating for education levels between 0 and 13 years of education, and decreases it for education levels 15 and above. The effects are statistically significant for education levels between 0 and 12 years and between 16 and 17 years; that is, the confidence intervals exclude 0 for those ranges. Looking only at the statistically significant marginal effects, a one-year increase in age increases the Biden rating by about 0.1 to 0.7 points for education levels between 0 and 12 years, and decreases the Biden rating by about 0.1 to 0.2 points for education levels between 16 and 17 years depending on education level.
 
 #### Part 2
 **Evaluate the marginal effect of education on Joe Biden thermometer rating, conditional on age. Consider the magnitude and direction of the marginal effect, as well as its statistical significance.**
@@ -266,7 +267,7 @@ instant_effect(lr_mod2, "age") %>%
        y = "Estimated marginal effect")
 ```
 
-Increasing education levels increases the Biden thermometer rating for ages approximately 18 to 30, and decreases it for all other ages. The effects are statistically significant for ages approximately 45 and up. Looking only at the statistically significant marginal effects, a one-year increase in education level decreases the Biden rating by between 0.5 and 3 points. 
+Increasing education levels increases the Biden thermometer rating for ages approximately 18 to 30, and decreases it for all other ages. The effects are statistically significant for ages approximately 45 and up. Looking only at the statistically significant marginal effects, a one-year increase in education level decreases the Biden rating by between 0.5 and 3 points depending on age. 
 
 ### Missing data
 **This time, use multiple imputation to account for the missingness in the data. Consider the multivariate normality assumption and transform any variables as you see fit for the imputation stage. Calculate appropriate estimates of the parameters and the standard errors and explain how the results differ from the original, non-imputed model.**
@@ -313,12 +314,14 @@ mi.meld.plus <- function(df_tidy){
 
 tidy(lr_mod3) %>%
   left_join(mi.meld.plus(models_trans_imp)) %>%
-  select(-statistic, -p.value)
+  select(-statistic, -p.value) %>%
+  kable(format = "html")
 ```
 
 vs. the model in **Regression diagnostics**:
 ```{r original_model}
-tidy(lr_mod1)
+tidy(lr_mod1) %>%
+  kable(format = "html")
 ```
 
 The estimates from the imputed model are fairly similar to non-imputed models. Standard errors are slightly smaller for some variables in the imputed model compared to the non-imputed model without list-wise deletion of missing observations. Standard errors are actually smaller overall for the non-imputed model with list-wise deletion, showing that list-wise deletion is not necessarily a bad strategy compared to multiple imputation.

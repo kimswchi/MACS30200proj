@@ -85,7 +85,7 @@ ggplot(bid1_augment, aes(hat, student)) +
 
 ![](soowankim_ps3_files/figure-html/bubble_plot-1.png)<!-- -->
 
-The bubble plot shows many observations with high discrepancy and some observations with high leverage as well as high discrepancy.
+The bubble plot shows many observations with high discrepancy and some observations with high leverage as well as high discrepancy (high influence).
 
 
 ```r
@@ -259,16 +259,51 @@ biden2 <- biden %>%
   na.omit()
 
 lr_mod2 <- lm(biden ~ age*educ, data = biden2)
-tidy(lr_mod2)
+tidy(lr_mod2) %>%
+  kable(format = "html")
 ```
 
-```
-##          term   estimate  std.error statistic      p.value
-## 1 (Intercept) 38.3735103 9.56356681  4.012468 6.254443e-05
-## 2         age  0.6718750 0.17049152  3.940812 8.430505e-05
-## 3        educ  1.6574253 0.71399213  2.321350 2.037897e-02
-## 4    age:educ -0.0480341 0.01290186 -3.723037 2.028851e-04
-```
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 38.3735103 </td>
+   <td style="text-align:right;"> 9.5635668 </td>
+   <td style="text-align:right;"> 4.012468 </td>
+   <td style="text-align:right;"> 0.0000625 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> age </td>
+   <td style="text-align:right;"> 0.6718750 </td>
+   <td style="text-align:right;"> 0.1704915 </td>
+   <td style="text-align:right;"> 3.940812 </td>
+   <td style="text-align:right;"> 0.0000843 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> educ </td>
+   <td style="text-align:right;"> 1.6574253 </td>
+   <td style="text-align:right;"> 0.7139921 </td>
+   <td style="text-align:right;"> 2.321350 </td>
+   <td style="text-align:right;"> 0.0203790 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> age:educ </td>
+   <td style="text-align:right;"> -0.0480341 </td>
+   <td style="text-align:right;"> 0.0129019 </td>
+   <td style="text-align:right;"> -3.723037 </td>
+   <td style="text-align:right;"> 0.0002029 </td>
+  </tr>
+</tbody>
+</table>
 
 #### Part 1
 **Evaluate the marginal effect of age on Joe Biden thermometer rating, conditional on education. Consider the magnitude and direction of the marginal effect, as well as its statistical significance.**
@@ -323,7 +358,7 @@ instant_effect(lr_mod2, "educ") %>%
 
 ![](soowankim_ps3_files/figure-html/age_biden_marginal-1.png)<!-- -->
 
-Increasing age increases the Biden thermometer rating for education levels between 0 and 13 years of education, and decreases it for education levels 15 and above. The effects are statistically significant for education levels between 0 and 12 years and between 16 and 17 years; that is, the confidence intervals exclude 0 for those ranges. Looking only at the statistically significant marginal effects, a one-year increase in age increases the Biden rating by about 0.1 to 0.7 points for education levels between 0 and 12 years, and decreases the Biden rating by about 0.1 to 0.2 points for education levels between 16 and 17 years.
+Increasing age increases the Biden thermometer rating for education levels between 0 and 13 years of education, and decreases it for education levels 15 and above. The effects are statistically significant for education levels between 0 and 12 years and between 16 and 17 years; that is, the confidence intervals exclude 0 for those ranges. Looking only at the statistically significant marginal effects, a one-year increase in age increases the Biden rating by about 0.1 to 0.7 points for education levels between 0 and 12 years, and decreases the Biden rating by about 0.1 to 0.2 points for education levels between 16 and 17 years depending on education level.
 
 #### Part 2
 **Evaluate the marginal effect of education on Joe Biden thermometer rating, conditional on age. Consider the magnitude and direction of the marginal effect, as well as its statistical significance.**
@@ -344,7 +379,7 @@ instant_effect(lr_mod2, "age") %>%
 
 ![](soowankim_ps3_files/figure-html/educ_biden_marginal-1.png)<!-- -->
 
-Increasing education levels increases the Biden thermometer rating for ages approximately 18 to 30, and decreases it for all other ages. The effects are statistically significant for ages approximately 45 and up. Looking only at the statistically significant marginal effects, a one-year increase in education level decreases the Biden rating by between 0.5 and 3 points. 
+Increasing education levels increases the Biden thermometer rating for ages approximately 18 to 30, and decreases it for all other ages. The effects are statistically significant for ages approximately 45 and up. Looking only at the statistically significant marginal effects, a one-year increase in education level decreases the Biden rating by between 0.5 and 3 points depending on age. 
 
 ### Missing data
 **This time, use multiple imputation to account for the missingness in the data. Consider the multivariate normality assumption and transform any variables as you see fit for the imputation stage. Calculate appropriate estimates of the parameters and the standard errors and explain how the results differ from the original, non-imputed model.**
@@ -419,29 +454,99 @@ mi.meld.plus <- function(df_tidy){
 
 tidy(lr_mod3) %>%
   left_join(mi.meld.plus(models_trans_imp)) %>%
-  select(-statistic, -p.value)
+  select(-statistic, -p.value) %>%
+  kable(format = "html")
 ```
 
-```
-##          term   estimate std.error estimate.mi std.error.mi
-## 1 (Intercept) 62.2118694 6.3714523  58.6857360    6.7007169
-## 2    log(age)  1.9846331 1.4203420   2.5956361    1.4016691
-## 3      female  6.0206180 1.0898466   5.9818591    1.0218418
-## 4        educ -0.8240799 0.2214316  -0.7425816    0.2271171
-```
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> estimate.mi </th>
+   <th style="text-align:right;"> std.error.mi </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 62.2118694 </td>
+   <td style="text-align:right;"> 6.3714523 </td>
+   <td style="text-align:right;"> 58.6857360 </td>
+   <td style="text-align:right;"> 6.7007169 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> log(age) </td>
+   <td style="text-align:right;"> 1.9846331 </td>
+   <td style="text-align:right;"> 1.4203420 </td>
+   <td style="text-align:right;"> 2.5956361 </td>
+   <td style="text-align:right;"> 1.4016691 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 6.0206180 </td>
+   <td style="text-align:right;"> 1.0898466 </td>
+   <td style="text-align:right;"> 5.9818591 </td>
+   <td style="text-align:right;"> 1.0218418 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> educ </td>
+   <td style="text-align:right;"> -0.8240799 </td>
+   <td style="text-align:right;"> 0.2214316 </td>
+   <td style="text-align:right;"> -0.7425816 </td>
+   <td style="text-align:right;"> 0.2271171 </td>
+  </tr>
+</tbody>
+</table>
 
 vs. the model in **Regression diagnostics**:
 
 ```r
-tidy(lr_mod1)
+tidy(lr_mod1) %>%
+  kable(format = "html")
 ```
 
-```
-##          term    estimate  std.error statistic      p.value
-## 1 (Intercept) 68.62101396 3.59600465 19.082571 4.337464e-74
-## 2         age  0.04187919 0.03248579  1.289154 1.975099e-01
-## 3      female  6.19606946 1.09669702  5.649755 1.863612e-08
-## 4        educ -0.88871263 0.22469183 -3.955251 7.941295e-05
-```
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> term </th>
+   <th style="text-align:right;"> estimate </th>
+   <th style="text-align:right;"> std.error </th>
+   <th style="text-align:right;"> statistic </th>
+   <th style="text-align:right;"> p.value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> (Intercept) </td>
+   <td style="text-align:right;"> 68.6210140 </td>
+   <td style="text-align:right;"> 3.5960047 </td>
+   <td style="text-align:right;"> 19.082571 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> age </td>
+   <td style="text-align:right;"> 0.0418792 </td>
+   <td style="text-align:right;"> 0.0324858 </td>
+   <td style="text-align:right;"> 1.289154 </td>
+   <td style="text-align:right;"> 0.1975099 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 6.1960695 </td>
+   <td style="text-align:right;"> 1.0966970 </td>
+   <td style="text-align:right;"> 5.649755 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> educ </td>
+   <td style="text-align:right;"> -0.8887126 </td>
+   <td style="text-align:right;"> 0.2246918 </td>
+   <td style="text-align:right;"> -3.955251 </td>
+   <td style="text-align:right;"> 0.0000794 </td>
+  </tr>
+</tbody>
+</table>
 
 The estimates from the imputed model are fairly similar to non-imputed models. Standard errors are slightly smaller for some variables in the imputed model compared to the non-imputed model without list-wise deletion of missing observations. Standard errors are actually smaller overall for the non-imputed model with list-wise deletion, showing that list-wise deletion is not necessarily a bad strategy compared to multiple imputation.
