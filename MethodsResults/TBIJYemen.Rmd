@@ -1,0 +1,299 @@
+---
+title: "TBIJYemen"
+author: "Soo Wan Kim"
+date: "May 1, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+theme_set(theme_minimal())
+
+library(tidyverse)
+library(scales)
+library(maptools)
+library(raster)
+library(rgdal)
+
+#saved xlsx file as csv in Excel
+gtd <- read_csv("Data/Terrorism Data/globalterrorismdb_0616dist.csv")
+
+gtd_filt <- gtd %>%
+  mutate(TargetType = ifelse(targtype1_txt %in% c("Military", "Police", "Terrorists/Non-State Militia"),
+"Military", 
+ifelse(targtype1_txt %in% c("Government (Diplomatic)", "Government (General)", "Violent Political Party"),
+       "Government", "Other"))) %>%
+  mutate(WeaponType = ifelse(weaptype1_txt %in% c("Biological", "Chemical", "Radiological",
+                                                  "Fake Weapons", "Sabotage Equipment",
+                                                         "Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)", "Other", "Unknown"), "Unknown/Other",
+                                    ifelse(weaptype1_txt == "Explosives/Bombs/Dynamite", 
+                                           "Explosives", weaptype1_txt)))
+```
+
+### Yemen
+
+#### Terrorist attacks
+
+Confirmed attacks
+AQAP or Ansar al-Sharia
+
+```{r}
+gtd_yemen <- gtd_filt %>%
+  filter(country_txt == "Yemen" & iyear > 2010 & guncertain1 == 0 & gname %in% 
+           c("Al-Qaida in the Arabian Peninsula (AQAP)", "Al-Qaida in Yemen")) %>%
+  mutate(date = paste0(iyear,"-",imonth,"-",iday)) %>%
+  transform(date = as.Date(date, "%Y-%m-%d")) %>%
+  arrange(date)
+```
+
+How many attacks?
+
+When do attacks occur
+
+```{r}
+count_year <- gtd_yemen %>%
+  group_by(iyear) %>%
+  summarize(count = n())
+
+ggplot(count_year, aes(iyear, count)) + 
+  geom_line(linetype = 2) + 
+  geom_point() + 
+  labs(title = "Number of confirmed attacks by AQAP and affiliates, by year",
+       x = "Year", y = "Number of attacks") + 
+  theme(panel.grid.minor = element_blank())
+```
+
+Where do attacks occur
+
+```{r}
+yemen<-getData("GADM", country="YE", level=1)
+
+yemen1 <-spTransform(yemen, CRS("+init=EPSG:2089"))
+
+provinces <- unique(gtd_yemen$provstate)
+
+gtd_yemen_map <- gtd_yemen %>%
+  transform(provstate = ifelse(provstate == "Unknown", NA, provstate)) %>%
+  transform(provstate = ifelse(provstate == "Adan", "`Adan", provstate)) %>%
+  transform(provstate = ifelse(provstate == "Ad Dali", "Al Dali'", provstate)) %>%
+  transform(provstate = ifelse(provstate == "Taizz", "Ta`izz", provstate)) %>%
+  transform(provstate = ifelse(provstate == "Saada", "Sa`dah", provstate)) %>%
+  transform(provstate = ifelse(provstate == "Sanaa", "San`a", provstate)) %>%
+  transform(provstate = ifelse(provstate == "Marib", "Ma'rib", provstate)) 
+
+#yemen1@data$NAME_1
+
+NAME_1 <- yemen1@data$NAME_1
+
+count_all <- gtd_yemen_map %>%
+  group_by(provstate) %>%
+  summarize(count = n()) %>%
+  rename(`NAME_1` = provstate)
+
+yemen1@data$id <- rownames(yemen1@data)
+yemen1@data <- left_join(yemen1@data, count_all, by = "NAME_1")
+yemen1_df <- fortify(yemen1)
+yemen1_df <- left_join(yemen1_df, yemen1@data, by = "id")
+
+theme_opts<-list(theme(panel.grid.minor = element_blank(),
+                       panel.grid.major = element_blank(),
+                       panel.background = element_blank(),
+                       plot.background = element_blank(),
+                       axis.line = element_blank(),
+                       axis.text.x = element_blank(),
+                       axis.text.y = element_blank(),
+                       axis.ticks = element_blank(),
+                       axis.title.x = element_blank(),
+                       axis.title.y = element_blank()))
+
+ggplot() + 
+  geom_polygon(data = yemen1_df, aes(x = long, y = lat, group = group, fill =
+                                       count), color = "black", size = 0.25) +
+  theme(aspect.ratio=.7) + 
+  labs(title = "Confirmed terrorist attacks by AQAP and affiliates, 2011 - 2015",
+       fill = "Frequency") + 
+  scale_fill_gradient(low='#FFFFCC', high='#006837') + 
+  theme_opts
+```
+
+How many killed in attacks
+`r sum(gtd_yemen$nkill, na.rm = TRUE)`
+This field stores the number of total confirmed fatalities for the incident. The
+number includes all victims and attackers who died as a direct result of the incident.
+
+```{r}
+fatalities <- gtd_yemen %>%
+  group_by(iyear) %>%
+  summarize(NumAttacks = n(),
+            Sum = sum(nkill, na.rm = TRUE), 
+            Min = min(nkill, na.rm = TRUE), 
+            Max = max(nkill, na.rm = TRUE), 
+            Mean = mean(round(nkill,2), na.rm = TRUE),
+            Median = median(nkill, na.rm = TRUE),
+            Sd = sd(round(nkill,2), na.rm = TRUE))
+```
+
+Who killed
+
+```{r}
+targ_count <- gtd_yemen %>%
+  group_by(iyear, TargetType) %>%
+  summarize(freq = n()) %>%
+  mutate(freq_weight = freq/sum(freq)) %>%
+  transform(TargetType = as.factor(TargetType)) %>%
+  transform(TargetType = factor(targ_count$TargetType, levels = c("Other", "Government", "Military")))
+
+ggplot(targ_count, aes(iyear, freq_weight)) + 
+  geom_bar(aes(fill = TargetType), stat = "identity") + 
+  labs(title = "Percentage of attacks by target type",
+       x = "Year", y = "Percentage of attacks",
+       fill = "Target Type") + 
+  scale_y_continuous(labels = percent_format())
+```
+
+how killed
+
+```{r}
+weap_count <- gtd_yemen %>%
+  group_by(iyear, WeaponType) %>%
+  summarize(freq = n()) %>%
+  mutate(freq_weight = freq/sum(freq)) %>%
+  transform(WeaponType = as.factor(WeaponType)) %>%
+  transform(WeaponType = factor(weap_count$WeaponType, 
+                                levels = c("Unknown/Other", "Incendiary", "Melee",
+                                           "Firearms", "Explosives")))
+
+ggplot(weap_count, aes(iyear, freq_weight)) + 
+  geom_bar(aes(fill = WeaponType), stat = "identity") + 
+  labs(title = "Percentage of attacks by weapon type",
+       x = "Year", y = "Percentage of attacks",
+       fill = "Target Type") + 
+  scale_y_continuous(labels = percent_format())
+```
+
+#### Covert strikes
+
+strike frequency by year
+
+location of strikes
+
+number killed in strikes
+
+leaders killed
+
+```{r}
+TBIJYemen <- read_csv("Data/Strikes Data/Tidy data/TBIJYemenTidy.csv") %>%
+  transform(Date = as.Date(Date, "%Y-%m-%d")) %>%
+  filter(Date > "2009-01-01")
+
+NAFYemen <- read_csv("Data/Strikes Data/Tidy data/NAFYemenTidy.csv") %>%
+  select(Date, NumLeadersKilled)
+
+TBIJYemen <- left_join(TBIJYemen, NAFYemen, by = "Date") %>%
+  mutate(LeaderKilled = ifelse(!is.na(NumLeadersKilled) & NumLeadersKilled > 0, 1, 0)) %>%
+  select(-NumLeadersKilled)
+```
+
+
+```{r}
+#attacks on same day treated as single attack
+
+gtd_yemen_casualties <- gtd_yemen %>%
+  group_by(date) %>%
+  summarize(attack_fatalities = sum(nkill))
+
+date <- as.character(gtd_yemen_casualties$date)
+date2 <- c(date, NA)
+date2 <- date2[-1]
+gtd_yemen_casualties$date2 <- as.Date(date2, "%Y-%m-%d")
+
+gtd_yemen_casualties <- gtd_yemen_casualties %>%
+  mutate(lull = date2 - date)
+
+
+gtd_yemen_filt <- gtd_yemen %>%
+  filter(crit3 == 1)
+  filter(suicide == 1)
+
+ggplot(gtd_yemen_casualties, aes(date, lull)) + 
+  geom_point() + 
+  geom_line() + 
+  geom_smooth()
+
+ggplot(gtd_yemen, aes(date, nkill)) + 
+  geom_point() + 
+  geom_line() + 
+  geom_smooth()
+
+ggplot(gtd_yemen_casualties, aes(date, lull)) + 
+  geom_point() + 
+  geom_line() + 
+  geom_smooth()
+
+ggplot(gtd_yemen_casualties, aes(date, killed)) + 
+  geom_point() + 
+  geom_line() + 
+  geom_smooth()
+
+ggplot(gtd_yemen, aes(lull)) + 
+  geom_histogram(bins = 60)
+
+
+
+d <- 4/5
+a <- 0.2
+r <- 0.9
+
+get_strike_casualties <- function(date) {
+  obs <- filter(TBIJYemen, Date < date)
+  obs <- select(obs, Date, TotalKilledMin, LeaderKilled)
+  obs <- group_by(obs, Date)
+  obs <- summarize(obs, TotalKilledMin = sum(TotalKilledMin), LeaderKilled = sum(LeaderKilled))
+  obs <- mutate(obs, Diff = ceiling((date - Date)/30))
+  obs <- mutate(obs, TotKilledMinW = ifelse(LeaderKilled == 0,
+                                            r*TotalKilledMin*d^(as.numeric(Diff) - 1),
+                                            r*(1 + a)*TotalKilledMin*d^(as.numeric(Diff) - 1)))
+  TotKilledMin <- sum(obs$TotKilledMinW)
+  return(TotKilledMin)
+}
+
+TotKilledMinW <- map(gtd_yemen_casualties$date, function(i) get_strike_casualties(i))
+TotKilledMinW <- data.frame(TotKilledMinW)
+TotKilledMinW <- t(TotKilledMinW)
+TotKilledMinW <- data.frame(TotKilledMinW)
+rownames(TotKilledMinW) <- NULL
+
+gtd_yemen_casualties <- bind_cols(gtd_yemen_casualties, TotKilledMinW)
+
+ggplot(gtd_yemen_casualties, aes(TotKilledMinW, lull)) + 
+  geom_point() + 
+  geom_smooth()
+
+# number of strikes in same month
+# number of strikes in previous month
+# smoothed (exponential?)
+```
+
+```{r}  
+x <- seq(1, 1000, 1)
+y <- 0
+
+for (i in 1:1000) {
+  y[i] <- d^(i - 1)
+}
+
+test <- data.frame(x, y)
+
+ggplot(test, aes(x, y)) + 
+  geom_point() + 
+  xlim(0,50)
+
+```
+
+### Somalia
+
+```{r}
+TBIJSomalia <- read.csv("Data/Strikes Data/Tidy data/TBIJSomaliaTidy.csv")
+NAFSomalia <- read.csv("Data/Strikes Data/Tidy data/NAFSomaliaTidy.csv")
+```
