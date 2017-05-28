@@ -440,33 +440,74 @@ tidy(time_mod12) %>%
 ```
 
 ```{r fixed effects model}
-#
+yemen_lm_fix_data <- yemen_lm_data %>%
+  mutate(year = year(date))
+
+#smoothed across last two months
+time_mod2.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW2+1) + (log(TotKilledMedW2+1))^2 + factor(year),
+             data = yemen_lm_fix_data)
 
 
+tidy(time_mod2.fix)
+
+#smoothed across last six months
+time_mod6.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW6+1) + (log(TotKilledMedW6+1))^2 + factor(year),
+             data = yemen_lm_fix_data)
+
+
+tidy(time_mod6.fix)
+summary(time_mod6.fix)
+
+#smoothed across last twelve months
+time_mod12.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW12+1) + (log(TotKilledMedW12+1))^2 + factor(year),
+             data = yemen_lm_fix_data)
+
+tidy(time_mod12.fix)
+summary(time_mod12.fix)
 ```
 
 ```{r diagnoses}
-gtd_yemen_casualties2 %>%
-  add_predictions(time_mod) %>%
-  add_residuals(time_mod) %>%
-  ggplot(aes(pred, resid)) +
-  geom_point(alpha = .2) +
-  geom_hline(yintercept = 0, linetype = 2) +
-  geom_quantile(method = "rqss", lambda = 5, quantiles = c(.05, .95)) +
-  labs(title = "Variance of error terms",
-       x = "Predicted values",
-       y = "Residuals")
+yemen_lm_pred_data <- yemen_lm_fix_data %>%
+  add_predictions(time_mod2) %>%
+  add_residuals(time_mod2) %>%
+  rename(pred2 = pred, resid2 = resid) %>%
+  add_predictions(time_mod6) %>%
+  add_residuals(time_mod6) %>%
+  rename(pred6 = pred, resid6 = resid) %>%
+  add_predictions(time_mod12) %>%
+  add_residuals(time_mod12) %>%
+  rename(pred12 = pred, resid12 = resid) %>%
+  #add_predictions(time_mod2.fix) %>%
+  #add_residuals(time_mod2.fix) %>%
+  #rename(pred2fix = pred, resid2fix = resid) %>%
+  #add_predictions(time_mod6.fix) %>%
+  #add_residuals(time_mod6.fix) %>%
+  #rename(pred6fix = pred, resid6fix = resid) %>%
+  #add_predictions(time_mod12.fix) %>%
+  #add_residuals(time_mod12.fix) %>%
+  #rename(pred12fix = pred, resid12fix = resid) %>%
+  transform(lull = log(as.numeric(lull) + 1)) %>%
+  gather(lull, pred2, pred6, pred12, key = "model", value = "lull")
+  #gather(lull, pred2, pred6, pred12, pred2fix, pred6fix, pred12fix, key = "model", value = "lull")
 
-time_augment <- yemen_lm_data %>%
-  mutate(hat = hatvalues(time_mod),
-         student = rstudent(time_mod),
-         cooksd = cooks.distance(time_mod))
+ggplot(data = yemen_lm_pred_data) + 
+  geom_smooth(aes(date, lull, color = model, linetype = model))
 
-gtd_time_inf <- time_augment %>%
-  filter(cooksd > 4 / (nrow(.) - (length(coef(time_mod)) - 1) - 1))
+yemen_lm_predfix_data <- yemen_lm_fix_data %>%
+  add_predictions(time_mod2.fix) %>%
+  add_residuals(time_mod2.fix) %>%
+  rename(pred2fix = pred, resid2fix = resid) %>%
+  add_predictions(time_mod6.fix) %>%
+  add_residuals(time_mod6.fix) %>%
+  rename(pred6fix = pred, resid6fix = resid) %>%
+  add_predictions(time_mod12.fix) %>%
+  add_residuals(time_mod12.fix) %>%
+  rename(pred12fix = pred, resid12fix = resid) %>%
+  transform(lull = log(as.numeric(lull) + 1)) %>%
+  gather(lull, pred2fix, pred6fix, pred12fix, key = "model", value = "lull")
 
-gtd_time_n_inf <- time_augment %>%
-  filter(cooksd < 4 / (nrow(.) - (length(coef(time_mod)) - 1) - 1))
-gtd_time_n_inf <- gtd_time_n_inf[,1:5]
+ggplot(data = yemen_lm_predfix_data) + 
+  geom_smooth(aes(date, lull, color = model, linetype = model))
+
 ```
 
