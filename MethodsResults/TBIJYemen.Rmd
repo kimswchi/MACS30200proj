@@ -35,10 +35,6 @@ ifelse(targtype1_txt %in% c("Government (Diplomatic)", "Government (General)", "
                                                          "Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)", "Other", "Unknown"), "Unknown/Other",
                                     ifelse(weaptype1_txt == "Explosives/Bombs/Dynamite", 
                                            "Explosives", weaptype1_txt)))
-
-#set beginning of time range
-y <- 2012
-y_txt <- "2012"
 ```
 
 # Yemen
@@ -48,64 +44,78 @@ y_txt <- "2012"
 ### Terrorist attacks
 
 ```{r terrorist attack data}
+#all attacks from 2009 on
 gtd_yemen <- gtd_filt %>%
-  filter(country_txt == "Yemen" & iyear >= y & guncertain1 == 0 & gname %in% 
+  filter(country_txt == "Yemen" & iyear >= 2009 & guncertain1 == 0 & gname %in% 
            c("Al-Qaida in the Arabian Peninsula (AQAP)", "Al-Qaida in Yemen")) %>%
   mutate(date = paste0(iyear,"-",imonth,"-",iday)) %>%
   transform(date = as.Date(date, "%Y-%m-%d")) %>%
   arrange(date)
+
+#from March 2012 on
+gtd_yemen2012 <- gtd_yemen %>%
+  filter(date >= as.Date("3/1/2012", "%m/%d/%Y"))
 ```
+
+According to the Global Terorrism Database, AQAP carried out at least `r nrow(gtd_yemen)` attacks since its founding in January 2009, `r nrow(gtd_yemen2012)` of which were carried out after February 2012.
 
 #### Graphs
 
-```{r number of attacks by year}
-count_year <- gtd_yemen %>%
-  group_by(iyear) %>%
-  summarize(count = n())
-
-ggplot(count_year, aes(iyear, count)) + 
-  geom_line(linetype = 2) + 
-  geom_point() + 
-  labs(title = "Number of confirmed attacks by AQAP and affiliates, by year",
-       x = "Year", y = "Number of attacks") + 
-  theme(panel.grid.minor = element_blank())
-```
-
-
 ```{r intervals between attacks}
+#all attacks from 2009 on
 gtd_yemen_casualties <- gtd_yemen %>%
   group_by(date) %>%
   summarize(attack_fatalities = sum(nkill))
 
-date <- as.character(gtd_yemen_casualties$date)
-date2 <- c(date, NA)
+date2 <- c(gtd_yemen_casualties$date, NA)
 date2 <- date2[-1]
 gtd_yemen_casualties$date2 <- as.Date(date2, "%Y-%m-%d")
 
 gtd_yemen_casualties <- gtd_yemen_casualties %>%
   mutate(lull = date2 - date)
 
-#histogram
-ggplot(gtd_yemen_casualties, aes(log(as.numeric(lull) + 1))) + 
-  geom_histogram(bins = 90)
+#all attacks from March 2012 on
+gtd_yemen_casualties2012 <- gtd_yemen_casualties %>%
+  filter(date >= as.Date("3/1/2012", "%m/%d/%Y"))
 
-#scatter plot over time
-ggplot(gtd_yemen_casualties, aes(date, log(as.numeric(lull)+1))) + 
+#scatter plot of intervals over time
+
+#2009 on 
+ggplot(gtd_yemen_casualties, aes(date, as.numeric(lull))) + 
+  geom_point(alpha = 0.3) + 
+  geom_line(size = 0.3) + 
+  geom_rect(data=NULL,aes(xmin=as.Date("1/27/2011", "%m/%d/%Y"),
+                          xmax=as.Date("2/27/2012", "%m/%d/%Y"),
+                          ymin=-Inf,ymax=Inf),
+            fill="#ff6347", alpha = 0.002) + 
+  annotate(geom = "text", x = as.Date("8/15/2011", "%m/%d/%Y"),
+           y = 200, label = "Yemeni Revolution", size = 3.4) + 
+  geom_smooth() +
+  labs(title = "Intervals between AQAP attacks in Yemen (2009 - 2015)",
+       subtitle = "N = 382",
+       x = "Date", y = "Intervals (days)")
+
+#march 2012 on
+ggplot(gtd_yemen_casualties2012, aes(date, as.numeric(lull))) + 
   geom_point(alpha = 0.3) + 
   geom_line(size = 0.3) + 
   geom_smooth() +
-  labs(title = "Intervals between AQAP attacks in Yemen, logged",
-       x = "Date", y = "Intervals (log)")
+  labs(title = "Intervals between AQAP attacks in Yemen (Mar. 2012 - 2015)",
+       subtitle = "N = 362",
+       x = "Date", y = "Intervals (days)")
 ```
+
+Discounting same-day attacks, intervals between attacks from 2009 to 2015: `r nrow(gtd_yemen_casualties) - 1`
+Discounting same-day attacks, intervals between attacks from March 2012 to 2015: `r nrow(gtd_yemen_casualties2012) - 1`
 
 ```{r attack location frequency map}
 yemen<-getData("GADM", country="YE", level=1)
 
 yemen1 <-spTransform(yemen, CRS("+init=EPSG:2089"))
 
-provinces <- unique(gtd_yemen$provstate)
+provinces <- unique(gtd_yemen2012$provstate)
 
-gtd_yemen_map <- gtd_yemen %>%
+gtd_yemen_map <- gtd_yemen2012 %>%
   transform(provstate = ifelse(provstate == "Unknown", NA, provstate)) %>%
   transform(provstate = ifelse(provstate == "Adan", "`Adan", provstate)) %>%
   transform(provstate = ifelse(provstate == "Ad Dali", "Al Dali'", provstate)) %>%
@@ -143,14 +153,15 @@ ggplot() +
   geom_polygon(data = yemen1_df, aes(x = long, y = lat, group = group, fill =
                                        count), color = "black", size = 0.25) +
   theme(aspect.ratio=.7) + 
-  labs(title = "Confirmed terrorist attacks by AQAP and affiliates, 2011 - 2015",
+  labs(title = "Confirmed AQAP attacks in Yemen, Mar. 2012 - 2015",
+       subtitle = "N = 537", 
        fill = "Frequency") + 
   scale_fill_gradient(low='#FFFFCC', high='#006837') + 
   theme_opts
 ```
 
 ```{r attacks target type}
-targ_count <- gtd_yemen %>%
+targ_count <- gtd_yemen2012 %>%
   group_by(iyear, TargetType) %>%
   summarize(freq = n()) %>%
   mutate(freq_weight = freq/sum(freq)) %>%
@@ -163,11 +174,13 @@ ggplot(targ_count, aes(iyear, freq_weight)) +
        x = "Year", y = "Percentage of attacks",
        fill = "Target Type") + 
   scale_y_continuous(labels = percent_format()) + 
-  theme(panel.grid.minor = element_blank())
+  theme(panel.grid.minor.x = element_blank())
 ```
 
+The composition of targets is similar across years, though there is an appreciable `r  round((targ_count$freq_weight[targ_count$iyear == 2014 & targ_count$TargetType == "Military"] - targ_count$freq_weight[targ_count$iyear == 2015 & targ_count$TargetType == "Military"])*100,1)`% drop in the percentage of attacks aimed at military targets between 2014 and 2015, accompanied by a corresponding increase in government targets.
+
 ```{r attacks weapon type}
-weap_count <- gtd_yemen %>%
+weap_count <- gtd_yemen2012 %>%
   group_by(iyear, WeaponType) %>%
   summarize(freq = n()) %>%
   mutate(freq_weight = freq/sum(freq)) %>%
@@ -181,10 +194,14 @@ ggplot(weap_count, aes(iyear, freq_weight)) +
   labs(title = "Percentage of attacks by weapon type",
        x = "Year", y = "Percentage of attacks",
        fill = "Weapon Type") + 
-  scale_y_continuous(labels = percent_format())
+  scale_y_continuous(labels = percent_format()) + 
+  theme(panel.grid.minor.x = element_blank())
 ```
+
+Most attacks were carried out using explosives and firearms. The percentage of attacks using explosives appears to have somewhat decreased over the years.
+
 ```{r attacks suicide}
-sui_count <- gtd_yemen %>%
+sui_count <- gtd_yemen2012 %>%
   group_by(iyear, suicide) %>%
   summarize(freq = n()) %>%
   mutate(freq_weight = freq/sum(freq)) %>%
@@ -195,8 +212,11 @@ ggplot(sui_count, aes(iyear, freq_weight)) +
   geom_bar(aes(fill = suicide_label), stat = "identity") + 
   labs(title = "Use of suicide attacks over time",
        x = "Year", y = "Percentage of attacks", fill = "Suicide\nattack?") + 
-  scale_y_continuous(labels = percent_format())
+  scale_y_continuous(labels = percent_format()) + 
+  theme(panel.grid.minor.x = element_blank())
 ```
+
+The use of suicide attacks also appears to have decreased between 2012 and 2015.
 
 #### Table
 
@@ -208,19 +228,24 @@ options(xtable.timestamp = "")
 colnames <- c("Year", "# Attacks", "Avg. Interval (Days)", "Interval range (Days)")
 
 #year
-year <- c(2011, 2012, 2013, 2014, 2015, "Total")
-#number of attacks
+year <- c(2012, 2013, 2014, 2015, "Total")
+#number of attacks per year
+count_year <- gtd_yemen2012 %>%
+  group_by(iyear) %>%
+  summarize(count = n())
+
 attacks <- c(count_year$count, sum(count_year$count))
 
-lull <- gtd_yemen_casualties %>%
+#intervals between attacks
+lull <- gtd_yemen_casualties2012 %>%
   mutate(year = year(date)) %>%
   group_by(year) %>%
   summarize(avg = round(mean(as.numeric(lull), na.rm = TRUE),1), 
             min = min(as.numeric(lull), na.rm = TRUE), 
             max = max(as.numeric(lull), na.rm = TRUE))
-lull_total <- c(round(mean(gtd_yemen_casualties$lull, na.rm = TRUE),1),
-                min(gtd_yemen_casualties$lull, na.rm = TRUE),
-                max(gtd_yemen_casualties$lull, na.rm = TRUE))
+lull_total <- c(round(mean(gtd_yemen_casualties2012$lull, na.rm = TRUE),1),
+                min(gtd_yemen_casualties2012$lull, na.rm = TRUE),
+                max(gtd_yemen_casualties2012$lull, na.rm = TRUE))
 avg_interval <- c(lull$avg, as.numeric(lull_total[1]))
 min_interval <- c(lull$min, as.numeric(lull_total[2]))
 max_interval <- c(lull$max, as.numeric(lull_total[3]))
@@ -232,10 +257,10 @@ colnames(attack_table) <- colnames
 xtable(attack_table)
 ```
 
-
 ### Covert strikes
 
-```{r}
+```{r strike incident data}
+#all strike incidents
 TBIJYemen <- read_csv("Data/Strikes Data/Tidy data/TBIJYemenTidy.csv") %>%
   transform(Date = as.Date(Date, "%Y-%m-%d")) %>%
   transform(Province = ifelse(Province %in% c("Hadhramout", "Hadramout", "Hadaramout"), 
@@ -255,8 +280,11 @@ TBIJYemen <- TBIJYemen %>%
   mutate(TotalKilledMed = floor((TotalKilledMin + TotalKilledMax)/2)) %>%
   mutate(CiviliansKilledMed = floor((CiviliansKilledMin + CiviliansKilledMax)/2)) %>%
   mutate(MilitantsKilledMed = TotalKilledMed - CiviliansKilledMed) %>%
-  filter(Date < as.Date("1/1/2016", "%m/%d/%Y") & Date > as.Date("1/1/2012", "%m/%d/%Y"))
+  filter(Date < as.Date("1/1/2016", "%m/%d/%Y"))
 
+TBIJYemen2012 <- TBIJYemen %>%
+  filter(Date >= as.Date("3/1/2012", "%m/%d/%Y"))
+  
 #Leaders killed
 NAFYemenLeaders <- read_csv("Data/Strikes Data/Tidy data/NAFYemenTidy.csv") %>%
   group_by(Date) %>%
@@ -269,10 +297,18 @@ NAFYemenLeaders <- read_csv("Data/Strikes Data/Tidy data/NAFYemenTidy.csv") %>%
   mutate(LeaderKilled = ifelse(NumLeadersKilled > 0, 1, 0))
 ```
 
+`r nrow(TBIJYemen)` covert strike incidents since 2009
+`r nrow(TBIJYemen2012)` covert strike incidents since March 2012
+
 #### Graphs
 
 ```{r strike incidents by year}
 strike_count_year <- TBIJYemen %>%
+  mutate(year = year(Date)) %>%
+  group_by(year) %>%
+  summarize(count = n())
+
+strike_count_year2012 <- TBIJYemen2012 %>%
   mutate(year = year(Date)) %>%
   group_by(year) %>%
   summarize(count = n())
@@ -282,14 +318,24 @@ ggplot(strike_count_year, aes(year, count)) +
   geom_point() + 
   scale_x_continuous(breaks = c(2002, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017)) + 
   ylim(0, 80) + 
-  labs(title = "Reported number of covert strike incidents in Yemen, by year",
+  labs(title = "Reported covert strike incidents in Yemen (2009 - 2015)",
+       subtitle = "N = 210",
+       x = "Year", y = "Number of incidents")
+
+ggplot(strike_count_year2012, aes(year, count)) + 
+  geom_line(linetype = 2) + 
+  geom_point() + 
+  scale_x_continuous(breaks = c(2012, 2013, 2014, 2015, 2016, 2017)) + 
+  ylim(0, 80) + 
+  labs(title = "Reported covert strike incidents in Yemen (Mar. 2012 - 2015)",
+       subtitle = "N = 172",
        x = "Year", y = "Number of incidents")
 ```
 
 ```{r strike location map}
 yemen2 <- yemen
 
-count_strikes <- TBIJYemen %>%
+count_strikes <- TBIJYemen2012 %>%
   group_by(Province) %>%
   summarize(count = n()) %>%
   rename(`NAME_1` = Province)
@@ -303,13 +349,15 @@ ggplot() +
   geom_polygon(data = yemen2_df, aes(x = long, y = lat, group = group, fill =
                                        count), color = "black", size = 0.25) +
   theme(aspect.ratio=.7) + 
-  labs(title = "Location of covert strike incidents on AQAP and affiliates in Yemen, 2002 - 2017",
+  labs(title = "Location of covert strike incidents in Yemen, Mar. 2012 - 2015",
        fill = "Frequency") + 
-  scale_fill_gradient(low='#FFFFCC', high='#006837') + 
+  scale_fill_gradient(low='#F0F8FF', high='#00008B') + 
   theme_opts
 ```
 
 ```{r fatalities per incident}
+#KEEP the pre-2012 strike data (otherwise the smoothing is wonky)
+
 fatalities <- gtd_yemen %>%
   group_by(iyear) %>%
   summarize(NumAttacks = n(),
@@ -331,46 +379,21 @@ strike_fatalities <- TBIJYemen %>%
                                                                        NA))))
 
 ggplot(strike_fatalities, aes(Date, killed)) + 
-  geom_point(aes(color = TypeLabel)) + 
+  geom_point(aes(color = TypeLabel), alpha = 0.3) + 
   geom_smooth(aes(color = TypeLabel)) + 
-  labs(title = "Reported casualties from covert strike incidents",
+  scale_x_date(limits = c(as.Date("12/17/2009", "%m/%d/%Y"), NA), 
+               date_breaks = "1 year", date_labels = "%Y") + 
+  labs(title = "Reported casualties from covert strike incidents (2009 - 2015)",
        subtitle = "Average of maximum and minimum reported casualties",
        x = "Date", y = "Number killed per incident", color = "Casualty\nType")
-  
-```
-
-```{r naf leaders killed}
-year <- sort(rep(c(2002, seq(2009, 2017, 1)), 2))
-LeaderKilled <- rep(c(0,1), 10)
-decap <- data.frame(year, LeaderKilled)
-
-decap_count <- NAFYemenLeaders %>%
-  group_by(year(as.Date(Date, "%Y-%m-%d")), LeaderKilled) %>%
-  summarize(freq = n())
-colnames(decap_count) <- c("year", "LeaderKilled", "freq")
-
-decap_count <- left_join(decap, decap_count, by = c("year", "LeaderKilled")) %>%
-  transform(freq = ifelse(is.na(freq), 0, freq))
-
-decap_count <- left_join(decap_count, strike_count_year, by = "year") %>%
-  mutate(freq_weight = freq/count) %>%
-  transform(LeaderKilled = as.factor(LeaderKilled))
-
-ggplot(decap_count, aes(year, freq_weight)) + 
-  geom_bar(aes(fill = LeaderKilled), stat = "identity") + 
-  labs(title = "Percentage of strikes known to have killed at least one group leader",
-       x = "Year", y = "Percentage of attacks",
-       fill = "Killed leader?",
-       caption = "Sources: The Bureau of Investigative Journalism,\nNew America Foundation") + 
-  scale_y_continuous(labels = percent_format()) + 
-  scale_x_continuous(breaks = c(2002, 2009, 2011, 2013, 2015, 2017)) + 
-  scale_fill_manual(labels = c("No", "Yes"), values = c("black", "#999999"))
 ```
 
 #### Table
 
 ```{r strike incidents table}
-colnames <- c("Year", "# Incidents", "% Confirmed", "Avg. killed (min.)", "Avg. killed (max.)")
+colnames <- c("Year", "# Incidents", "% Confirmed", "Avg. killed (min.)", "Avg. killed (max.)",
+              "# Leaders killed")
+year <- c(2002, 2009, 2010, 2011, 2012, 2013, 2014, 2015, "Total")
 strikes <- c(strike_count_year$count, sum(strike_count_year$count))
 confirmed_year <- TBIJYemen %>%
   mutate(year = year(Date)) %>%
@@ -393,7 +416,15 @@ killedmin <- c(strike_killed_year$KilledMin,
 killedmax <- c(strike_killed_year$KilledMax,
                round(mean(TBIJYemen$TotalKilledMax, na.rm = TRUE),1))
 
-strike_table <- data.frame(year, strikes, confirmed, killedmin, killedmax)
+decap_count <- NAFYemenLeaders %>%
+  group_by(year(as.Date(Date, "%Y-%m-%d"))) %>%
+  summarize(sum = sum(NumLeadersKilled))
+colnames(decap_count) <- c("year", "NumLeadersKilled")
+decap_count <- decap_count %>%
+  filter(year < 2016)
+decap <- c(decap_count$NumLeadersKilled, sum(decap_count$NumLeadersKilled))
+
+strike_table <- data.frame(year, strikes, confirmed, killedmin, killedmax, decap)
 colnames(strike_table) <- colnames
 xtable(strike_table)
 
@@ -404,6 +435,7 @@ xtable(strike_table)
 
 ```{r regression setup}
 #attacks on same day treated as single attack
+#again, do not filter strikes data by date!
 
 d <- 2/5
 a <- 0.1
@@ -423,21 +455,21 @@ get_strike_casualties <- function(date, x) {
 }
 
 # smoothed across last two months
-TotKilledMedW2 <- map(gtd_yemen_casualties$date, function(i) get_strike_casualties(i, 2))
+TotKilledMedW2 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 2))
 TotKilledMedW2 <- data.frame(TotKilledMedW2)
 TotKilledMedW2 <- t(TotKilledMedW2)
 TotKilledMedW2 <- data.frame(TotKilledMedW2)
 rownames(TotKilledMedW2) <- NULL
 
 # smoothed across last six months
-TotKilledMedW6 <- map(gtd_yemen_casualties$date, function(i) get_strike_casualties(i, 7))
+TotKilledMedW6 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 7))
 TotKilledMedW6 <- data.frame(TotKilledMedW6)
 TotKilledMedW6 <- t(TotKilledMedW6)
 TotKilledMedW6 <- data.frame(TotKilledMedW6)
 rownames(TotKilledMedW6) <- NULL
 
 # smoothed across last twelve months
-TotKilledMedW12 <- map(gtd_yemen_casualties$date, function(i) get_strike_casualties(i, 13))
+TotKilledMedW12 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 13))
 TotKilledMedW12 <- data.frame(TotKilledMedW12)
 TotKilledMedW12 <- t(TotKilledMedW12)
 TotKilledMedW12 <- data.frame(TotKilledMedW12)
@@ -446,22 +478,25 @@ rownames(TotKilledMedW12) <- NULL
 
 ```{r aggregate models}
 #Model 1
-yemen_lm_data <- bind_cols(gtd_yemen_casualties, TotKilledMedW2, TotKilledMedW6, TotKilledMedW12) %>%
+yemen_lm_data <- bind_cols(gtd_yemen_casualties2012, TotKilledMedW2, TotKilledMedW6, TotKilledMedW12) %>%
   na.omit()
 
 #smoothed across last two months
-time_mod2 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW2+1) + (log(TotKilledMedW2+1))^2, data = yemen_lm_data)
+time_mod2 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW2+1), data = yemen_lm_data)
 
+summary(time_mod2)
 xtable(tidy(time_mod2))
 
 #smoothed across last six months
-time_mod6 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW6+1) + (log(TotKilledMedW6+1))^2, data = yemen_lm_data)
+time_mod6 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW6+1), data = yemen_lm_data)
 
+summary(time_mod6)
 xtable(tidy(time_mod6))
 
 #smoothed across last twelve months
-time_mod12 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW12+1) + (log(TotKilledMedW12+1))^2, data = yemen_lm_data)
+time_mod12 <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW12+1), data = yemen_lm_data)
 
+summary(time_mod12)
 xtable(tidy(time_mod12))
 ```
 
@@ -470,25 +505,25 @@ yemen_lm_fix_data <- yemen_lm_data %>%
   mutate(year = year(date))
 
 #smoothed across last two months
-time_mod2.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW2+1) + (log(TotKilledMedW2+1))^2 + factor(year),
+time_mod2.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW2+1) + factor(year),
              data = yemen_lm_fix_data)
 
-
+summary(time_mod2.fix)
 xtable(tidy(time_mod2.fix))
 
 #smoothed across last six months
-time_mod6.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW6+1) + (log(TotKilledMedW6+1))^2 + factor(year),
+time_mod6.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW6+1) + factor(year),
              data = yemen_lm_fix_data)
 
 summary(time_mod6.fix)
 xtable(summary(time_mod6.fix))
 
 #smoothed across last twelve months
-time_mod12.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW12+1) + (log(TotKilledMedW12+1))^2 + factor(year),
+time_mod12.fix <- lm(log(as.numeric(lull)+1) ~ log(TotKilledMedW12+1) + factor(year),
              data = yemen_lm_fix_data)
 
-xtable(tidy(time_mod2))
 summary(time_mod12.fix)
+xtable(tidy(time_mod2))
 ```
 
 ```{r pred plot}
@@ -499,7 +534,7 @@ ggplot(yemen_lm_data_pred6, aes(TotKilledMedW6, exp(pred)-1)) +
   geom_line(color = "red") + 
   ylim(0,4.5) + 
   #scale_y_continuous(breaks = c(2, 3, 4), labels = c)
-  labs(title = "Cumulative effect of covert strike fatalities vs. predicted interval between attacks",
+  labs(title = "Cumulative effect of covert strike fatalities vs. predicted interval",
        subtitle = "Smoothed measure of covert strike fatalities over six-month period",
        x = "Cumulative effect measure",
        y = "Predicted interval (days)")
@@ -508,7 +543,7 @@ ggplot(yemen_lm_data_pred6, aes(TotKilledMedW6, exp(pred)-1)) +
 
 ```{r coef plot}
 coefplot(time_mod6.fix,
-         title = "Intervals between terrorist attacks ~ covert strike casualties\n(with fixed year effects)",
+         title = "LM of log attack intervals with year fixed effects",
          newNames = c("log(TotKilledMedW6 + 1)" = "killed (logged)"),
          decreasing = TRUE)
 ```
