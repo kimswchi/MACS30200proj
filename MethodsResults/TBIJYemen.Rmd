@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 library(tidyverse)
 library(scales)
@@ -437,7 +437,7 @@ xtable(strike_table)
 #attacks on same day treated as single attack
 #again, do not filter strikes data by date!
 
-d <- 2/5
+d <- 3/5
 a <- 0.1
 
 get_strike_casualties <- function(date, x) {
@@ -449,7 +449,7 @@ get_strike_casualties <- function(date, x) {
   obs <- transform(obs, NumLeadersKilled = ifelse(is.na(NumLeadersKilled), 0, NumLeadersKilled))
   obs <- mutate(obs, Diff = ceiling((date - Date)/30))
   obs <- filter(obs, Diff <= x)
-  obs <- mutate(obs, TotKilledMedW = ((1 + a)^(NumLeadersKilled))*TotalKilledMed*d^(as.numeric(Diff) - 1))
+  obs <- mutate(obs, TotKilledMedW = ((1 + a)^(NumLeadersKilled))*TotalKilledMed*(1-d)^(as.numeric(Diff) - 1))
   TotKilledMed <- sum(obs$TotKilledMedW)
   return(TotKilledMed)
 }
