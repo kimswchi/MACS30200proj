@@ -16,7 +16,7 @@ makerange <- function(column, word) {
 
 #NAF
 
-naf_strikesY <- read.csv("Strikes Data/NAFYemenStrikes.csv", 
+naf_strikesY <- read.csv("MethodsResults/Data/Strikes Data/NAFYemenStrikes.csv", 
                         col.names = c("Date", "Location", "TotalKilled", 
                                       "MilitantsKilled", "CiviliansKilled", "UnknownKilled", "Target"),
                         na.strings = c("")) %>%
@@ -41,7 +41,7 @@ naf_strikesY <- naf_strikesY %>%
   transform(Location = gsub(" $", "", Location)) %>%
   transform(Location = ifelse(Location == "", NA, Location))
 
-naf_leadersY <- read.csv("Strikes Data/NAFYemenStrikesLeaders.csv", 
+naf_leadersY <- read.csv("MethodsResults/Data/Strikes Data/NAFYemenStrikesLeaders.csv", 
                         col.names=c("Date", "LeadersKilled", "Description"),
                         na.strings = c("")) %>%
   transform(Date = gsub(",", " ", Date)) %>% 
@@ -59,11 +59,11 @@ naf_leadersY <- read.csv("Strikes Data/NAFYemenStrikesLeaders.csv",
 naf_strikesY <- left_join(naf_strikesY, naf_leadersY, by = "Date")
 naf_strikesY$NumLeadersKilled[is.na(naf_strikesY$NumLeadersKilled)] <- 0
 
-write_csv(naf_strikesY, "Strikes Data/Tidy data/NAFYemenTidy.csv")
+write_csv(naf_strikesY, "MethodsResults/Data/Strikes Data/Tidy data/NAFYemenTidy.csv")
 
 #TBIJ
 
-bij_strikesY <- read.csv("Strikes Data/TBIJYemenStrikes.csv", na.strings = c("")) %>%
+bij_strikesY <- read.csv("MethodsResults/Data/Strikes Data/TBIJYemenStrikes.csv", na.strings = c("")) %>%
   filter(!is.na(Date)) %>%
   select(-Strike.ID, -Strike.link, -X, -Index) %>%
   transform(Date = as.Date(Date, "%d/%m/%Y")) %>%
@@ -82,7 +82,7 @@ bij_strikesY <- read.csv("Strikes Data/TBIJYemenStrikes.csv", na.strings = c("")
   rename(TotalInjuredMin = Minimum.people.injured) %>%
   rename(TotalInjuredMax = Maximum.people.injured)
   
-write_csv(bij_strikesY, "Strikes Data/Tidy data/TBIJYemenTidy.csv")
+write_csv(bij_strikesY, "MethodsResults/Data/Strikes Data/Tidy data/TBIJYemenTidy.csv")
 
 #Combined
 
@@ -100,7 +100,7 @@ strikesYcombined <- rbind(select(naf_strikesY, c(Date, Location, Province, Total
                           select(bij_confirmedY, c(Date, Location, Province, TotalKilledMin, TotalKilledMax,
                                                    CiviliansKilledMin, CiviliansKilledMax, SourceConfirmed)))
 
-write_csv(strikesYcombined, "Strikes Data/Tidy data/CombinedYemenTidy.csv")
+write_csv(strikesYcombined, "MethodsResults/Data/Strikes Data/Tidy data/CombinedYemenTidy.csv")
 
 #############################
 ## Somalia                  #
@@ -108,7 +108,7 @@ write_csv(strikesYcombined, "Strikes Data/Tidy data/CombinedYemenTidy.csv")
 
 #NAF
 
-naf_strikesS <- read.csv("Strikes Data/NAFSomaliaStrikes.csv", 
+naf_strikesS <- read.csv("MethodsResults/Data/Strikes Data/NAFSomaliaStrikes.csv", 
                          col.names = c("Date", "Location", "TotalKilled", 
                                        "MilitantsKilled", "CiviliansKilled", "UnknownKilled", "Target"),
                          na.strings = c("")) %>%
@@ -128,7 +128,7 @@ naf_strikesS <- naf_strikesS %>%
   separate(CiviliansKilled, into = c("CiviliansKilledMin", "CiviliansKilledMax"), sep = ",") %>%
   separate(UnknownKilled, into = c("UnknownKilledMin", "UnknownKilledMax"), sep = ",")
 
-naf_leadersS <- read.csv("Strikes Data/NAFSomaliaStrikesLeaders.csv", 
+naf_leadersS <- read.csv("MethodsResults/Data/Strikes Data/NAFSomaliaStrikesLeaders.csv", 
                          col.names=c("Date", "LeadersKilled", "Description"),
                          na.strings = c("N/A")) %>%
   transform(Date = gsub(",", " ", Date)) %>% 
@@ -143,11 +143,11 @@ naf_leadersS <- read.csv("Strikes Data/NAFSomaliaStrikesLeaders.csv",
 naf_strikesS <- left_join(naf_strikesS, naf_leadersS, by = "Date")
 naf_strikesS$NumLeadersKilled[is.na(naf_strikesS$NumLeadersKilled)] <- 0
 
-write_csv(naf_strikesS, "Strikes Data/Tidy data/NAFSomaliaTidy.csv")
+write_csv(naf_strikesS, "MethodsResults/Data/Strikes Data/Tidy data/NAFSomaliaTidy.csv")
 
 #TBIJ
 
-bij_strikesS <- read.csv("Strikes Data/TBIJSomaliaStrikes.csv", na.strings = c("")) %>%
+bij_strikesS <- read.csv("MethodsResults/Data/Strikes Data/TBIJSomaliaStrikes.csv", na.strings = c("")) %>%
   filter(!is.na(Date)) %>%
   select(-Strike.ID, -Strike.link, -X, -Index) %>%
   transform(Date = as.Date(Date, "%m/%d/%Y")) %>%
@@ -166,7 +166,7 @@ bij_strikesS <- read.csv("Strikes Data/TBIJSomaliaStrikes.csv", na.strings = c("
   rename(TotalInjuredMin = Minimum.people.injured) %>%
   rename(TotalInjuredMax = Maximum.people.injured)
 
-write_csv(bij_strikesS, "Strikes Data/Tidy data/TBIJSomaliaTidy.csv")
+write_csv(bij_strikesS, "MethodsResults/Data/Strikes Data/Tidy data/TBIJSomaliaTidy.csv")
 
 #Combined
 
@@ -184,16 +184,16 @@ strikesScombined <- rbind(select(naf_strikesS, c(Date, Location, TotalKilledMin,
                           select(bij_confirmedS, c(Date, Location, TotalKilledMin, TotalKilledMax,
                                                    CiviliansKilledMin, CiviliansKilledMax, SourceConfirmed)))
 
-write_csv(strikesScombined, "Strikes Data/Tidy data/CombinedSomaliaTidy.csv")
+write_csv(strikesScombined, "MethodsResults/Data/Strikes Data/Tidy data/CombinedSomaliaTidy.csv")
 
 #############################
 ## Afghanistan              #
 #############################
 
 #TBIJ
-bij_strikesA <- read.csv("Strikes Data/TBIJAfghanistanStrikes.csv", na.strings = c("-", "")) %>%
+bij_strikesA <- read.csv("MethodsResults/Data/Strikes Data/TBIJAfghanistanStrikes.csv", na.strings = c("-", "")) %>%
   filter(!is.na(Date)) %>%
-  select(-ï..Strike, -Strike.link, -Timeline.URL, -Index) %>%
+  select(-?..Strike, -Strike.link, -Timeline.URL, -Index) %>%
   transform(Date = as.Date(Date, "%d/%m/%Y")) %>%
   arrange(Date) %>%
   rename(AttackType = Type.of.attack) %>%
@@ -210,14 +210,14 @@ bij_strikesA <- read.csv("Strikes Data/TBIJAfghanistanStrikes.csv", na.strings =
   rename(TotalInjuredMin = Minimum.reported.injured) %>%
   rename(TotalInjuredMax = Maximum.reported.injured)
 
-write_csv(bij_strikesA, "Strikes Data/Tidy data/TBIJAfghanistanTidy.csv")
+write_csv(bij_strikesA, "MethodsResults/Data/Strikes Data/Tidy data/TBIJAfghanistanTidy.csv")
 
 #############################
 ## Pakistan                 #
 #############################
 
 #TBIJ
-bij_strikesP <- read.csv("Strikes Data/TBIJPakistanStrikes.csv", na.strings = c("")) %>%
+bij_strikesP <- read.csv("MethodsResults/Data/Strikes Data/TBIJPakistanStrikes.csv", na.strings = c("")) %>%
   filter(!is.na(Date)) %>%
   select(-Strike.ID, -Strike.link, -X, -Index) %>%
   transform(Date = as.Date(Date, "%d/%m/%Y")) %>%
@@ -231,7 +231,7 @@ bij_strikesP <- read.csv("Strikes Data/TBIJPakistanStrikes.csv", na.strings = c(
   rename(TotalInjuredMin = Minimum.reported.injured) %>%
   rename(TotalInjuredMax = Maximum.reported.injured)
 
-write_csv(bij_strikesP, "Strikes Data/Tidy data/TBIJPakistanTidy.csv")
+write_csv(bij_strikesP, "MethodsResults/Data/Strikes Data/Tidy data/TBIJPakistanTidy.csv")
 
 #############################
 ## TBIJ Combine             #
