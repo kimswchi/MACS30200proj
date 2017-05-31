@@ -210,7 +210,7 @@ where for each time period $t$ in which an attack has occurred, $interval_{t}$ i
 This culumative effect is modeled as:
 $$killed_{ct} = \sum_{n=t-x}^{t} (1 + \alpha)^{K_n}killed_{n}(1-\delta)^{D_{n}}$$
 where $x$ is some fixed cutoff in difference in days, $\alpha$ is the added effect of the death of a group leader, $K_{n}$ is the number of group leaders killed in period $n$, $killed_{n}$ is the number of covert strike fatalities in period $n$, and $\delta$ is a depreciation constant by which the effect of an attack in a period depreciates in each subsequent period (due to new recruits, replacements, forgetting, etc.). $D_{n}$ is the 30-day difference between periods $n$ and $t$; I assume that the effects of an attack depreciate on a monthly basis. $D$ is calculated as follows:
-$$D_{n} = ceiling((t - n)/30)$$
+$$D_{n} = floor((t - n)/30)$$
 Thus, if $x$ = 30 the cumulative effect covers the deaths caused by covert strikes in the last thirty days and there is no depreciation effect. For $D_{n} > 1$ there is a depreciation effect and more recent deaths are weighed more heavily.
 
 The parameters were set arbitrarily as follows: 

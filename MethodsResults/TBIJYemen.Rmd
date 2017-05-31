@@ -447,7 +447,7 @@ get_strike_casualties <- function(date, x) {
   leaders <- filter(NAFYemenLeaders, as.Date(Date, "%Y-%m-%d") < date)
   obs <- left_join(obs, leaders, by = "Date")
   obs <- transform(obs, NumLeadersKilled = ifelse(is.na(NumLeadersKilled), 0, NumLeadersKilled))
-  obs <- mutate(obs, Diff = ceiling((date - Date)/30))
+  obs <- mutate(obs, Diff = floor((date - Date)/30))
   obs <- filter(obs, Diff <= x)
   obs <- mutate(obs, TotKilledMedW = ((1 + a)^(NumLeadersKilled))*TotalKilledMed*(1-d)^(as.numeric(Diff) - 1))
   TotKilledMed <- sum(obs$TotKilledMedW)
@@ -455,21 +455,21 @@ get_strike_casualties <- function(date, x) {
 }
 
 # smoothed across last two months
-TotKilledMedW2 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 2))
+TotKilledMedW2 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 1))
 TotKilledMedW2 <- data.frame(TotKilledMedW2)
 TotKilledMedW2 <- t(TotKilledMedW2)
 TotKilledMedW2 <- data.frame(TotKilledMedW2)
 rownames(TotKilledMedW2) <- NULL
 
 # smoothed across last six months
-TotKilledMedW6 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 7))
+TotKilledMedW6 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 6))
 TotKilledMedW6 <- data.frame(TotKilledMedW6)
 TotKilledMedW6 <- t(TotKilledMedW6)
 TotKilledMedW6 <- data.frame(TotKilledMedW6)
 rownames(TotKilledMedW6) <- NULL
 
 # smoothed across last twelve months
-TotKilledMedW12 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 13))
+TotKilledMedW12 <- map(gtd_yemen_casualties2012$date, function(i) get_strike_casualties(i, 12))
 TotKilledMedW12 <- data.frame(TotKilledMedW12)
 TotKilledMedW12 <- t(TotKilledMedW12)
 TotKilledMedW12 <- data.frame(TotKilledMedW12)
