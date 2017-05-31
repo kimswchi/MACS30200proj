@@ -78,7 +78,7 @@
 \end{flushleft}
 \section{Introduction}
 
-In this paper I investigate the relationship between fatalities from covert air strikes on militant groups and subsequent timing of terrorist incidents, using Yemen as a case study. Specifically, I look at the effects of fatalities from all covert air strikes in Yemen from 2002 to the end of 2015 on the intervals in number of days between one terrorist incident in Yemen to another between March 2012 and the end of 2015. In addition, I only address terrorist attacks carried out by the militant group al-Qaeda in the Arabian Peninsula (AQAP), one of the main perpetrators of terrorist and insurgent violence in the Arabian Peninsula and also the primary target of counter-terror air strikes in Yemen.
+In this paper I investigate the relationship between fatalities from covert air strikes on militant groups and subsequent timing of attacks by millitants, using Yemen as a case study. Specifically, I look at the effects of fatalities from all covert air strikes in Yemen from 2002 to the end of 2015 on the intervals in number of days between one terrorist incident in Yemen to another between March 2012 and the end of 2015. In addition, I only address attacks carried out by the militant group al-Qaeda in the Arabian Peninsula (AQAP), one of the main perpetrators of terrorist and insurgent violence in the Arabian Peninsula and also the primary target of counter-terror air strikes in Yemen.
 
 Previously, I proposed using data from Afghanistan, Pakistan, Somalia, and Yemen, but given the varying and complex political, economic and social situations in each of the four countries I decided to focus on a single country instead. To further control for variables, I examine terrorist incidents occurring only after the Yemeni Revolution, which is connected to the broader Arab Spring phenomenon and took place roughly between January 27, 2011 and February 27, 2012. Due to lack of data and detailed knowledge, I could not control for the myriad complex developments occuring in Yemen since 2012, including major military offensives by AQAP and counter-offensives by the Yemeni and Saudi regimes. Thus, my models, which only account for covert strike fatalities, are unlikely to explain most of the variation in the timing of attacks. Also, due to the very high frequency of attacks in certain periods, the timing of attacks as measured in days may not be the most useful feature to study for the purpose of investigating the effectiveness of covert targeted killings in counter-terror and counter-insurgency operations. Either a more fine-grained measure in hours or even minutes, or a different measure of militant capabilities, such as lethality of attacks, could provide more useful insight.
 
@@ -86,11 +86,17 @@ Previously, I proposed using data from Afghanistan, Pakistan, Somalia, and Yemen
 
 \subsection{AQAP attacks}
 
-Data on AQAP attacks came from the Global Terrorism Database (GTD) managed at the University of Maryland. The GTD is one of the most detailed and comprehensive data sources for terrorist incidents around the world, and provides an advantage compared to other data sources in that it is freely accessible, extensively documented, and allows filtering by various categories. For the purpose of this study, I looked only at observations for incidents that took place in Yemen between March 1, 2012 and the end of 2015 for which the first perpetuating group is coded as "Al-Qaida in the Arabian Peninsula" or "Al-Qaida in Yemen" (a precursor to AQAP). In addition, I only used observations where the attribution of the attack to the group is not based on speculation or dubious sources ($guncertain1$ = 0). Based on these specifications, the number of individual terrorist attacks was 537. Because the unit of analysis for the timing of attacks is one day, attacks occurring on the same date were treated as one attack. This reduced the number of observations to 362.
+Data on AQAP attacks came from the Global Terrorism Database (GTD) managed at the University of Maryland. The GTD is one of the most detailed and comprehensive data sources for terrorist incidents around the world, and is freely accessible and extensively documented. The GTD defines terrorism as the ``\textit{the threatened or actual use of illegal force and violence by
+a non‐state actor to attain a political, economic, religious, or social goal through fear, coercion,
+or intimidation}." Its criteria for inclusion in the database include, roughly speaking, intentionality on the part of the perpetrator, use or threat of violence, and sub-national actors as perpetrators. This broad definition of terrorism covers essentially all violent offensives by AQAP. While the GTD allows filtering based on more narrow criteria for what constitutes terrorism, it was not necessary for this study as I am interested in AQAP's offensive capabilities as a whole, not just their use of terrorist tactics.
 
-The table below shows the number of attacks occurring each year, and the average interval in days between each attack and the minimum and maximum intervals. To note, the number of attacks measure counts every attack separately, but the interval measures treat attacks occuring on the same day as a single incident. Thus, the minimum interval is 1 day rather than 0 days.
+Within the GTD I looked only at observations for incidents that took place in Yemen between March 1, 2012 and the end of 2015 for which the first perpetuating group is coded as "Al-Qaida in the Arabian Peninsula" or "Al-Qaida in Yemen" (a precursor to AQAP). In addition, I only used observations where the attribution of the attack to the group is not based on speculation or dubious sources ($guncertain1$ = 0). Based on these specifications, the number of individual terrorist attacks was 537. Because the unit of analysis for the timing of attacks is one day, attacks occurring on the same date were treated as one attack. This reduced the number of observations to 362.
 
-\noindent\textbf{Summary of attacks by AQAP in Yemen, 2012 - 2015}\\
+The table below shows the number of attacks occurring each year, and the average interval in days between each attack and the minimum and maximum intervals. To note, the number of attacks measure counts every attack separately, but the interval measures treat attacks occuring on the same day as a single incident. Thus, the minimum interval is 1 day rather than 0 days.\\
+
+\begin {table}[H]
+\begin{center}
+\caption {Summary of attacks by AQAP in Yemen, 2012 - 2015}
 \begin{tabular}{rlrrl}
   \hline
 Year & \# Attacks & Avg. interval & Interval range \\ 
@@ -104,7 +110,8 @@ Year & \# Attacks & Avg. interval & Interval range \\
   All & 537 & 3.9 & 1, 41 \\ 
    \hline
 \end{tabular}
-\\
+\end{center}
+\end {table}
 
 The following charts show the distribution of intervals between attacks ocurring between 2009 to 2015 and 2012 to 2015, respectively. There is a notable decrease in the overall spacing between attacks starting in 2012, which may have been caused by political changes or even by the stepping up of counter-terror operations in the region. From 2012 on there is significantly less variation, though the overall pattern appears to vary from year to year. In particular, attacks are more numerous in 2014 and occur in quicker succession than in any other year, as the summary table corroborates.
 
@@ -143,9 +150,9 @@ In addition, I obtained the list of group leaders killed per incident from the N
 
 The following table shows the number of incidents per year, as well as the percentage of incidents confirmed to be US operations (as opposed to covert operations carried out by regional powers, such as Yemen or Saudi Arabia), averages for minimum and maximum fatality estimates, and the number of group leaders killed. Group leaders include senior leaders and prominent ideologues, and any other high-profile member of AQAP. 
 
-\noindent\textbf{Summary of covert strike incidents in Yemen, 2002 - 2015}\\
 \begin{table}[ht!]
 \centering
+\caption {Summary of covert strike incidents in Yemen, 2002 - 2015}
 \begin{tabular}{rlrrrrr}
   \hline
 Year & \# Incidents & \% US Confirmed & Avg. killed & Avg. killed & \# Leaders killed \\ 
