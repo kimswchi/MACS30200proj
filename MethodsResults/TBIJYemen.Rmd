@@ -532,10 +532,10 @@ yemen_lm_data_pred6 <- yemen_lm_data %>%
 
 ggplot(yemen_lm_data_pred6, aes(TotKilledMedW6, exp(pred)-1)) + 
   geom_line(color = "red") + 
-  ylim(0,4.5) + 
+  #ylim(0,4.5) + 
   #scale_y_continuous(breaks = c(2, 3, 4), labels = c)
-  labs(title = "Cumulative effect of covert strike fatalities vs. predicted interval",
-       subtitle = "Smoothed measure of covert strike fatalities over six-month period",
+  labs(title = "Predicted intervals without fixed effects",
+       subtitle = "Covert strike fatalities weighted across 6 months",
        x = "Cumulative effect measure",
        y = "Predicted interval (days)")
 ```
